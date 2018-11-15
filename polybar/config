@@ -1,4 +1,4 @@
-;==========================================================
+;=============================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -14,14 +14,13 @@
 ;
 ;   The README contains alot of information
 ;
-;==========================================================
+;=============================================================
 
 [colors]
-background = #2E3441
+background = #91000000
 background-alt = #4B586B
 foreground = #dfdfdf
 foreground-alt = #dfdfd
-;primary = #C16069
 primary = #0A81F5
 secondary = #3B4253
 alert = #0A81F5
@@ -37,6 +36,8 @@ height = 29
 radius = 0
 fixed-center = true
 
+
+;background = ${colors.background}
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -64,9 +65,9 @@ font-5 = Hack Nerd Font:pixelsize=10;1
 font-6 = MaterialIcons-Regular:pixelsize=10;1
 
 
-modules-left = i3
+modules-left = scratchpad i3
 modules-center =  xwindow
-modules-right = filesystem wireless-network battery date 
+modules-right = filesystem wireless-network eth
 
 ;tray-position = right
 ;tray-padding = 5
@@ -126,10 +127,10 @@ font-6 = MaterialIcons-Regular:pixelsize=10;1
 
 modules-left = powermenu cpu memory
 modules-center = mpd
-modules-right = alsa 
+modules-right = alsa pulseaudio battery date
 
-tray-position = right
-tray-padding = 5
+;tray-position = right
+;tray-padding = 5
 ;tray-transparent = true
 ;tray-background = #000000
 
@@ -148,6 +149,14 @@ enable-ipc = true
 cursor-click = pointer
 ;cursor-scroll = ns-resize
 
+[module/scratchpad]
+type = custom/script
+
+exec = python ~/_my-scripts/i3-scratchpad-indicator.py
+tail = true
+interval = 1
+
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:60:..%
@@ -155,7 +164,7 @@ label = %title:0:60:..%
 
 [module/xkeyboard]
 type = internal/xkeyboard
-blacklist-0 = num lock
+;blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
@@ -219,7 +228,7 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
-label-focused-background = ${module/bspwm.label-focused-background}
+label-focused-background = ${colors.background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
@@ -245,12 +254,12 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
+ws-icon-3 = 4;
+ws-icon-4 = 5; 
 ws-icon-5 = 6;
-ws-icon-6 = 7; ²
-ws-icon-7 = 8; ³
-
+ws-icon-6 = 7; 
+ws-icon-7 = 8;
+ws-icon-8 = 9;
 
 [module/mpd]
 type = internal/mpd
@@ -266,10 +275,10 @@ icon-repeat = 
 icon-single = 
 
 label-song = %artist% - %title%
-label-song-maxlen = 55
+label-song-maxlen = 60
 label-song-ellipsis = true
 
-label-offline =  mpd is offline
+label-offline =  mpd offline
 
 toggle-on-foreground =
 toggle-off-foreground = #55
@@ -278,28 +287,51 @@ bar-progress-width = 12
 bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
 bar-progress-indicator = |
 bar-progress-indicator-foreground = #ff
-bar-progress-indicator-font = 3
+bar-progress-indicator-font = 6
 bar-progress-fill = ─
 bar-progress-fill-foreground = #bb
-bar-progress-fill-font = 3
+bar-progress-fill-font = 6
 bar-progress-empty = ─
-bar-progress-empty-font = 3
+bar-progress-empty-font = 6
 bar-progress-empty-foreground = #44
 
 [module/backlight]
 type = internal/backlight
 card = acpi_video0
-output = EDP-1
+output = LVDS-1
 
-enable-scroll = true
-format = <ramp> <bar> <label>
-label = %percentage:3%%
+format = <ramp> <bar>
+;label = %percentage:3%%
 
 ramp-0 =  
 ramp-1 = 
 ramp-2 =  
 
 bar-width = 10
+bar-indicator = |
+bar-indicator-font = 6
+bar-indicator-foreground = #ff
+bar-fill = ─
+bar-fill-font = 6
+bar-fill-foreground = #c9665e
+bar-empty = ─
+bar-empty-font = 6
+bar-empty-foreground = #44
+
+[module/xbacklight]
+type = internal/xbacklight
+card = acpi_video0
+output = LVDS-1
+
+enable-scroll = true
+format = <ramp> <bar>
+label = %percentage:3%%
+
+ramp-0 =  
+ramp-1 = 
+ramp-2 =  
+
+bar-width = 7
 bar-indicator = |
 bar-indicator-font = 3
 bar-indicator-foreground = #ff
@@ -346,6 +378,8 @@ type = internal/memory
 interval = 1
 format = <label> <bar-used> 
 format-prefix = 
+;format-prefix-foreground = ${colors.foreground-alt}
+;format-underline = #4bffdc
 label = 
 
 bar-used-width = 13
@@ -383,7 +417,7 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
-click-left = /usr/bin/termite >/dev/null 2>&1 &
+click-left = $TERMINAL
 
 [module/wireless-network]
 type = internal/network
@@ -391,9 +425,9 @@ interface = wlan0
 interval = 1.0
 ping-interval = 10
 
-format-connected = <ramp-signal> <label-connected> 
-label-connected = %essid%   %signal%    %downspeed% 
-label-disconnected = not connected
+format-connected = <label-connected> 
+label-connected =  %essid%   %signal%    %downspeed%    %upspeed%
+label-disconnected =   Disconnected
 label-disconnected-foreground = #66
 
 ramp-signal-0 = 
@@ -414,7 +448,7 @@ interface = enp20s0
 interval = 3.0
 
 ;format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -428,8 +462,8 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %d-%m-%Y"
+date = " %d/%m"
+date-alt = "%Y"
 
 time =⠀ %H:%M
 time-alt = ⠀ %H:%M
@@ -443,29 +477,48 @@ label = %time% %date%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${root.foreground}
+;format-volume = <label-volume> <bar-volume>
+;label-volume = VOL %percentage%%
+;label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
-label-muted-foreground = #666
+;label-muted = 🔇 muted
+;label-muted-foreground = #666
 
-bar-volume-width = 21
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+;bar-volume-width = 21
+;bar-volume-foreground-0 = #55aa55
+;bar-volume-foreground-1 = #55aa55
+;bar-volume-foreground-2 = #55aa55
+;bar-volume-foreground-3 = #55aa55
+;bar-volume-foreground-4 = #55aa55
+;bar-volume-foreground-5 = #f5a70a
+;bar-volume-foreground-6 = #ff5555
+;bar-volume-gradient = false
+;bar-volume-indicator = |
+;bar-volume-indicator-font = 2
+;bar-volume-fill = ─
+;bar-volume-fill-font = 2
+;bar-volume-empty = ─
+;bar-volume-empty-font = 2
+;bar-volume-empty-foreground = ${colors.foreground-alt}
+
+headphone-id = 14
+
+mapped = true
+
+interval = 5
+
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage:3%%
+label-muted =  muted
+label-muted-foreground = #66
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
 
 [module/alsa]
 type = internal/alsa

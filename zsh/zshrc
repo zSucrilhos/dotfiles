@@ -1,5 +1,6 @@
 source ~/antigen.zsh
 
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -14,7 +15,9 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
+
 antigen theme eendroroy/alien-minimal alien-minimal
+
 # Tell Antigen that you're done.
 antigen apply
 
@@ -29,7 +32,8 @@ antigen apply
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-## ZSH_THEME="robbyrussell"
+ZSH_THEME=""
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -87,6 +91,7 @@ plugins=(
   git
   vi-mode
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,8 +122,25 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zsh-config="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias i3-config="nvim ~/.i3/config"
+alias polybar-config="nvim ~/.config/polybar/config"
+alias cdmysources="cd ~/_my-sources"
+alias cdmyscripts="cd ~/_my-scripts"
+
+alias mkdir="mkdir -v"
+alias cp="cp -v"
+
+alias tmux="tmux -2"  # for 256color
+alias termite="termite" 
+#alias tmux="TERM=sreen-256color tmux -2"
+#alias tmux='tmux -u -2'  # to get rid of unicode rendering problem
+#alias termtmux="TERM=xterm-256color tmux"
+#alias termite-tmux-term="termite -e 'zsh export TERM=xterm-256color tmux'"
+#alias termite="termite && zsh tmux"
+
+
 #
 
 # Export ~/_my-scripts folder to the $PATH variable
@@ -185,5 +207,25 @@ set -sg escape-time 1
 
 
 export TERM=xterm-256color
+
+
+[[ $TERM = "xterm" ]] && { tmux -2 && exit 0; }
+
+# FZF finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+##########################################################################
+################################ CDM START ###############################
+##########################################################################
+# To avoid potential situation where cdm(1) crashes on every TTY, here we
+# default to execute cdm(1) on tty1 only, and leave other TTYs untouched.
+#if [[ "$(tty)" == '/dev/tty1' ]]; then
+#    [[ -n "$CDM_SPAWN" ]] && return
+#    # Avoid executing cdm(1) when X11 has already been started.
+#    [[ -z "$DISPLAY$SSH_TTY$(pgrep xinit)" ]] && exec cdm
+#fi
+
+
 
 
