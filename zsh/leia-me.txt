@@ -1,0 +1,6 @@
+Usando Oh-My-Zsh
+Tema = Alien Minimal
+Addons = vi-mode, git, autosuggestions (fish-like suggestions)
+
+.zshrc
+    Arquivo oculto, utilize ls -la
