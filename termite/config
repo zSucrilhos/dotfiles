@@ -38,45 +38,76 @@ cursor_shape = block
 # "off", "left" or "right"
 scrollbar = off
 
-[colors]
+## My colors
+#[colors]
 
 # special
-foreground      = #dcdccc
-foreground_bold = #ffffff
-cursor          = #d90d7b
-background      = rgba(0,0,0, 0.70)
+#foreground      = #dcdccc
+#foreground_bold = #ffffff
+#cursor          = #d90d7b
+#background      = rgba(0,0,0, 0.70)
 
 # black
-color0  = #36363f
-color8  = #525a8f
+#color0  = #36363f
+#color8  = #525a8f
 
 # red
-color1  = #bd0d0d
-color9  = #fd6767
+#color1  = #bd0d0d
+#color9  = #fd6767
 
 # green
-color2  = #ffd700
-color10 = #e7ff00
+#color2  = #ffd700
+#color10 = #e7ff00
 
 # yellow
-color3  = #d6c815
-color11 = #ffd200
+#color3  = #d6c815
+#color11 = #ffd200
 
 # blue
-color4  = #285378
-color12 = #3d9ef2
+#color4  = #285378
+#color12 = #3d9ef2
 
 # magenta
-color5  = #6b327e
-color13 = #aa69bd
+#color5  = #6b327e
+#color13 = #aa69bd
 
 # cyan
-color6  = #69c0b5
-color14 = #8abeb7
+#color6  = #69c0b5
+#color14 = #8abeb7
 
 # white
-color7  = #748698
-color15 = #98a0bd
+#color7  = #748698
+#color15 = #98a0bd
+
+
+## New colors
+
+[colors]
+foreground = #339AF0
+background = rgba(0, 0, 34, 0.70)
+
+foreground_bold = #339AF0
+cursor = #339AF0
+cursor_foreground = #339AF0
+highlight = #339AF0
+
+color0 = #6272a4
+color1 = #ff5555
+color2 = #50fa7b
+color3 = #f1fa8c
+color4 = #bd93f9
+color5 = #ff79c6
+color6 = #8be9fd
+color7 = #bfbfbf
+color8 = #4d4d4d
+color9 = #ff6e67
+color10 = #5af78e
+color11 = #f4f99d
+color12 = #caa9fa
+color13 = #ff92d0
+color14 = #9aedfe
+color15 = #e6e6e6
+
 
 [hints]
 font = Hack Nerd Font 9
