@@ -27,6 +27,8 @@ Bottom bar
 
 ### Neovim (VimPlug):
 
+![init.vim](/wallpapers/nvim.png)
+
 * Plug 'terryma/vim-multiple-cursors'
 
 * Plug 'ncm2/ncm2'
