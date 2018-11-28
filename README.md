@@ -1,10 +1,11 @@
 # My _i3-gaps_ dotfiles
 
-imagem
+![Desktop shot](/wallpapers/sshot.png)
+![Terminal shot](/wallpapers/sshot-terminal.png.png)
 
 ## Configuration:
 ### Shell:
-* zsh (zsh-autocompletions, zsh-autosuggestions etc)
+* zsh (zsh-autocompletions, zsh-autosuggestions)
 * oh-my-zsh - https://github.com/robbyrussell/oh-my-zsh (theme: kphoen)
 * fzf - https://github.com/junegunn/fzf
 * antigen
