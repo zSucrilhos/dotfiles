@@ -1,25 +1,25 @@
-source ~/antigen.zsh
-
-
+#source ~/antigen.zsh
+#
+#
 # Load the oh-my-zsh's library.
-antigen use oh-my-zsh
+#antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle heroku
-antigen bundle pip
-antigen bundle lein
-antigen bundle command-not-found
+#antigen bundle git
+#antigen bundle heroku
+#antigen bundle pip
+#antigen bundle lein
+#antigen bundle command-not-found
 
 # Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-
-antigen theme eendroroy/alien-minimal alien-minimal
+#antigen theme eendroroy/alien-minimal alien-minimal
+#antigen theme kphoen
 
 # Tell Antigen that you're done.
-antigen apply
+#antigen apply
 
 
 # If you come from bash you might have to change your $PATH.
@@ -32,7 +32,7 @@ antigen apply
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=""
+ZSH_THEME="kphoen"
 
 
 # Set list of themes to pick from when loading at random
@@ -215,17 +215,23 @@ export TERM=xterm-256color
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-##########################################################################
-################################ CDM START ###############################
-##########################################################################
-# To avoid potential situation where cdm(1) crashes on every TTY, here we
-# default to execute cdm(1) on tty1 only, and leave other TTYs untouched.
-#if [[ "$(tty)" == '/dev/tty1' ]]; then
-#    [[ -n "$CDM_SPAWN" ]] && return
-#    # Avoid executing cdm(1) when X11 has already been started.
-#    [[ -z "$DISPLAY$SSH_TTY$(pgrep xinit)" ]] && exec cdm
-#fi
+# wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+#
+#(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+#
+#cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+##source ~/.cache/wal/colors-tty.sh
 
 
-
-
+# Autologin with getty
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+    exec startx
+fi

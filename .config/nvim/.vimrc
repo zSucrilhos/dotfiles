@@ -17,25 +17,17 @@ Plug 'ncm2/ncm2-jedi'
 " pyclang for c/c++
 Plug 'ncm2/ncm2-pyclang'
 
-" Identation guides for better visualization
-Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'itchyny/lightline.vim'
-
-" My themes
-Plug 'yuttie/hydrangea-vim'
-Plug 'arcticicestudio/nord-vim'
-
-Plug 'scrooloose/nerdcommenter'
+Plug 'tjammer/blayu.vim'
+"Plug 'kaicataldo/material.vim'
 Plug 'tpope/vim-repeat'
 Plug 'svermeulen/vim-easyclip'
 Plug 'sheerun/vim-polyglot'
 Plug 'wellle/tmux-complete.vim'
 
-" Vim git-gutter
-Plug 'airblade/vim-gitgutter'
 
 
 " VimPlug END
@@ -47,9 +39,6 @@ call plug#end()
 " Use an older version of RegeX, faster
 set re=1
 
-" Always use system clipboard no matter what
-set clipboard+=unnamedplus
-
 " Make Vim buffer the rendered lines
 set ttyfast
 set lazyredraw
@@ -57,7 +46,7 @@ set lazyredraw
 set synmaxcol=128
 syntax sync minlines=25
 
-"#######################################################
+"##################################################
 
 " NERDTree
 "    Autostart NERDTree
@@ -68,9 +57,7 @@ map <C-n> :NERDTreeToggle<CR>
 "    Open _my-sources folder
 map <F10> :NERDTree /home/zsucrilhos/_my-sources/
 
-"#######################################################
 
-"#######################################################
 
 " ncm2 configs
 "   enable ncm2 for all buffers
@@ -82,10 +69,8 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 
-"#######################################################
 
-"#######################################################
-
+"##################################################
 " Syntastic configs
 "   Recommended settings
 set statusline+=%#warningmsg#
@@ -99,10 +84,7 @@ let g:syntastic_check_on_wq = 0
 
 "   Use pylint as the liter for python
 let g:syntastic_python_checkers = ['pylint']
-
-"#######################################################
-
-"#######################################################
+"##################################################
 
 " Easyclip configs 
 "    Use gm for 'add mark' instead of m, include the following in your .vimrc
@@ -116,45 +98,27 @@ nnoremap gm m
 "let g:EasyClipAlwaysMoveCursorToEndOfPaste
 
 
-"#######################################################
-
+"##################################################
 " Lightline configs
 set laststatus=2
 
 "    Lightline colorscheme
-"let g:lightline = {
-"      \ 'colorscheme': 'seoul256',
-"      \ }
-
 let g:lightline = {
-      \ 'colorscheme': 'iceberg',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"":""}',
-      \ },
-      \ 'separator':    { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' },
+      \ 'colorscheme': 'seoul256',
       \ }
 
-"#######################################################
+"#################################################
 
-"#######################################################
+" My colorscheme
+colorscheme material-monokai
 
-" Set 256 colors
-"set t_ut=
-"set t_AB=^[[48;5;%dm
-"set t_AF=^[[38;5;%dm
+
+
+" Change default cursor's thickness
+set guicursor=i-ci:ver5-Cursor/lCursor
 
 " Enable line numbers
 set relativenumber
-
-"#######################################################
-" Enable and toggle indent guides
-let g:indent_guides_enable_on_vim_startup = 1
-
-" Set the indent guides colors
-hi IndentGuidesOdd  ctermbg=black
-hi IndentGuidesEven ctermbg=darkgrey
-"#######################################################
 
 " Set shell
 set shell=zsh
@@ -163,20 +127,13 @@ set shell=zsh
 set encoding=utf-8
 set fileencoding=utf-8
 
+
 " Syntax and colors
 syntax on
 
-set termguicolors
-
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-
-" My colorscheme
-" colorscheme hydrangea
-colorscheme iceberg
+if has('termguicolors')
+    set termguicolors
+endif
 
 filetype on
 filetype indent on
