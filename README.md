@@ -8,7 +8,18 @@
 * zsh (zsh-autocompletions, zsh-autosuggestions)
 * oh-my-zsh - https://github.com/robbyrussell/oh-my-zsh (theme: kphoen)
 * fzf - https://github.com/junegunn/fzf
-* antigen
-* tmux (oh-my-tmux)
+* antigen (https://github.com/zsh-users/antigen)
+* tmux
+* oh-my-tmux (https://github.com/gpakosz/.tmux)
 
-### etc
+### Polybar:
+* Scratchpad indicator (/scripts/i3-scratchpad-indicator.py)
+* WS indicator
+* Window Name
+* Disk, Wi-Fi/DSL net indicator, Wi-Fi strenght and traffic
+
+* Power menu
+* CPU and Memory usage
+* mpd module
+* pulseaudio, battery and clock/date modules
+
