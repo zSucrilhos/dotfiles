@@ -13,11 +13,13 @@
 * oh-my-tmux (https://github.com/gpakosz/.tmux)
 
 ### Polybar:
+
     Top bar
 * Scratchpad indicator (/scripts/i3-scratchpad-indicator.py)
 * WS indicator
 * Window Name
 * Disk, Wi-Fi/DSL net indicator, Wi-Fi strenght and traffic
+
     Bottom bar
 * Power menu
 * CPU and Memory usage
