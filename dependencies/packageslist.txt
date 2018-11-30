@@ -43,6 +43,7 @@ i3 Window Manager:
     dunst
 
     compton (window compositor)
+    wmctrl
 
 Network:
     networkmanager
