@@ -34,9 +34,7 @@ Xorg:
     xorg-server
     xorg-xinit
     xorg-xrandr
-
-i3 Window Manager:
-    i3-gaps
+i3 Window Manager: i3-gaps
     dmenu
     rofi
     polybar
@@ -236,12 +234,24 @@ Optional:
     bleachbit 
     lxappearance
     mingetty
+    gnome-system-monitor
+    gnome-disk-utility
+    viewnior
+    flameshot
+    lightscreeen
+    mpv
+
+
 
     nitrogen
 
     notify-osd
     mpd-album-art (Search)
 
+Disable PC Speaker:
+    # echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
+Disable webcam:
+    # echo "blacklist uvcvideo" > /etc/modprobe.d/blacklist.conf
 
 
 ##################################################
