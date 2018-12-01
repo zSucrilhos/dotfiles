@@ -109,6 +109,13 @@ Multimedia (Audio/Video):
         x264
         xvidcore
 
+GUI Programs:
+    inkscape
+    krita
+    gimp
+    gparted
+
+
 Fonts:
     ttf-font-awesome
     nerd-fonts-hack
@@ -116,7 +123,19 @@ Fonts:
     ttf-dejavu
     ttf-unifont
     siji-git
+    bdf-unifont
     powerline-fonts
+    ttf-ms-fonts
+    ttf-ubuntu-font-family
+    noto-fonts
+    ttf-roboto
+    ttf-droid
+    ttf-fira-mono
+    ttf-tahoma
+    ttf-iosevka
+    ttf-inconsolata
+    ttf-vista-fonts
+
 
 Python:
     python2-pip
