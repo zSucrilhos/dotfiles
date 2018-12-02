@@ -87,12 +87,7 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  vi-mode
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+plugins=(git vi-mode zsh-completions zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,7 +119,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zsh-config="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
-alias i3-config="nvim ~/.i3/config"
+alias i3-config="nvim ~/.config/i3/config"
 alias polybar-config="nvim ~/.config/polybar/config"
 alias cdmysources="cd ~/_my-sources"
 alias cdmyscripts="cd ~/_my-scripts"
@@ -221,17 +216,28 @@ export TERM=xterm-256color
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 #
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
 #
-#cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 ##source ~/.cache/wal/colors-tty.sh
+
+# wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
+
+
+# zsh-competions # zsh-competions # zsh-competions # zsh-competions # zsh-competions # zsh-competions # zsh-competions
+autoload -U compinit && compinit
+
+
 
 
 # Autologin with getty
 if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
     exec startx
 fi
+
+
+

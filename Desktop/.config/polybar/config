@@ -16,24 +16,43 @@
 ;
 ;=============================================================
 
+;[colors]
+;background = #91000000
+;background-alt = #4B586B
+;foreground = #dfdfdf
+;foreground-alt = #dfdfd
+;primary = #0A81F5
+;secondary = #3B4253
+;alert = #0A81F5
+;blue = #0A81F5
+
+
+; Wal colors
 [colors]
-background = #91000000
-background-alt = #4B586B
-foreground = #dfdfdf
-foreground-alt = #dfdfd
-primary = #0A81F5
-secondary = #3B4253
-alert = #0A81F5
-blue = #0A81F5
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+blue = ${xrdb:color3:#222}
+
+[bar/bar]
+; ...
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+
+
 
 
 [bar/top]
-monitor = LVDS-1
+monitor = DVI-D-0
 width = 100%
 height = 29
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 0
+radius = 5
 fixed-center = true
 
 
@@ -47,7 +66,7 @@ line-size = 2
 ;line-color = #ff0000
 
 
-border-size = 0
+border-size = 5
 border-color = #00000000
 
 padding-left = 0
@@ -56,18 +75,19 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
-font-4 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
-font-5 = Hack Nerd Font:pixelsize=10;1
-font-6 = MaterialIcons-Regular:pixelsize=10;1
+font-0 = Iosevka Medium:pixelsize=10;1:antialias=true;0
+font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;0
+font-2 = Fixedsys Excelsior:pixelsize=10:size=8:antialias=true;1
+font-3 = Unifont:fontformat=truetype:size=8:antialias=true;0
+font-4 = Wuncon Siji:pixelsize=10;1:antialias=true;0
+font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
+font-6 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
+font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 
 
 modules-left = scratchpad i3
 modules-center =  xwindow
-modules-right = filesystem wireless-network eth
+modules-right = filesystem wireless-network eth wlan
 
 ;tray-position = right
 ;tray-padding = 5
@@ -91,12 +111,12 @@ cursor-click = pointer
 ;cursor-scroll = ns-resize
 
 [bar/bottom]
-monitor = LVDS-1
+monitor = DVI-D-0
 width = 100%
 height = 29
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 0
+radius = 5
 fixed-center = true
 bottom = true
 
@@ -108,7 +128,7 @@ line-size = 2
 ;line-color = #ff0000
 
 
-border-size = 0
+border-size = 5
 border-color = #00000000
 
 padding-left = 2
@@ -117,13 +137,14 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
-font-4 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
-font-5 = Hack Nerd Font:pixelsize=10;1
-font-6 = MaterialIcons-Regular:pixelsize=10;1
+font-0 = Iosevka Medium:pixelsize=10;1:antialias=true;0
+font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;0
+font-2 = Fixedsys Excelsior:pixelsize=10:size=8:antialias=true;1
+font-3 = Unifont:fontformat=truetype:size=8:antialias=true;0
+font-4 = Wuncon Siji:pixelsize=10;1:antialias=true;0
+font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
+font-6 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
+font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 
 modules-left = powermenu cpu memory
 modules-center = mpd
@@ -398,7 +419,7 @@ bar-used-empty-foreground = #444444
 
 [module/wlan]
 type = internal/network
-interface = wlan0
+interface = wlp0s18f2u2
 interval = 3.0
 
 format-connected =   <label-connected>
@@ -421,7 +442,7 @@ click-left = $TERMINAL
 
 [module/wireless-network]
 type = internal/network
-interface = wlan0
+interface = wlp0s18f2u2
 interval = 1.0
 ping-interval = 10
 
@@ -436,15 +457,15 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 
-animation-packetloss-0 = 
-animation-packetloss-0-foreground = #ffa64c
-animation-packetloss-1 = 
-animation-packetloss-1-foreground = ${bar/top.foreground}
-animation-packetloss-framerate = 500
+;animation-packetloss-0 = 
+;animation-packetloss-0-foreground = #ffa64c
+;animation-packetloss-1 = 
+;animation-packetloss-1-foreground = ${bar/top.foreground}
+;animation-packetloss-framerate = 500
 
 [module/eth]
 type = internal/network
-interface = enp20s0
+interface = wlp0s18f2u2
 interval = 3.0
 
 ;format-connected-underline = #55aa55
@@ -609,8 +630,10 @@ type = custom/menu
 expand-right = true
 
 format-spacing = 1
+label-active-font = 0
 
-label-open = ⏻  
+
+label-open = ⏻ 
 label-open-foreground = ${colors.blue}
 label-close =  
 label-close-foreground = ${colors.blue}
