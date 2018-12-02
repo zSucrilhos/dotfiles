@@ -248,6 +248,7 @@ Optional:
     xautolock
     betterlockscreen (configure)
     python-pywall
+    cmatrix
 
 
 
