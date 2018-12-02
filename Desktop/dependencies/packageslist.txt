@@ -136,6 +136,8 @@ Fonts:
     ttf-iosevka
     ttf-inconsolata
     ttf-vista-fonts
+    ttf-fixedsys-excelsior-linux
+    ttf-material-icons
     
     gucharmap
 
@@ -219,6 +221,7 @@ Vim/Nvim:
 
 
 Optional:
+    numlockx
     code
     htop
     gtop
@@ -240,6 +243,10 @@ Optional:
     flameshot
     lightscreeen
     mpv
+    net-tools
+    xorg-xprop
+    xautolock
+    betterlockscreen (configure)
 
 
 

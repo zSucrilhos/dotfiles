@@ -1,0 +1,20 @@
+{
+	"color_scheme": "Packages/Tron Color Scheme/TronLegacy.tmTheme",
+	"font_face": "Monoid, xFira Code",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Pylinter",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"material_theme_contrast_mode": true,
+	"overlay_scroll_bars": "disabled",
+	"theme": "Seti.sublime-theme"
+}
