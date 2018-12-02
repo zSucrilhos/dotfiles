@@ -2,6 +2,7 @@
 
 ![Desktop shot](./wallpapers/desktop.png)
 ![Terminal shot](./wallpapers/terminal.png)
+![Rofi shot](./wallpapers/rofi.png)
 
 ## Configuration:
 ### Shell:
