@@ -1,7 +1,6 @@
 # My _i3-gaps_ dotfiles
 
-![Desktop shot](/wallpapers/sshot.png)
-![Terminal shot](/wallpapers/sshot-terminal.png)
+![Desktop shot](/wallpapers/desktop.png
 
 ## Configuration:
 ### Shell:
