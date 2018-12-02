@@ -247,6 +247,7 @@ Optional:
     xorg-xprop
     xautolock
     betterlockscreen (configure)
+    mousepad
 
 
 
