@@ -210,7 +210,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 exec --no-startup-id volumeicon
 
 # Alsa
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym $mod+Ctrl+m exec termite -e 'alsamixer'
 
 # PulseAudio
 #exec --no-startup-id pulseaudio
@@ -251,30 +251,27 @@ bindsym $mod+Return exec termite --role=tmux -e "$SHELL -ic tmux"
 bindsym $mod+Shift+q kill
 
 # Bind start program launcher (rofi)
-bindsym $mod+d exec --no-startup-id rofi -modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1280 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal 
+bindsym $mod+d exec --no-startup-id rofi -modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1366 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal 
 
-# Bind to tdrop
-bindsym $mod+shift+y exec --no-startup-id tdrop -w 100% -h 30% 
+# Bind xfce4-appfinder
+bindsym $mod+shift+d exec --no-startup-id xfce4-appfinder
 
 
-
-# Launch categorized menu (morc_menu)
-bindsym $mod+z exec --no-startup-id morc_menu
-
+# REPLACE WITH BETTERLOCKSCREEN
 # Switch to the lightdm slick greeter (/etc/lightdm/lightdm.conf)
-bindsym $mod+l exec dm-tool switch-to-greeter
+## bindsym $mod+l exec dm-tool switch-to-greeter
 
 # Launch firefox
-bindsym $mod+F2 exec firefox
+bindsym $mod+F2 exec --no-startup-id firefox
 
 # Launch qutebrowser
-bindsym $mod+SHIFT+F2 exec qutebrowser
+bindsym $mod+SHIFT+F2 exec --no-startup-id qutebrowser
 
 # Launch spacefm file manager
-bindsym $mod+F3 exec spacefm
+bindsym $mod+F3 exec --no-startup-id spacefm
 
 # Launch ranger file manager
-bindsym $mod+Shift+F3 exec st -e "ranger"
+bindsym $mod+Shift+F3 exec --no-startup-id termite -e "ranger"
 
 # Launch ncmpcpp on ws7
 bindsym $mod+F5 exec --no-startup-id i3-msg workspace 7; termite --role=ncmpcpp -e "ncmpcpp"; workspace 7;
@@ -284,12 +281,16 @@ bindsym $mod+t exec --no-startup-id pkill compton
 
 # Launch compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+exec --no-startup-id compton &
 
 # Restart dunst
-bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
+bindsym $mod+Control+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 
 # Take a screenshot with i3-scrot
 bindsym Print exec --no-startup-id i3-scrot
+
+# Take a screenshot with flameshot
+bindsym shift+Print exec --no-startup-id flameshot gui
 
 # I don't really know what this block does
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -298,7 +299,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Start urxvt-unicode in floating mode to use with qalc
 for_window [class="URxvt"] floating enable
-bindsym $mod+F4 exec urxvt -e qalc
+bindsym $mod+F4 exec --no-startup-id  urxvt -e qalc
 
 
 # bindsym $mod+Shift+p exec rofi -show qalc -modi "calc:qalc +u8 -nocurrencies"
@@ -354,6 +355,10 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="SimpleScreenRecorder"] floating enable
+for_window [class="Xfce4-about"] floating enable
+for_window [class="Xfce4-appfinder"] floating enable
+
 
 ########################################################################################################################
 ############################################# AUTO START APPLICATIONS ##################################################
@@ -361,6 +366,9 @@ for_window [class="Xfburn"] floating enable
 ################### START POLYBAR SCRIPT ##################
 exec_always /home/zsucrilhos/_my-scripts/polybarstart
 ###########################################################
+
+# Enable numlock with numlockx
+exec --no-startup-id numlockx on
 
 # Script to turn off the screen
 exec_always dpms.sh
@@ -380,12 +388,13 @@ exec_always unclutter &
 # Just conky
 exec conky &
 
+
 # blurme
 exec --no-startup-id ~/_my-scripts/blurme -t 0.0000001
 
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec --no-startup-id xfce4-power-manager
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+#exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id pamac-tray
 #exec --no-startup-id blueman-applet
 
@@ -403,8 +412,8 @@ exec_always --no-startup-id fix_xcursor
 ######################################################## I3 GAPS #####################################################
 
 # Set inner/outer gaps
-gaps inner 14
-gaps outer -2
+gaps inner 15
+gaps outer -7
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 
@@ -552,6 +561,21 @@ mode "$mode_screen_time" {
 bindsym $mod+Shift+t mode "$mode_screen_time"
 
 ###########################################################################################
+
+# Set my wallpaper
+exec --no-startup-id feh --bg-fill /home/zsucrilhos/Desktop/New-Wallpapers-12-2018/The-Grid-652298023-by-wojtekfus.png
+
+# Set wal
+exec_always --no-startup-id wal -R
+
+
+# Gnome polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+
 
 
 # Template
