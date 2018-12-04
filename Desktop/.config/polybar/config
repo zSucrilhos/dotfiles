@@ -83,7 +83,7 @@ font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 
 modules-left = scratchpad i3
 modules-center =  xwindow
-modules-right = filesystem wireless-network eth wlan
+modules-right = filesystem wireless-network
 
 ;tray-position = right
 ;tray-padding = 5
@@ -441,6 +441,7 @@ type = internal/network
 interface = wlp0s18f2u2
 interval = 1.0
 ping-interval = 10
+unknown-as-up = true
 
 format-connected = <label-connected> 
 label-connected =  %essid%   %signal%    %downspeed%    %upspeed%
