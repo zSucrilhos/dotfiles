@@ -35,15 +35,11 @@ foreground-alt = ${xrdb:color7:#222}
 primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
-blue = ${xrdb:color3:#222}
-
-[bar/bar]
-; ...
-background = ${colors.background}
-foreground = ${colors.foreground}
+blue = ${xrdb:color1:#222}
+;blue = ${xrdb:color3:#222}
 
 
-
+;##############################
 
 
 [bar/top]

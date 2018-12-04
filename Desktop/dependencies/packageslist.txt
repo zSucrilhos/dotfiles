@@ -248,6 +248,9 @@ Optional:
     xautolock
     betterlockscreen (configure)
     mousepad
+    xfce4-appfinder
+    archey4
+    npm
 
 
 
