@@ -1,8 +1,8 @@
 # My _i3-gaps_ dotfiles
 
-![Desktop shot](./wallpapers/NewCfg_12-2018/desktop.png)
-![Terminal shot](./wallpapers/NewCfg_12-2018/terminal.png)
-![Rofi shot](./wallpapers/NewCfg_12-2018/rofi.png)
+![Desktop shot](./wallpapers/The-Grid/Desktop.png)
+![Terminal shot](./wallpapers/The-Grid/Busy.png)
+![Rofi shot](./wallpapers/The-Grid/Rofi.png)
 
 ## Configuration:
 ### Shell:
