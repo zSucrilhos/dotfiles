@@ -358,6 +358,8 @@ for_window [class="Xfburn"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [class="Xfce4-about"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
+for_window [class="Pulseeffects"] floating enable
+for_window [class="Pulseaudio-equalizer-gtk"] floating enable
 
 
 ########################################################################################################################

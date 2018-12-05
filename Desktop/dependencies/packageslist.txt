@@ -212,6 +212,7 @@ GTK+:
     flatplat-theme
     numix-gtk-theme
     vibrancy-colors
+    numix-themes-darkblue
     papirus-icon-theme
     breeze-obsidian-cursor-theme
 
@@ -249,8 +250,14 @@ Optional:
     betterlockscreen (configure)
     mousepad
     xfce4-appfinder
-    archey4
     npm
+    pulseaudio-equalizer
+    pulseaudio-equalizer-ladspa
+    pulseeffects
+    speedtest-cli
+
+
+
 
 
 
