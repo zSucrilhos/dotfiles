@@ -1,2 +1,2 @@
-![i3-logo](./i3-logo.png)
+![i3-logo](./i3-gaps.png)
 
