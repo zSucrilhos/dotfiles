@@ -64,6 +64,9 @@ Basic programs:
     gnome-keyring
     snap
     simplescreenrecorder
+    ntfs-3g
+    mpd-notification (enable with systemctl --user so as mpd too)
+
 
 
 
@@ -215,6 +218,8 @@ GTK+:
     numix-themes-darkblue
     papirus-icon-theme
     breeze-obsidian-cursor-theme
+    adwaita-icon-theme
+
 
 Vim/Nvim:
     VimPlug
