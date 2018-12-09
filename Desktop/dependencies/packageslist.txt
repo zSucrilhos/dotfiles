@@ -261,6 +261,8 @@ Optional:
     pulseeffects
     speedtest-cli
 
+Run "xset +dpms" to enable dpms
+
 
 
 
