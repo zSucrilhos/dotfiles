@@ -314,6 +314,7 @@ assign [class="Termite" window_role="tmux"] 1
 assign [class="Termite" window_role="ncmpcpp"] 7
 assign [class="Firefox"] 2
 assign [class="qutebrowser"] 2
+assign [class="Chromium"] 2
 assign [class="Mousepad"] 3
 assign [class="Notepadqq"] 3
 assign [class="Code"] 3
