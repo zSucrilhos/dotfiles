@@ -253,7 +253,7 @@ bindsym $mod+Return exec termite --role=tmux -e "$SHELL -ic tmux"
 bindsym $mod+Shift+q kill
 
 # Bind start program launcher (rofi)
-bindsym $mod+d exec --no-startup-id rofi -modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1366 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal 
+bindsym $mod+d exec --no-startup-id rofi -modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1366 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal -show-icons
 
 # Bind xfce4-appfinder
 bindsym $mod+shift+d exec --no-startup-id xfce4-appfinder
@@ -393,9 +393,10 @@ exec_always unclutter &
 # Just conky
 exec conky &
 
-
 # blurme
 exec --no-startup-id ~/_my-scripts/blurme -t 0.0000001
+
+
 
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; compton -b
@@ -403,8 +404,12 @@ exec --no-startup-id ~/_my-scripts/blurme -t 0.0000001
 #exec --no-startup-id pamac-tray
 #exec --no-startup-id blueman-applet
 
-exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
+#exec_always --no-startup-id ff-theme-util
+#exec_always --no-startup-id fix_xcursor
+
+
+# Start dpms
+exec xset +dpms
 
 
 # exec --no-startup-id xautolock -time 5 -locker 'betterlockscreen -l dimblur'

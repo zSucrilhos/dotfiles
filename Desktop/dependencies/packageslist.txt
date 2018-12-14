@@ -218,6 +218,7 @@ GTK+:
     numix-themes-darkblue
     papirus-icon-theme
     breeze-obsidian-cursor-theme
+    breeze-icons
     adwaita-icon-theme
 
 
@@ -260,6 +261,15 @@ Optional:
     pulseaudio-equalizer-ladspa
     pulseeffects
     speedtest-cli
+    kdenlive
+    xanmod-kernel (and headers)
+    xorg-xvinfo
+    clang
+    xclip   
+    frei0r-plugins
+    clang-tools-extra
+    iw
+
 
 Run "xset +dpms" to enable dpms
 
