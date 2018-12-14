@@ -147,6 +147,7 @@ Fonts:
 Python:
     python2-pip
     python-pip
+    python3-pip
 
 Video Drivers:
     nvidia
@@ -269,6 +270,7 @@ Optional:
     frei0r-plugins
     clang-tools-extra
     iw
+    sxiv
 
 
 Run "xset +dpms" to enable dpms

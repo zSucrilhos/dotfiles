@@ -217,7 +217,12 @@ exec --no-startup-id volumeicon
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
 
+# Volume bindings
+# Volume up
+bindsym $mod+Ctrl+Up exec amixer set Master 5%+
 
+# Volume down
+bindsym $mod+Ctrl+Down exec amixer set Master 5%-
 
 
 #########################################################################################################################
