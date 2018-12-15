@@ -12,7 +12,7 @@ Xft.lcdfilter: lcddefault
 !XTerm*pointerColor:      #1ABB9B
 !XTerm*faceName:          Fixed
 XTerm*faceSize:          11
-XTerm*reverseVideo:      off
+XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 !
 !*background:                      #222D31
@@ -70,7 +70,7 @@ URxvt.italicFont:                 xft:Hack:size=9,xft:meguri:pixelsize=9,xft:Pow
 !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !
-URxv*letterSpace:                 0
+URxvt*letterSpace:                 -4
 !
 URxvt*imLocale: en_US.UTF-8
 !
@@ -83,11 +83,12 @@ URxvt*termName: rxvt-unicode-256color
 !
 URxvt.depth:                      32
 !URxvt.background:                 [80]#222D31
+URxvt.background:                 #bababa
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       true
 URxvt*cursorBlink:                true
 !URxvt*background:                 black
-!URxvt*foreground:                 grey
+URxvt*foreground:                 #000000
 URxvt*saveLines:                  5000
 URxvt*reverseVideo: on
 

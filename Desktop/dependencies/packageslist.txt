@@ -167,6 +167,7 @@ Shell:
     zsh-completions
     zsh-autosuggestions
     zsh-history-substring-search
+    zsh-
     oh-my-zsh
     antigen (zsh)
 

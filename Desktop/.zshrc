@@ -32,7 +32,10 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="kphoen"
+#ZSH_THEME="kphoen"
+ZSH_THEME="punctual"
+#ZSH_THEME="refined"
+
 
 
 # Set list of themes to pick from when loading at random
@@ -87,7 +90,14 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-completions zsh-autosuggestions)
+plugins=(
+git
+vi-mode
+zsh-completions
+zsh-autosuggestions
+alias-tips
+k
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,12 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -117,6 +121,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias k="k -h"
 alias zsh-config="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias i3-config="nvim ~/.config/i3/config"
@@ -142,6 +147,8 @@ alias termite="termite"
 PATH="$HOME/_my-scripts:$PATH"
 export PATH
 export LANG=en_US.UTF-8
+# Preferred editor 
+export EDITOR="nvim"
 
 # Export mpsyt location to the $PATH variable
 PATH="$HOME/.local/bin/:$PATH"
