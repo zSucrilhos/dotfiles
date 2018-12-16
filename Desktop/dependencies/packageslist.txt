@@ -34,10 +34,13 @@ Xorg:
     xorg-server
     xorg-xinit
     xorg-xrandr
+    xorg-xprop
+    xorg-xvinfo
+
 i3 Window Manager: i3-gaps
     dmenu
     rofi
-    polybar
+    polybar - compile with wireless_tools
     dunst
 
     compton (window compositor)
@@ -65,7 +68,7 @@ Basic programs:
     snap
     simplescreenrecorder
     ntfs-3g
-    mpd-notification (enable with systemctl --user so as mpd too)
+    mpd-notification (enable with systemctl --user so as mpd too) (yay)
 
 
 
@@ -80,7 +83,7 @@ Multimedia (Audio/Video):
     pavucontrol
     paprefs
 
-    mpsyt
+    mps-youtube
 
     cava
     mpd (systemctl enable/start mpd.service)
@@ -147,7 +150,6 @@ Fonts:
 Python:
     python2-pip
     python-pip
-    python3-pip
 
 Video Drivers:
     nvidia
@@ -192,7 +194,21 @@ Pamac GUI:
 Download utilities:
     aria2
     qbittorrent
+    qbittorrent-nox
     transmission
+    atool
+    elinks
+    ffmpegthumbnailer
+    highlight
+    libcaca
+    lynx
+    mediainfo
+    odt2txt
+    perl-image-exiftool
+    poppler
+    python-chardet
+    transmission-cli
+    w3m
 
 File handling:
     spacefm
@@ -242,10 +258,10 @@ Optional:
     qalc
     unclutter
     conky
-    blurme
+    blurme - script
     bleachbit 
     lxappearance
-    mingetty
+    mingetty - yay 
     gnome-system-monitor
     gnome-disk-utility
     viewnior
@@ -253,7 +269,6 @@ Optional:
     lightscreeen
     mpv
     net-tools
-    xorg-xprop
     xautolock
     betterlockscreen (configure)
     mousepad
@@ -265,7 +280,6 @@ Optional:
     speedtest-cli
     kdenlive
     xanmod-kernel (and headers)
-    xorg-xvinfo
     clang
     xclip   
     frei0r-plugins
@@ -287,7 +301,7 @@ Run "xset +dpms" to enable dpms
 
     nitrogen
 
-    notify-osd
+    notify-osd yay
     mpd-album-art (Search)
 
 Disable PC Speaker:
