@@ -272,6 +272,10 @@ Optional:
     clang-tools-extra
     iw
     sxiv
+    zathura (pdf)
+    zathura-pdf-mupdf
+    tomboy
+    
 
 
 Run "xset +dpms" to enable dpms
