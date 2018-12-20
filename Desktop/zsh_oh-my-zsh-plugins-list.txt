@@ -1,0 +1,4 @@
+alias-tips
+k
+zsh-autosuggestions
+zsh-completions
