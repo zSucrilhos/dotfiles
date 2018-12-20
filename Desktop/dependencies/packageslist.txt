@@ -295,6 +295,7 @@ Optional:
     kcolorchooser (AUR)
     gcolor2 (AUR)
     lm_sensors
+    sonic-visualiser
 
     
 
