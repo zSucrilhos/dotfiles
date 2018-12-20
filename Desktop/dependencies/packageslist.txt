@@ -249,6 +249,7 @@ Optional:
     numlockx
     code
     htop
+    i3-lock-color
     gtop
     maim
     volumeicon
