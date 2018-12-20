@@ -289,10 +289,18 @@ Optional:
     zathura (pdf)
     zathura-pdf-mupdf
     tomboy
+    s-tui (AUR)
+    hardinfo (AUR)
+    gpick (AUR)
+    kcolorchooser (AUR)
+    gcolor2 (AUR)
+    lm_sensors
+
     
 
 
 Run "xset +dpms" to enable dpms
+
 
 
 
