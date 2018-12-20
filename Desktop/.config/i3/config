@@ -381,7 +381,7 @@ exec_always /home/zsucrilhos/_my-scripts/polybarstart
 exec --no-startup-id numlockx on
 
 # Script to turn off the screen
-exec_always dpms.sh
+exec dpms.sh
 
 # Lock the screen
 exec --no-startup-id xautolock -time 5 -locker 'dm-tool switch-to-greeter'
@@ -412,12 +412,7 @@ exec --no-startup-id ~/_my-scripts/blurme -t 0.0000001
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
 
-
-# Start dpms
-exec xset +dpms
-
-
-# exec --no-startup-id xautolock -time 5 -locker 'betterlockscreen -l dimblur'
+exec --no-startup-id xautolock -time 5 -locker 'betterlockscreen -l dimblur'
 # exec --no-startup-id clipit
 # exec --no-startup-id nm-applet
 # exec_always --no-startup-id sbxkb
