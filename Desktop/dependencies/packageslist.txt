@@ -297,6 +297,7 @@ Optional:
     gcolor2 (AUR)
     lm_sensors
     sonic-visualiser
+    you-get
 
     
 

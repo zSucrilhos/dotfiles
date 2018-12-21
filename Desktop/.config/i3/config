@@ -331,6 +331,7 @@ assign [class="Spacefm"] 5
 assign [class="TelegramDesktop"] 6
 assign [class="Foxit Reader"] 8
 assign [class="okular"] 8
+assign [class="Zathura"] 8
 assign [class="Steam"] 9
 
 ##########################################################################################################################
@@ -384,7 +385,7 @@ exec --no-startup-id numlockx on
 exec dpms.sh
 
 # Lock the screen
-exec --no-startup-id xautolock -time 5 -locker 'dm-tool switch-to-greeter'
+exec_always --no-startup-id xautolock -time 5 -locker 'dm-tool switch-to-greeter'
 
 # Exec ncmpcpp at startup on ws 7
 exec --no-startup-id i3-msg workspace 7; exec termite -e ncmpcpp; workspace 7;
