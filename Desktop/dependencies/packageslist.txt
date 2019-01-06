@@ -74,6 +74,7 @@ Basic programs:
     gvfs-mtp
     gvfs-gphoto2
     papirus-folders-git
+    pacman-contrib
 
 
 
