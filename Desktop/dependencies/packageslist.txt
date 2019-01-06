@@ -69,6 +69,12 @@ Basic programs:
     simplescreenrecorder
     ntfs-3g
     mpd-notification (enable with systemctl --user so as mpd too) (yay)
+    mtpfs
+    jmtpfs (git)
+    gvfs-mtp
+    gvfs-gphoto2
+    papirus-folders-git
+
 
 
 
