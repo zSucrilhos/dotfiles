@@ -83,7 +83,7 @@ font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 
 modules-left = scratchpad i3
 modules-center =  xwindow
-modules-right = filesystem wireless-network
+modules-right = filesystem wireless-network updates-arch-combined
 
 ;tray-position = right
 ;tray-padding = 5
@@ -144,7 +144,7 @@ font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 
 modules-left = powermenu cpu memory
 modules-center = mpd
-modules-right = alsa pulseaudio battery date
+modules-right = pulseaudio date
 
 ;tray-position = right
 ;tray-padding = 5
@@ -436,6 +436,11 @@ ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 click-left = $TERMINAL
 
+[module/updates-arch-combined]
+type = custom/script
+exec = ~/_my-scripts/updates-arch-combined.sh
+interval = 600
+
 [module/wireless-network]
 type = internal/network
 interface = wlp0s18f2u2
@@ -444,7 +449,8 @@ ping-interval = 10
 unknown-as-up = true
 
 format-connected = <label-connected> 
-label-connected =  %essid%   %signal%    %downspeed%    %upspeed%
+;label-connected =  %essid%   %signal%    %downspeed%    %upspeed%
+label-connected =  %essid%   %signal%    %downspeed%
 label-disconnected =   Disconnected
 label-disconnected-foreground = #66
 
