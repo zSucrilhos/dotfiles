@@ -319,7 +319,7 @@ Run "xset +dpms" to enable dpms
 
     nitrogen
 
-    notify-osd yay
+    xfce4-notifyd
     mpd-album-art (Search)
 
 Disable PC Speaker:

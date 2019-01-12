@@ -397,10 +397,10 @@ exec_always lightsOn.sh
 exec_always unclutter &
 
 # Just conky
-exec conky &
+# exec conky &
 
 # blurme
-exec --no-startup-id ~/_my-scripts/blurme -t 0.0000001
+# exec --no-startup-id ~/_my-scripts/blurme -t 0.0000001
 
 
 

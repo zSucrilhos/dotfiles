@@ -48,7 +48,7 @@ width = 100%
 height = 29
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 5
+radius = 0
 fixed-center = true
 
 
@@ -62,7 +62,7 @@ line-size = 2
 ;line-color = #ff0000
 
 
-border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -112,7 +112,7 @@ width = 100%
 height = 29
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 5
+radius = 0
 fixed-center = true
 bottom = true
 
@@ -124,7 +124,7 @@ line-size = 2
 ;line-color = #ff0000
 
 
-border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 2
