@@ -171,6 +171,7 @@ CPU/Hardware Control/Monitoring:
 
 Shell:
     termite
+    xst
     urxvt
     zsh
     zsh-completions
