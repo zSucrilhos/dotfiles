@@ -188,6 +188,8 @@ Shell:
 
     autologin thing
 
+    colorpicker
+
 Change the default shell to zsh:
     List all default shells:
         chsh -l

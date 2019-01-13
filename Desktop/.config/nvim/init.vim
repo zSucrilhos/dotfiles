@@ -66,6 +66,7 @@ Plug 'tpope/vim-eunuch'
 " My themes
 Plug 'yuttie/hydrangea-vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'drewtempelmeyer/palenight.vim'
 
 " Wal colorscheme
 Plug 'dylanaraps/wal.vim'
@@ -184,7 +185,7 @@ set laststatus=2
 "      \ }
 
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'palenight',
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
@@ -233,7 +234,7 @@ set termguicolors
 
 " My colorscheme
 " colorscheme hydrangea
-colorscheme nord
+colorscheme palenight
 " colorscheme wal
 
 filetype on
