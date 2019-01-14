@@ -45,6 +45,8 @@ i3 Window Manager: i3-gaps
 
     compton (window compositor)
     wmctrl
+    slop
+    main
 
 Network:
     networkmanager
@@ -75,6 +77,7 @@ Basic programs:
     gvfs-gphoto2
     papirus-folders-git
     pacman-contrib
+    ncpamixer
 
 
 

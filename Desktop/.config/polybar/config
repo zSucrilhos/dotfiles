@@ -450,7 +450,8 @@ unknown-as-up = true
 
 format-connected = <label-connected> 
 ;label-connected =  %essid%   %signal%    %downspeed%    %upspeed%
-label-connected =  %essid%   %signal%    %downspeed%
+;label-connected =  %essid%   %signal%    %downspeed%
+label-connected =  %signal%   %downspeed%   %upspeed%
 label-disconnected =   Disconnected
 label-disconnected-foreground = #66
 

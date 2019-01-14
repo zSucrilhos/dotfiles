@@ -254,6 +254,9 @@ bindsym XF86AudioStop exec mpc stop
 # Bind start termite+tmux
 bindsym $mod+Return exec termite --role=tmux -e "$SHELL -ic tmux"
 
+# Bind start xst+tmux
+bindsym $mod+Shift+Return exec xst 
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
@@ -261,7 +264,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1366 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal -show-icons
 
 # Bind xfce4-appfinder
-bindsym $mod+shift+d exec --no-startup-id xfce4-appfinder
+bindsym $mod+Shift+d exec --no-startup-id xfce4-appfinder
 
 
 # REPLACE WITH BETTERLOCKSCREEN
@@ -534,23 +537,23 @@ set_from_resource $term_color15    color15
 
 
 ################################################################################################################################
-################################################## MISCELANEOUS SETTINGS #######################################################
+################################################## MODES SETTINGS #######################################################
 
 ## Manual management of external displays
 # Set the shortcuts and what they do
-set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
-mode "$mode_display" {
-    bindsym v exec --no-startup-id xrandr --output VGA1 --auto --right-of LVDS1, mode "default"
-    bindsym h exec --no-startup-id xrandr --output HDMI1 --auto --right-of LVDS1, mode "default"
-    bindsym x exec --no-startup-id xrandr --output VGA1 --auto --off, mode "default"
-    bindsym y exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
+# set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
+# mode "$mode_display" {
+#     bindsym v exec --no-startup-id xrandr --output VGA1 --auto --right-of LVDS1, mode "default"
+#     bindsym h exec --no-startup-id xrandr --output HDMI1 --auto --right-of LVDS1, mode "default"
+#     bindsym x exec --no-startup-id xrandr --output VGA1 --auto --off, mode "default"
+#     bindsym y exec --no-startup-id xrandr --output HDMI1 --auto --off, mode "default"
 
     # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+#     bindsym Return mode "default"
+#     bindsym Escape mode "default"
 }
 # Declare here the shortcut to bring the display selection menu
-bindsym $mod+Shift+p mode "$mode_display"
+# bindsym $mod+Shift+p mode "$mode_display"
 
 ##########################################################################################
 # Set screen (turn off) time and lightdm lock options
@@ -578,7 +581,6 @@ exec --no-startup-id feh --bg-fill /home/zsucrilhos/Desktop/New-Wallpapers-12-20
 
 # Set wal
 exec_always --no-startup-id wal -R
-
 
 # Gnome polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
