@@ -32,7 +32,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Identation guides for better visualization
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
 
 " File manager sidebar
 Plug 'scrooloose/nerdtree'
