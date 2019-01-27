@@ -217,7 +217,6 @@ Download utilities:
     atool
     elinks
     ffmpegthumbnailer
-    highlight
     libcaca
     lynx
     mediainfo
@@ -231,6 +230,11 @@ Download utilities:
 File handling:
     spacefm
     ranger
+    highlight
+    pdftotext
+    transmission-show
+    mediainfo
+    chardet (pip)
     vifm
     file-roller
 
