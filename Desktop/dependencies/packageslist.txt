@@ -164,6 +164,8 @@ Python:
 Video Drivers:
     nvidia
     nvidia-settings
+    nvidia-utils
+    lib32-nvidia-utils
 
     xrandr
     arandr
@@ -174,6 +176,8 @@ CPU/Hardware Control/Monitoring:
 
 Shell:
     termite
+    alacritty
+    kitty
     xterm
     xst
     urxvt
@@ -227,6 +231,7 @@ Download utilities:
 File handling:
     spacefm
     ranger
+    vifm
     file-roller
 
     thunar

@@ -83,7 +83,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym l exec --no-startup-id betterlockscreen -l, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
@@ -209,8 +209,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 exec --no-startup-id volumeicon
 
-# Alsa
-# bindsym $mod+Ctrl+m exec termite -e 'alsamixer'
+# ncmapmixer
+bindsym $mod+Ctrl+m exec --no-startup-id xst -e 'ncpamixer'
 
 # PulseAudio
 #exec --no-startup-id pulseaudio
@@ -255,7 +255,7 @@ bindsym XF86AudioStop exec mpc stop
 bindsym $mod+Return exec termite --role=tmux -e "$SHELL -ic tmux"
 
 # Bind start xst+tmux
-bindsym $mod+Shift+Return exec xst 
+bindsym $mod+Shift+Return exec --no-startup-id xst 
 
 # Kill focused window
 bindsym $mod+Shift+q kill
@@ -281,7 +281,7 @@ bindsym $mod+SHIFT+F2 exec --no-startup-id qutebrowser
 bindsym $mod+F3 exec --no-startup-id spacefm
 
 # Launch ranger file manager
-bindsym $mod+Shift+F3 exec --no-startup-id termite -e "ranger"
+bindsym $mod+Shift+F3 exec --no-startup-id xst -e "ranger"
 
 # Launch ncmpcpp on ws7
 bindsym $mod+F5 exec --no-startup-id i3-msg workspace 7; termite --role=ncmpcpp -e "ncmpcpp"; workspace 7;
@@ -290,8 +290,8 @@ bindsym $mod+F5 exec --no-startup-id i3-msg workspace 7; termite --role=ncmpcpp 
 bindsym $mod+t exec --no-startup-id pkill compton
 
 # Launch compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-exec --no-startup-id compton &
+bindsym $mod+Ctrl+t exec --no-startup-id compton -b --config ~/.config/compton/compton.conf &
+exec --no-startup-id compton --config ~/.config/compton/compton.conf &
 
 # Restart dunst
 bindsym $mod+Control+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -643,10 +643,5 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # hide/unhide i3status bar
 #### bindsym $mod+m bar mode toggle
 #
-
-
-
-
-
 
 
