@@ -1,0 +1,6 @@
+alias-tips
+k
+zsh-autosuggestions
+zsh-completions
+git
+vi-mode
