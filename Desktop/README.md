@@ -2,7 +2,7 @@
 
 ![Desktop shot](./wallpapers/Palenight/01.png)
 ![Terminal shot](./wallpapers/Palenight/02.png)
-![init.vim](./wallpapers/Razgriz/nvim.png)
+![init.vim](./wallpapers/Palenight/03.png)
 
 ## Configuration:
 ### Shell:
