@@ -215,7 +215,7 @@ bindsym $mod+Ctrl+m exec --no-startup-id xst -e 'ncpamixer'
 # PulseAudio
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec --no-startup-id pavucontrol
+    bindsym $mod+m exec --no-startup-id pavucontrol
 
 # Volume bindings
 # Volume up
@@ -261,15 +261,11 @@ bindsym $mod+Shift+Return exec --no-startup-id xst
 bindsym $mod+Shift+q kill
 
 # Bind start program launcher (rofi)
-bindsym $mod+d exec --no-startup-id rofi -modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1366 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal -show-icons
+bindsym $mod+d exec --no-startup-id rofi --config ~/.config/rofi/config -show drun
+#-modi run#drun#window -show drun -bw 2 -yoffset -2 -drun-match-fields exec -lines 7 -columns 1 -width 1366 -location 1 -padding 5 -terminal termite -i -selected-row 1 -cycle false -color-normal -show-icons
 
 # Bind xfce4-appfinder
 bindsym $mod+Shift+d exec --no-startup-id xfce4-appfinder
-
-
-# REPLACE WITH BETTERLOCKSCREEN
-# Switch to the lightdm slick greeter (/etc/lightdm/lightdm.conf)
-## bindsym $mod+l exec dm-tool switch-to-greeter
 
 # Launch firefox
 bindsym $mod+F2 exec --no-startup-id firefox
@@ -384,6 +380,9 @@ exec_always /home/zsucrilhos/_my-scripts/polybarstart
 # Enable numlock with numlockx
 exec --no-startup-id numlockx on
 
+# Start mpDris2 for using MPRIS with mpd
+exec --no-startup-id mpDris2 &
+
 # Script to turn off the screen
 exec dpms.sh
 
@@ -394,7 +393,7 @@ exec_always --no-startup-id xautolock -time 5 -locker 'dm-tool switch-to-greeter
 exec --no-startup-id i3-msg workspace 7; exec termite -e ncmpcpp; workspace 7;
 
 # Script to check fullscreen on browsers and do not turn off the screen
-exec_always lightsOn.sh
+exec_always --no-startup-id lightsOn.sh
 
 # Unclutter, hide the mouse
 exec_always unclutter &
@@ -416,7 +415,7 @@ exec_always unclutter &
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
 
-exec --no-startup-id xautolock -time 5 -locker 'betterlockscreen -l dimblur'
+exec --no-startup-id xautolock -time 5 -locker 'betterlockscreen -l dim'
 # exec --no-startup-id clipit
 # exec --no-startup-id nm-applet
 # exec_always --no-startup-id sbxkb
@@ -551,7 +550,7 @@ set_from_resource $term_color15    color15
     # back to normal: Enter or Escape
 #     bindsym Return mode "default"
 #     bindsym Escape mode "default"
-}
+#}
 # Declare here the shortcut to bring the display selection menu
 # bindsym $mod+Shift+p mode "$mode_display"
 
@@ -577,10 +576,10 @@ bindsym $mod+Shift+t mode "$mode_screen_time"
 ###########################################################################################
 
 # Set my wallpaper
-exec --no-startup-id feh --bg-fill /home/zsucrilhos/Desktop/New-Wallpapers-12-2018/The-Grid-652298023-by-wojtekfus.png
+exec_always --no-startup-id feh --bg-fill /home/zsucrilhos/Desktop/palenight-rice/palenight.jpg
 
 # Set wal
-exec_always --no-startup-id wal -R
+# exec_always --no-startup-id wal -R
 
 # Gnome polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &

@@ -1,3 +1,4 @@
+
 [options]
 allow_bold = true
 audible_bell = false
@@ -45,7 +46,7 @@ scrollbar = off
 #foreground      = #dcdccc
 #foreground_bold = #ffffff
 #cursor          = #d90d7b
-#background      = rgba(0,0,0, 0.70)
+#background      = rgba(0,0,0, 1.0)
 
 # black
 #color0  = #36363f
@@ -82,31 +83,73 @@ scrollbar = off
 
 ## New colors
 
+#[colors]
+#foreground = #339AF0
+#background = rgba(0, 0, 34, 0.95)
+
+#foreground_bold = #339AF0
+#cursor = #FA4664
+#cursor_foreground = #339AF0
+#highlight = #339AF0
+
+#color0 = #6272a4
+#color1 = #ff5555
+#color2 = #50fa7b
+#color3 = #f1fa8c
+#color4 = #bd93f9
+#color5 = #ff79c6
+#color6 = #8be9fd
+#color7 = #bfbfbf
+#color8 = #4d4d4d
+#color9 = #ff6e67
+#color10 = #5af78e
+#color11 = #f4f99d
+#color12 = #caa9fa
+#color13 = #ff92d0
+#color14 = #9aedfe
+#color15 = #e6e6e6
+
+# Palenight termite
 [colors]
-foreground = #339AF0
-background = rgba(0, 0, 34, 0.70)
 
-foreground_bold = #339AF0
-cursor = #339AF0
-cursor_foreground = #339AF0
-highlight = #339AF0
+# special
+foreground      = #bfc7d5
+foreground_bold = #bfc7d5
+cursor          = #FA4664
+background      = rgba(41,45,62, 0.90)
+# black
+color0  = #171819
+color8  = #5f6670
 
-color0 = #6272a4
-color1 = #ff5555
-color2 = #50fa7b
-color3 = #f1fa8c
-color4 = #bd93f9
-color5 = #ff79c6
-color6 = #8be9fd
-color7 = #bfbfbf
-color8 = #4d4d4d
-color9 = #ff6e67
-color10 = #5af78e
-color11 = #f4f99d
-color12 = #caa9fa
-color13 = #ff92d0
-color14 = #9aedfe
-color15 = #e6e6e6
+# red
+color1  = #a0363f
+color9  = #cc6666
+
+# green
+color2  = #b2de67
+color10 = #b5bd68
+
+# yellow
+color3  = #fdc467
+color11 = #e8664a
+
+# blue
+color4  = #62add5
+color12 = #5ea7f4
+
+# magenta
+color5  = #8388ea
+color13 = #b294bb
+
+# cyan
+color6  = #5e8d87
+color14 = #8abeb7
+
+# white
+color7  = #697098
+color15 = #9ba5de
+
+
 
 
 [hints]
