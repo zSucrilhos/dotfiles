@@ -1,7 +1,7 @@
 # My _i3-gaps_ dotfiles
 
-![Desktop shot](/home/zsucrilhos/Downloads/_cloned-repos/dotfiles/Desktop/wallpapers/Palenight/01.png)
-![Terminal shot](/home/zsucrilhos/Downloads/_cloned-repos/dotfiles/Desktop/wallpapers/Palenight/02.png)
+![Desktop shot](./wallpapers/Palenight/01.png)
+![Terminal shot](./wallpapers/Palenight/02.png)
 ![init.vim](./wallpapers/Razgriz/nvim.png)
 
 ## Configuration:
