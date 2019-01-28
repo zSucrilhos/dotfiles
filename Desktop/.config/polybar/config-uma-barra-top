@@ -276,7 +276,7 @@ bar-progress-empty-foreground = #44
 
 [module/mpd-simple]
 type = internal/mpd
-format-online =   <label-time> <label-song> 
+format-online =   <label-time> <toggle>  <label-song> 
 icon-play = 
 icon-pause = 
 icon-stop = 
