@@ -381,7 +381,7 @@ exec_always /home/zsucrilhos/_my-scripts/polybarstart
 exec --no-startup-id numlockx on
 
 # Start mpDris2 for using MPRIS with mpd
-exec --no-startup-id mpDris2 &
+exec --no-startup-id mpDris2
 
 # Script to turn off the screen
 exec dpms.sh
