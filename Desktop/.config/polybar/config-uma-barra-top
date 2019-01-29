@@ -40,6 +40,8 @@ alert = #0A81F5
 ; Just for research purposes
 blue = #62add5
 
+red = #8388ea
+
 
 ; ############## we are not using this anymore ##############
 ; Wal colors
@@ -179,7 +181,7 @@ label-occupied = %index%
 label-occupied-padding = 2
 
 label-urgent = %index%!
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${colors.red}
 label-urgent-padding = 2
 
 label-empty = %index%

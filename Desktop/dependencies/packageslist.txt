@@ -321,6 +321,7 @@ Optional:
     lm_sensors
     sonic-visualiser
     you-get
+    mpDris2 (aur)
 
     
 
