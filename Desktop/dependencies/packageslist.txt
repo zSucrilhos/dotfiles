@@ -37,6 +37,10 @@ Xorg:
     xorg-xprop
     xorg-xvinfo
 
+bspwm
+xorg-xsetroot
+sxhkd
+
 i3 Window Manager: i3-gaps
     dmenu
     rofi
