@@ -69,6 +69,7 @@ Basic programs:
     gnome-keyring
     snap
     simplescreenrecorder
+    obs-studio
     ntfs-3g
     mpd-notification (enable with systemctl --user so as mpd too) (yay)
     mtpfs
