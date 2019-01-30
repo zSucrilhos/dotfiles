@@ -242,9 +242,10 @@ autoload -U compinit && compinit
 
 
 # Autologin with getty
-if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-    exec startx
-fi
+# /etc/systemd/system/getty@tty1.service.d/override.conf
+#if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+#    exec startx
+#fi
 
 
 
