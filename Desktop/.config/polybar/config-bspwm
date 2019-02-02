@@ -173,24 +173,47 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
+;label-focused = %index%
+label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
-label-occupied = %index%
+;label-occupied = %index%
 label-occupied-padding = 2
 
-label-urgent = %index%!
+;label-urgent = %index%!
+label-urgent = %name%!
 label-urgent-background = ${colors.red}
 label-urgent-padding = 2
 
-label-empty = %index%
+;label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+; fuzzy-match = true
+
+;ws-icon-0 = um;♚
+;ws-icon-1 = dois;♛
+;ws-icon-2 = tres;♜
+;ws-icon-3 = quatro;♝
+;ws-icon-5 = cinco;♞
+;ws-icon-6 = seis;♞
+;ws-icon-7 = sete;♞
+;ws-icon-8 = oito;♞
+;ws-icon-9 = nove;♞
+
+;ws-icon-default = ♟
+
 ; Separator in between workspaces
-; label-separator = |
+;label-separator = |
+;label-separator-padding = 2
+;label-separator-foreground = #ffb52a
 
 [module/mpd]
 type = internal/mpd
