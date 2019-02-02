@@ -377,7 +377,7 @@ for_window [class="Pulseaudio-equalizer-gtk"] floating enable
 ############################################# AUTO START APPLICATIONS ##################################################
 
 ################### START POLYBAR SCRIPT ##################
-exec_always /home/zsucrilhos/_my-scripts/polybarstart
+exec_always /home/zsucrilhos/_my-scripts/polybarstart-i3
 ###########################################################
 
 # Enable numlock with numlockx
