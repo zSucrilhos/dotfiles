@@ -17,11 +17,12 @@
 ;=============================================================
 
 [colors]
-background = #282828
+background = #16031F
 dim-value = 0.5
 
 ; Used only with bspwm
-background-alt = #4B5869
+;background-alt = #4B5869
+background-alt = #661429
 
 ; Text color
 foreground = #bfc7d5
@@ -30,16 +31,16 @@ foreground = #bfc7d5
 foreground-alt = #767676
 
 ; Highlight color
-primary = #62add5
+primary = #E91545
 
 ; Highlight color no.2
 secondary = #5f6690
 
 ; Houston, we have a problem!
-alert = #0A81F5
+alert = #C5123F
 
 ; Just for research purposes
-blue = #62add5
+blue = #E91545
 
 red = #8388ea
 
@@ -252,7 +253,7 @@ bar-progress-empty-foreground = #44
 
 [module/mpd-simple]
 type = internal/mpd
-format-online =   <label-time> <toggle>  <label-song> 
+format-online =   <toggle>  <label-song> 
 icon-play = 
 icon-pause = 
 icon-stop = 
@@ -266,7 +267,7 @@ icon-single = 
 ;label-time = 
 ;
 label-song = %artist% - %title%
-label-song-maxlen = 40
+label-song-maxlen = 38
 label-song-ellipsis = true
 
 label-offline =  mpd offline
