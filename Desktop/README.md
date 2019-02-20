@@ -5,13 +5,19 @@
 ![init.vim](./wallpapers/Palenight/03.png)
 
 ## Configuration:
-### Shell:
-* zsh (zsh-autocompletions, zsh-autosuggestions)
-* oh-my-zsh - https://github.com/robbyrussell/oh-my-zsh (theme: ponctual)
-* fzf - https://github.com/junegunn/fzf
-* antigen (https://github.com/zsh-users/antigen)
-* tmux
-* oh-my-tmux (https://github.com/gpakosz/.tmux)
+Shell | zsh
+-----------------------------------------------------------------------------------------
+Shell Framework | oh-my-zsh - https://github.com/robbyrussell/oh-my-zsh (theme: ponctual)
+-----------------------------------------------------------------------------------------
+Shell Plugins | zsh-autocompletions, zsh-autosuggestions
+-----------------------------------------------------------------------------------------
+General Terminal Search Toll | fzf - https://github.com/junegunn/fzf
+-----------------------------------------------------------------------------------------
+Terminal Multiplexer | tmux
+-----------------------------------------------------------------------------------------
+tmux framework | oh-my-tmux (https://github.com/gpakosz/.tmux)
+-----------------------------------------------------------------------------------------
+
 
 ### Polybar:
 Top bar:
