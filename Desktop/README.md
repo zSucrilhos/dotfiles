@@ -1,7 +1,7 @@
 ### My _i3-gaps/bspwm_ dotfiles
 This is a repository dedicated to back-up and share my dotfiles when needed.
 
-![dotfiles-logo](./__REPO-MEDIA/dotfile-logo.png)
+![dotfiles-logo](/artworks/dotfile-logo.png)
 
 ## Configuration:
 | Program | Name |
@@ -30,6 +30,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips) |
 | Terminal General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
+| GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme]()
 | Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
