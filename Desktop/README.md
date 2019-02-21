@@ -37,7 +37,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Main Code Editor | [neovim](https://neovim.io/) ([rc](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
-| GTK+ Theme | My forked version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by EliverLara: [Juno-Ocean-Sucrilhos](Link goes here) |
+| GTK+ Theme | My forked version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara): [Juno-Ocean-Sucrilhos](Link goes here) |
 
 ### Polybar:
 Top bar:
