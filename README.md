@@ -1,1 +1,1 @@
-![i3-logo](./i3-gaps.png) 
+![i3-logo](./artworks/logo.png) 

@@ -3,15 +3,11 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ![dotfiles-logo](./__REPO-MEDIA/dotfile-logo.png)
 
-![Desktop shot](./wallpapers/Palenight/01.png)
-![Terminal shot](./wallpapers/Palenight/02.png)
-![init.vim](./wallpapers/Palenight/03.png)
-
 ## Configuration:
-| Type | Name |
+| Program | Name |
 | :--- | :--- |
 | Linux Distribution | [Arch Linux](https://www.archlinux.org/) |
-| Window Manager | [bspwm](https://github.com/baskerville/bspwm) |
+| Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) |
@@ -22,7 +18,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Image Viewer | [Viewnior](https://github.com/hellosiyan/Viewnior) |
 | GUI File Manager | [Thunar](https://github.com/xfce-mirror/thunar) with [tumbler](https://github.com/xfce-mirror/tumbler) |
 | GUI File Manager | [Caja](https://github.com/mate-desktop/caja) |
-| Terminal File Manager | [ranger](https://github.com/ranger/ranger) with [icons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
+| Terminal File Manager | [ranger](https://github.com/ranger/ranger) with [devicons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
 | Sound visualizer | [Cava](https://github.com/karlstav/cava) |
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
@@ -37,11 +33,9 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
-| GTK+ Theme | My slightly modified version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara): [Juno-Ocean-Sucrilhos](https://link-goes-here.com) |
+| GTK+ Theme | [My slightly modified version](http://link-goes-here.com) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
-### Polybar:
-Top bar:
-* Scratchpad indicator (/scripts/i3-scratchpad-indicator.py)
-* WS indicator
-* MPD Module
-* METAR (weather-report (AUR)), Wi-Fi/DSL, Wi-Fi strenght, Traffic indicator, date, powermenu
+## Screenshots:
+![Desktop shot](./wallpapers/Palenight/01.png)
+![Terminal shot](./wallpapers/Palenight/02.png)
+![init.vim](./wallpapers/Palenight/03.png)
