@@ -20,7 +20,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Image Viewer 2 (Fallback) | [Viewnior](https://github.com/hellosiyan/Viewnior) |
 | GUI File Manager 1 | [Thunar](https://github.com/xfce-mirror/thunar) with [tumbler](https://github.com/xfce-mirror/tumbler) |
 | GUI File Manager 2 (Fallback) | [Caja](https://github.com/mate-desktop/caja) |
-| Terminal File Manager | [ranger](https://github.com/ranger/ranger) with [devicons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
+| CLI File Manager | [ranger](https://github.com/ranger/ranger) with [devicons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
 | Sound visualizer | [Cava](https://github.com/karlstav/cava) |
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
 | Text Reader (RSVP) | [fltrdr](https://octobanana.com/software/fltrdr) |
@@ -31,9 +31,10 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Terminal 3 (Fallback) | [xst](https://github.com/gnotclub/xst) |
 | Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
 | zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips), [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) and [vi-mode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode) |
-| Terminal General Search Tool | [fzf](https://github.com/junegunn/fzf) |
-| Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
-| GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme]()
+| CLI General Search Tool | [fzf](https://github.com/junegunn/fzf) |
+| CLI Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
+| GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme](https://github.com/zSucrilhos/dotfiles/tree/master/Desktop/extras/speedcrunch-palenight-theme) |
+| CLI Calculator App | [calc](http://www.isthe.com/chongo/tech/comp/calc/) (Binary name: qalc) |
 | Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
 | Code Editor 2 (Fallback) | [VSCode](https://code.visualstudio.com/) |
 | General Code/Text Editor | [SublimeText3](https://www.sublimetext.com/) |
