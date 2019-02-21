@@ -21,7 +21,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Terminal File Manager | [ranger](https://github.com/ranger/ranger) with [devicons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
 | Sound visualizer | [Cava](https://github.com/karlstav/cava) |
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
-| Text Reader | [fltrdr](https://octobanana.com/software/fltrdr) |
+| Text Reader (RSVP) | [fltrdr](https://octobanana.com/software/fltrdr) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
 | Screen-shot Tool | [scrot](https://github.com/dreamer/scrot) and [i3scrot](https://github.com/pazuzu156/i3scrot) |
 | Main Terminal | [termite](https://github.com/thestinger/termite) |
