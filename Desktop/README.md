@@ -29,7 +29,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Terminal 2 (Fallback) | [alacritty](https://github.com/jwilm/alacritty) |
 | Terminal 3 (Fallback) | [xst](https://github.com/gnotclub/xst) |
 | Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
-| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips) |
+| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips), [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) and [vi-mode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode) |
 | Terminal General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme]()
