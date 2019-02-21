@@ -32,7 +32,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
 | zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips), [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) and [vi-mode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode) |
 | CLI General Search Tool | [fzf](https://github.com/junegunn/fzf) |
-| CLI Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
+| Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme](https://github.com/zSucrilhos/dotfiles/tree/master/Desktop/extras/speedcrunch-palenight-theme) |
 | CLI Calculator App | [calc](http://www.isthe.com/chongo/tech/comp/calc/) (Binary name: qalc) |
 | Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
