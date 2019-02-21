@@ -35,7 +35,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme]()
 | Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
-| Code Editor 2 (Falback) | [VSCode](https://code.visualstudio.com/) |
+| Code Editor 2 (Fallback) | [VSCode](https://code.visualstudio.com/) |
 | General Code/Text Editor | [SublimeText3](https://www.sublimetext.com/) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
