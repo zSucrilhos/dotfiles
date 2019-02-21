@@ -11,6 +11,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
+| Web Broser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Music Player 1 | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) |
 | Music Player 2 (Fallback) | [Clementine](https://www.clementine-player.org/pt_BR/) |
 | Video Player 1 | [mpv](https://github.com/mpv-player/mpv) |
