@@ -10,17 +10,18 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
-| Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) |
-| Music Player | [Clementine](https://www.clementine-player.org/pt_BR/) |
-| Video Player | [mpv](https://github.com/mpv-player/mpv) |
-| Video Player | [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
-| Image Viewer | [sxiv](https://github.com/muennich/sxiv) |
-| Image Viewer | [Viewnior](https://github.com/hellosiyan/Viewnior) |
-| GUI File Manager | [Thunar](https://github.com/xfce-mirror/thunar) with [tumbler](https://github.com/xfce-mirror/tumbler) |
-| GUI File Manager | [Caja](https://github.com/mate-desktop/caja) |
+| Music Player 1 | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) |
+| Music Player 2 (Fallback) | [Clementine](https://www.clementine-player.org/pt_BR/) |
+| Video Player 1 | [mpv](https://github.com/mpv-player/mpv) |
+| Video Player 2 (Fallback) | [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
+| Image Viewer 1 | [sxiv](https://github.com/muennich/sxiv) |
+| Image Viewer 2 (Fallback) | [Viewnior](https://github.com/hellosiyan/Viewnior) |
+| GUI File Manager 1 | [Thunar](https://github.com/xfce-mirror/thunar) with [tumbler](https://github.com/xfce-mirror/tumbler) |
+| GUI File Manager 2 (Fallback) | [Caja](https://github.com/mate-desktop/caja) |
 | Terminal File Manager | [ranger](https://github.com/ranger/ranger) with [devicons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
 | Sound visualizer | [Cava](https://github.com/karlstav/cava) |
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
+| Text Reader | [fltrdr](https://octobanana.com/software/fltrdr) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
 | Screen-shot Tool | [scrot](https://github.com/dreamer/scrot) and [i3scrot](https://github.com/pazuzu156/i3scrot) |
 | Main Terminal | [termite](https://github.com/thestinger/termite) |
