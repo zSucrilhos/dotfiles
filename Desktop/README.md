@@ -4,7 +4,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
-## Configuration:
+## Overall View:
 | Program | Name |
 | :--- | :--- |
 | Linux Distribution | [Arch Linux](https://www.archlinux.org/) |
