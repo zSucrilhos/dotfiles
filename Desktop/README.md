@@ -34,10 +34,10 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions) |
 | Terminal General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
-| Main Code Editor | [neovim](https://neovim.io/) ([rc](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim) |
+| Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
-| GTK+ Theme | My forked version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara): [Juno-Ocean-Sucrilhos](Link goes here) |
+| GTK+ Theme | My slightly modified version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara): [Juno-Ocean-Sucrilhos](Link goes here) |
 
 ### Polybar:
 Top bar:
