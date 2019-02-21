@@ -31,13 +31,13 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Terminal 2 (Fallback) | [alacritty](https://github.com/jwilm/alacritty) |
 | Terminal 3 (Fallback) | [xst](https://github.com/gnotclub/xst) |
 | Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
-| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions) |
+| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips) |
 | Terminal General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
 | Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
-| GTK+ Theme | My slightly modified version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara): [Juno-Ocean-Sucrilhos](Link goes here) |
+| GTK+ Theme | My slightly modified version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara): [Juno-Ocean-Sucrilhos](https://link-goes-here.com) |
 
 ### Polybar:
 Top bar:
