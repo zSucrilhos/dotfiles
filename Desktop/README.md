@@ -1,4 +1,5 @@
 ### My _i3-gaps/bspwm_ dotfiles
+This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ![dotfiles-logo](./__REPO-MEDIA/dotfile-logo.png)
 
@@ -21,17 +22,22 @@
 | Image Viewer | [Viewnior](https://github.com/hellosiyan/Viewnior) |
 | GUI File Manager | [Thunar](https://github.com/xfce-mirror/thunar) with [tumbler](https://github.com/xfce-mirror/tumbler) |
 | GUI File Manager | [Caja](https://github.com/mate-desktop/caja) |
-| Terminal File Manager | [ranger](https://github.com/ranger/ranger)|
+| Terminal File Manager | [ranger](https://github.com/ranger/ranger) with [icons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
 | Sound visualizer | [Cava](https://github.com/karlstav/cava) |
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
-
-| Terminal | [termite](link goes here) |
-| Shell | zsh |
-| Shell Framework | [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) (theme: ponctual) |
-| Shell Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions) |
-| General Terminal Search Toll | [fzf](https://github.com/junegunn/fzf) |
-| Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) |
-| tmux Framework | [oh-my-tmux](https://github.com/gpakosz/.tmux) |
+| Wallpaper Setter | [feh](https://github.com/derf/feh) |
+| Screen-shot Tool | [scrot](https://github.com/dreamer/scrot) and [i3scrot](https://github.com/pazuzu156/i3scrot) |
+| Main Terminal | [termite](https://github.com/thestinger/termite) |
+| Terminal 2 (Fallback) | [alacritty](https://github.com/jwilm/alacritty) |
+| Terminal 3 (Fallback) | [xst](https://github.com/gnotclub/xst) |
+| Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
+| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions) |
+| Terminal General Search Tool | [fzf](https://github.com/junegunn/fzf) |
+| Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
+| Main Code Editor | [neovim](https://neovim.io/) ([rc](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim) |
+| Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
+| Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
+| GTK+ Theme | My forked version of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by EliverLara: [Juno-Ocean-Sucrilhos](Link goes here) |
 
 ### Polybar:
 Top bar:
