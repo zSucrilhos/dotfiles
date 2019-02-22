@@ -35,7 +35,7 @@ bspc rule -a Subl3 desktop='^3' follow=on
 bspc rule -a Code desktop='^3' follow=on
 bspc rule -a Notepadqq desktop='^3' follow=on
 bspc rule -a Deluge desktop='^4' follow=on
-bspc rule -a qBittorrent desktop='^4' follow=on
+bspc rule -a qBittorrent desktop='^9' follow=on
 bspc rule -a Nemo desktop='^5' follow=on
 bspc rule -a Thunar desktop='^5' follow=on
 bspc rule -a Spacefm desktop='^5' follow=on
@@ -58,13 +58,8 @@ bspc rule -a Pulseaudio-equalizer-gtk state=floating focus=on
 bspc rule -a Pavucontrol state=floating focus=on center=on
 bspc rule -a Viewnior focus=on state=tiled
 
-# Set my wallpaper
-#feh --bg-fill /home/zsucrilhos/Desktop/Meus-Wallpapers/2016-New/f_is_for_the_hype_by_kuldarleement-d9g88la.png
-#feh --bg-fill '/home/zsucrilhos/Desktop/Meus-Wallpapers/chess-1090862_960_720.jpg'
 feh --bg-fill "/home/zsucrilhos/Desktop/Meus-Wallpapers/Aviation/military-wallpaper20096181514682877803.jpg"
 
-
-# Auto-start programs
 dunst &
 compton -b --config ~/.config/compton/compton.conf &
 unclutter &
@@ -74,12 +69,7 @@ xsetroot -cursor_name left_ptr &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xautolock -time 5 -locker 'dm-tool switch-to-greeter'
 
-#   My scripts to start
 /home/zsucrilhos/_my-scripts/polybarstart-bspwm
 /home/zsucrilhos/_my-scripts/dpms.sh
 /home/zsucrilhos/_my-scripts/lightsOn.sh
-
-
-
-##############################
 

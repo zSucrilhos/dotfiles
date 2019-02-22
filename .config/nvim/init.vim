@@ -1,10 +1,8 @@
-
 " VimPlug START
 call plug#begin('~/.vim/plugged') 
 
 "Plug 'Valloric/YouCompleteMe'
 "Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
-
 
 " Deoplete completion
 if has('nvim')
@@ -32,17 +30,28 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Identation guides for better visualization
+Plug 'Yggdroot/indentLine'
 Plug 'nathanaelkane/vim-indent-guides'
 
-" File manager sidebar
+" File manager sidebar and git integration
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" NERDTree syntax highlighting
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Undo history
+Plug 'mbbill/undotree'
+
+" Nice icons
+Plug 'ryanoasis/vim-devicons'
 
 " Syntax highlighting
 Plug 'vim-syntastic/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-css-color'
 
-" Informations bar
+" Status bar
 Plug 'itchyny/lightline.vim'
 
 " Easier comments
@@ -57,11 +66,14 @@ Plug 'svermeulen/vim-easyclip'
 " Completions from other terminals inside tmux
 Plug 'wellle/tmux-complete.vim'
 
-" See edits on git files
+" Git wrapper
 Plug 'airblade/vim-gitgutter'
 
 " Unix FS operations inside vim!
 Plug 'tpope/vim-eunuch'
+
+" fzf search
+Plug 'junegunn/fzf.vim'
 
 
 " My themes
@@ -93,11 +105,13 @@ syntax sync minlines=25
 
 "#######################################################
 
-" Use deoplete.
+" Enable deoplete at startup
 let g:deoplete#enable_at_startup = 1
 
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " Deoplete for C++
-"
 " Change clang binary path
 call deoplete#custom#var('clangx', 'clang_binary', '/usr/local/bin/clang')
 
@@ -108,7 +122,6 @@ call deoplete#custom#var('clangx', 'default_cpp_options', '')
 "##############################
 
 " ALE Configs
-
 " Do not lint continuosly as the file is changed, only when saved
 let g:ale_lint_on_text_changed = 'never'
 
@@ -136,6 +149,8 @@ autocmd vimenter * NERDTree
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
+" Determines what char to use as identation guide
+let g:indentLine_char = '|'
 
 "#######################################################
 "    Open NERDTree binding
@@ -234,9 +249,8 @@ set termguicolors
 
 
 " My colorscheme
-" colorscheme hydrangea
 colorscheme palenight
-" colorscheme wal
+"colorscheme base16-icy
 
 filetype on
 filetype indent on
