@@ -66,7 +66,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | [Hack NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) variant: Mono | Terminal, SublimeText3 and VSCode |
 
 ### Neovim Plugins:
-| Name | Function |
+| Plugin Name | Function |
 | :--- | :--- |
 | [palenight.vim](https://github.com/drewtempelmeyer/palenight.vim) | Soothing color scheme for your favorite [best] text editor |
 | [VimPlug](https://github.com/junegunn/vim-plug) | A minimalist Vim plugin manager. |
