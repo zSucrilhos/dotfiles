@@ -4,6 +4,27 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
+## Screenshots:
+### Rofi:
+![rofi](/artworks/wallpapers/Deep,-dark-blue/rofi.png)
+### Cava+ncmpcpp:
+![cava+ncmpcpp](/artworks/wallpapers/Deep,-dark-blue/cava+ncmpcpp.png)
+### htop:
+![htop](/artworks/wallpapers/Deep,-dark-blue/htop.png)
+### gtop:
+![gtop](/artworks/wallpapers/Deep,-dark-blue/gtop.png)
+### nvtop:
+![nvtop](/artworks/wallpapers/Deep,-dark-blue/nvtop.png)
+### Neovim:
+![nvim](/artworks/wallpapers/Deep,-dark-blue/nvim.png)
+### SublimeText3 (right) and VSCode (left):
+![sublime,vsc](/artworks/wallpapers/Deep,-dark-blue/sublime+vsc.png)
+### Ranger:
+![ranger](/artworks/wallpapers/Deep,-dark-blue/ranger.png)
+### Thunar:
+![thunar](/artworks/wallpapers/Deep,-dark-blue/thunar.png)
+
+
 ## Overall View:
 | Program | Name |
 | :--- | :--- |
@@ -37,25 +58,6 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
-## Screenshots:
-### Rofi:
-![rofi](/artworks/wallpapers/Deep,-dark-blue/rofi.png)
-### Cava+ncmpcpp:
-![cava+ncmpcpp](/artworks/wallpapers/Deep,-dark-blue/cava+ncmpcpp.png)
-### htop:
-![htop](/artworks/wallpapers/Deep,-dark-blue/htop.png)
-### gtop:
-![gtop](/artworks/wallpapers/Deep,-dark-blue/gtop.png)
-### nvtop:
-![nvtop](/artworks/wallpapers/Deep,-dark-blue/nvtop.png)
-### Neovim:
-![nvim](/artworks/wallpapers/Deep,-dark-blue/nvim.png)
-### SublimeText3 (right) and VSCode (left):
-![sublime,vsc](/artworks/wallpapers/Deep,-dark-blue/sublime+vsc.png)
-### Ranger:
-![ranger](/artworks/wallpapers/Deep,-dark-blue/ranger.png)
-### Thunar:
-![thunar](/artworks/wallpapers/Deep,-dark-blue/thunar.png)
 
 
 
