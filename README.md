@@ -92,6 +92,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | [vim-gitgutter](https://github.com/airblade/vim-gitgutter) | A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks. |
 | [eunuch.vim](https://github.com/tpope/vim-eunuch) | eunuch.vim: Helpers for UNIX |
 | [fzf.vim](https://github.com/junegunn/fzf.vim) | Things you can do with fzf and Vim. |
-################################################################################################
+
+##############################################################################
 
 
