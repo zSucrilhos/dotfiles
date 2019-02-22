@@ -47,7 +47,9 @@ i3 Window Manager: i3-gaps
     polybar - compile with wireless_tools
     dunst
 
-    compton (window compositor)
+    compton-tryone-git
+    fltrdr
+    tizonia-all
     wmctrl
     slop
     main
