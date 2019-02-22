@@ -9,6 +9,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | :--- | :--- |
 | Linux Distribution | [Arch Linux](https://www.archlinux.org/) |
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
+| Window Compositor | [compton-tryone-git](https://aur.archlinux.org/packages/compton-tryone-git/)
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Web Broser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
