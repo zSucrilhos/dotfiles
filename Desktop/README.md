@@ -43,7 +43,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
 ## Screenshots:
-![rofi]('../wallpapers/Deep,-dark-blue/rofi.png')
+![rofi](../wallpapers/Deep,-dark-blue/rofi.png)
 ![cava+ncmpcpp]('/artworks/wallpapers/Deep,-dark-blue/cava+ncmpcpp.png')
 ![htop]('../wallpapers/Deep,-dark-blue/htop.png')
 ![gtop]('../wallpapers/Deep,-dark-blue/gtop.png')
