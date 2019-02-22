@@ -1,6 +1,6 @@
 ### My _i3-gaps/bspwm_ dotfiles
 This is a repository dedicated to back-up and share my dotfiles when needed.
-Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
+Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
@@ -58,7 +58,13 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
-## Neovim Plugins:
+### Fonts used:
+| Font Name | Usage |
+| :--- | :---- |
+| [Iosevka NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) | GUI Apps, Dunst and Polybar |
+| [Hack NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) variant: Mono | Terminal, SublimeText3 and VSCode |
+
+### Neovim Plugins:
 | Name | Function |
 | :--- | :--- |
 | [VimPlug](https://github.com/junegunn/vim-plug) | A minimalist Vim plugin manager. |
@@ -85,5 +91,7 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | [tmux-complete.vim](https://github.com/wellle/tmux-complete.vim) | Vim plugin for insert mode completion of words in adjacent tmux panes |
 | [vim-gitgutter](https://github.com/airblade/vim-gitgutter) | A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks. |
 | [eunuch.vim](https://github.com/tpope/vim-eunuch) | eunuch.vim: Helpers for UNIX |
+| [fzf.vim](https://github.com/junegunn/fzf.vim) | Things you can do with fzf and Vim. |
+################################################################################################
 
 
