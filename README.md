@@ -93,6 +93,6 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | [eunuch.vim](https://github.com/tpope/vim-eunuch) | eunuch.vim: Helpers for UNIX |
 | [fzf.vim](https://github.com/junegunn/fzf.vim) | Things you can do with fzf and Vim. |
 
-##########################################################################################
+##############################################################################################
 
 
