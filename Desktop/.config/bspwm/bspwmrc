@@ -40,8 +40,11 @@ bspc rule -a Nemo desktop='^5' follow=on
 bspc rule -a Thunar desktop='^5' follow=on
 bspc rule -a Spacefm desktop='^5' follow=on
 bspc rule -a TelegramDesktop desktop='^6' follow=on
-bspc rule -a Zathura desktop='^8' follow=on
+bspc rule -a Zathura desktop='^8' follow=on state=tiled
 bspc rule -a Steam desktop='^9' follow=on
+bspc rule -a mpv desktop=^4 follow=on state=tiled
+bspc rule -a Sxiv desktop=^4 follow=on state=tiled
+bspc rule -a Viewnior desktop=^4 follow=on state=tiled
 
 #   Open specific windows in floating mode
 bspc rule -a Xfce4-appfinder state=floating focus=on floating=on 
@@ -53,9 +56,13 @@ bspc rule -a SimpleScreenRecorder state=floating focus=on
 bspc rule -a Pulseffects state=floating focus=on
 bspc rule -a Pulseaudio-equalizer-gtk state=floating focus=on
 bspc rule -a Pavucontrol state=floating focus=on center=on
+bspc rule -a Viewnior focus=on state=tiled
 
 # Set my wallpaper
-feh --bg-fill /home/zsucrilhos/Desktop/New-Wallpapers-12-2018/mountains-on-mars.png
+#feh --bg-fill /home/zsucrilhos/Desktop/Meus-Wallpapers/2016-New/f_is_for_the_hype_by_kuldarleement-d9g88la.png
+#feh --bg-fill '/home/zsucrilhos/Desktop/Meus-Wallpapers/chess-1090862_960_720.jpg'
+feh --bg-fill "/home/zsucrilhos/Desktop/Meus-Wallpapers/Aviation/military-wallpaper20096181514682877803.jpg"
+
 
 # Auto-start programs
 dunst &
@@ -65,6 +72,7 @@ numlockx on &
 xsetroot -cursor_name left_ptr &
 /usr/bin/mpDris2 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+xautolock -time 5 -locker 'dm-tool switch-to-greeter'
 
 #   My scripts to start
 /home/zsucrilhos/_my-scripts/polybarstart-bspwm

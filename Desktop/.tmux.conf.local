@@ -262,7 +262,7 @@ tmux_conf_theme_clock_style='24'
 
 # screensaver
 set -g lock-after-time 120
-set -g lock-command "/usr/local/bin/pipes.sh"
+set -g lock-command "cmatrix -bs"
 
 # -- clipboard -----------------------------------------------------------------
 
@@ -337,7 +337,7 @@ bind M-r source-file ~/.tmux.conf \; display '~/.tmux.conf sourced'
 
 ###################################################################
 # Enable mouse control (clickable windows, panes, resizable panes)
-# set -g mouse on
+set -g mouse on
 
 # Don't rename windows automatically
 # set -g allow-rename off
@@ -353,7 +353,4 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 
 # Initialize TPM (keep at bottom of the file)
 run '~/.tmux/plugins/tpm/tpm'
-
-
-
 

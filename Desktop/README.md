@@ -40,9 +40,16 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | General Code/Text Editor | [SublimeText3](https://www.sublimetext.com/) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) |
-| GTK+ Theme | [My slightly modified version](http://link-goes-here.com) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
+| GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
 ## Screenshots:
-![Desktop shot](./wallpapers/Palenight/01.png)
-![Terminal shot](./wallpapers/Palenight/02.png)
-![init.vim](./wallpapers/Palenight/03.png)
+![rofi]('/artworks/wallpapers/Deep, dark blue/rofi.png')
+![cava+ncmpcpp]('/artworks/wallpapers/Deep, dark blue/cava+ncmpcpp.png')
+![htop]('/artworks/wallpapers/Deep, dark blue/htop.png')
+![gtop]('/artworks/wallpapers/Deep, dark blue/gtop.png')
+![nvtop]('/artworks/wallpapers/Deep, dark blue/nvtop.png')
+![nvim]('/artworks/wallpapers/Deep, dark blue/nvim.png')
+![sublime,vsc]('/artworks/wallpapers/Deep, dark blue/sublime+vsc.png')
+![ranger]('/artworks/wallpapers/Deep, dark blue/ranger.png')
+![thunar]('/artworks/wallpapers/Deep, dark blue/thunar.png')
+

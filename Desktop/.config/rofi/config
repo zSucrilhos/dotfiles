@@ -164,12 +164,22 @@ rofi.terminal:                       xst
 ! Palenight-inspired theme
 
 !State              'bg',    'fg',    'bgalt', 'hlbg',      'hlfg'
-rofi.color-normal:  #292d3e, #bfc7d5, #292d3e, #bfc7d5, 	#292d3e
-rofi.color-urgent:  #FA4664, #292d3e, #FA4664, #e8664a, 	#bfc7d5
-rofi.color-active:  #c2e488, #292d3e, #292d3e, #fdc467, 	#292d3e
+!rofi.color-normal:  #292d3e, #bfc7d5, #292d3e, #bfc7d5, 	#292d3e
+!rofi.color-urgent:  #FA4664, #292d3e, #FA4664, #e8664a, 	#bfc7d5
+!rofi.color-active:  #c2e488, #292d3e, #292d3e, #fdc467, 	#292d3e
 
 !                  'background', 'border', 'separator'
-rofi.color-window:  #292d3e,     #292d3e,   #697098
+!rofi.color-window:  #292d3e,     #292d3e,   #697098
+
+! New Rice theme
+
+!State              'bg',    'fg',    'bgalt', 'hlbg',      'hlfg'
+rofi.color-normal:  #0F111A, #8A8A8A, #0F111A, #bfc7d5, 	#0F111A
+rofi.color-urgent:  #FA4664, #0F111A, #FA4664, #e8664a, 	#bfc7d5
+rofi.color-active:  #c2e488, #0F111A, #0F111A, #fdc467, 	#0F111A
+
+!                  'background', 'border', 'separator'
+rofi.color-window:  #0F111A,     #0F111A,   #8A8A8A
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

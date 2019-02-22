@@ -16,46 +16,51 @@
 ;
 ;=============================================================
 
-[colors]
-background = #16031F
-dim-value = 0.5
+;[colors]
+;background = #16031F
+;dim-value = 0.5
 
 ; Used only with bspwm
 ;background-alt = #4B5869
-background-alt = #661429
+;background-alt = #661429
 
 ; Text color
-foreground = #bfc7d5
+;foreground = #bfc7d5
 
 ; bspwm
-foreground-alt = #767676
+;foreground-alt = #767676
 
 ; Highlight color
-primary = #E91545
+;primary = #E91545
 
 ; Highlight color no.2
-secondary = #5f6690
+;secondary = #5f6690
 
 ; Houston, we have a problem!
-alert = #C5123F
+;alert = #C5123F
 
 ; Just for research purposes
-blue = #E91545
+;blue = #E91545
 
-red = #8388ea
+;red = #8388ea
 
 
 ; ############## we are not using this anymore ##############
 ; Wal colors
-;[colors]
-;background = ${xrdb:color0:#222}
+[colors]
+background = ${xrdb:color0:#222}
+background-alt = ${xrdb:color5:#222}
 ;foreground = ${xrdb:color7:#222}
+foreground = #ffffff
 ;foreground-alt = ${xrdb:color7:#222}
-;primary = ${xrdb:color1:#222}
-;secondary = ${xrdb:color2:#222}
-;alert = ${xrdb:color3:#222}
-;blue = ${xrdb:color1:#222}
-;blue = ${xrdb:color3:#222}
+foreground-alt = #777777
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+blue = ${xrdb:color1:#222}
+red = ${xrdb:color3:#222}
+dim-value = 0.4
+
 
 
 ;##############################
@@ -92,28 +97,27 @@ module-margin-right = 2
 
 font-0 = Iosevka Medium:pixelsize=9;1:antialias=true;0
 font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;0
-font-2 = Fixedsys Excelsior:pixelsize=10:size=8:antialias=true;1
+font-2 = Fixedsys Excelsior:style=Regular:pixelsize=10:size=8:antialias=true;1
 font-3 = Unifont:fontformat=truetype:size=8:antialias=true;0
 font-4 = Wuncon Siji:pixelsize=10;1:antialias=true;0
 font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
 font-6 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
 font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
+font-8 = Hasklug Medium Nerd Font Complete Mono:pixelsize=9;1:antialias=true;0
 
 
 modules-left = bspwm mpd-simple
 modules-center = 
-modules-right = metar wireless-network pulseaudio date powermenu
+modules-right = wireless-network pulseaudio date powermenu
 
 ;tray-position = right
 ;tray-padding = 5
-;tray-transparent = true
-;tray-background = #000000
+;tray-background = #16031F
 
 wm-restack = bspwm
 ;wm-restack = i3
 
 override-redirect = false
-;wm-restack = i3
 enable-ipc = true
 
 ;scroll-up = bspwm-desknext
@@ -184,7 +188,7 @@ label-focused-padding = 2
 label-occupied-padding = 2
 
 ;label-urgent = %index%!
-label-urgent = %name%!
+label-urgent = %name%
 label-urgent-background = ${colors.red}
 label-urgent-padding = 2
 
@@ -267,7 +271,7 @@ icon-single = 
 ;label-time = 
 ;
 label-song = %artist% - %title%
-label-song-maxlen = 38
+label-song-maxlen = 60
 label-song-ellipsis = true
 
 label-offline =  mpd offline
@@ -464,8 +468,8 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-;date = " %d/%m"
-;date-alt = "%Y"
+date = " %d/%m"
+date-alt = "%Y"
 
 time =⠀ %H:%M
 time-alt = ⠀ %d/%m

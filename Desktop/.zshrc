@@ -128,6 +128,7 @@ alias i3-config="nvim ~/.config/i3/config"
 alias polybar-config="nvim ~/.config/polybar/config"
 alias cdmysources="cd ~/_my-sources"
 alias cdmyscripts="cd ~/_my-scripts"
+alias fbg="feh --bg-fill"
 
 alias mkdir="mkdir -v"
 alias cp="cp -v"
@@ -223,11 +224,11 @@ export TERM=xterm-256color
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 #
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
 #
-#cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 ##source ~/.cache/wal/colors-tty.sh

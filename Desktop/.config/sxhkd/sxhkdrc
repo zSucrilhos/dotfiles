@@ -21,11 +21,11 @@ super + shift + r
 # Volume bindings
 #   Volume up
 super + ctrl + Up
-    amixer set Master 5%+
+    pactl set-sink-volume 0 +5%
 
 #   Volume down
 super + ctrl + Down
-    amixer set Master 5%-
+    pactl set-sink-volume 0 -5%
 ##########################
 
 # General start-app bindings
@@ -64,7 +64,7 @@ super + ctrl + x
     xkill
 
 # lock screen with betterlockscreen
-super + ctrl + l
+super + ctrl + shift + l
     betterlockscreen -l
 
 
