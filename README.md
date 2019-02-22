@@ -68,7 +68,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 ### Neovim Plugins:
 | Name | Function |
 | :--- | :--- |
-| palenight.vim | Soothing color scheme for your favorite [best] text editor |
+| [palenight.vim](https://github.com/drewtempelmeyer/palenight.vim) | Soothing color scheme for your favorite [best] text editor |
 | [VimPlug](https://github.com/junegunn/vim-plug) | A minimalist Vim plugin manager. |
 | [Deoplete](https://github.com/Shougo/deoplete.nvim) | Dark powered asynchronous completion framework for neovim/Vim8 |
 | [A.L.E](https://github.com/w0rp/ale) | Asynchronous Lint Engine |
