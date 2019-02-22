@@ -58,6 +58,32 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
-
+## Neovim Plugins:
+| Name | Function |
+| :--- | :--- |
+| [VimPlug](https://github.com/junegunn/vim-plug) | A minimalist Vim plugin manager. |
+| [Deoplete](https://github.com/Shougo/deoplete.nvim) | Dark powered asynchronous completion framework for neovim/Vim8 |
+| [A.L.E](https://github.com/w0rp/ale) | Asynchronous Lint Engine |
+| [vim-lsp](https://github.com/prabirshrestha/vim-lsp) | Async Language Server Protocol plugin for vim8 and neovim. |
+| [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) | True Sublime Text style multiple selections for Vim |
+| [auto-pairs](https://github.com/jiangmiao/auto-pairs) | Vim plugin, insert or delete brackets, parens, quotes in pair |
+| [vim-surround](https://github.com/tpope/vim-surround) | surround.vim: quoting/parenthesizing made simple |
+| [indentLine](https://github.com/Yggdroot/indentLine) | A vim plugin to display the indention levels with thin vertical lines |
+| [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) | A Vim plugin for visually displaying indent levels in code |
+| [nerdtree](https://github.com/scrooloose/nerdtree) | A tree explorer plugin for vim. |
+| [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) | A plugin of NERDTree showing git status |
+| [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) | Extra syntax and highlight for nerdtree files |
+| [undotree](https://github.com/mbbill/undotree) | The undo history visualizer for VIM |
+| [vim-devicons](https://github.com/ryanoasis/vim-devicons) |  Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more |
+| [syntastic](https://github.com/vim-syntastic/syntastic) | Syntax checking hacks for vim |
+| [vim-polyglot](https://github.com/sheerun/vim-polyglot) | A solid language pack for Vim. |
+| [vim-css-color](https://github.com/ap/vim-css-color) | Preview colours in source code while editing |
+| [lightline.vim](https://github.com/itchyny/lightline.vim) | A light and configurable statusline/tabline plugin for Vim |
+| [nerdcommenter](https://github.com/scrooloose/nerdcommenter) | Vim plugin for intensely orgasmic commenting |
+| [vim-repeat](https://github.com/tpope/vim-repeat) | repeat.vim: enable repeating supported plugin maps with "." |
+| [vim-easyclip](https://github.com/svermeulen/vim-easyclip) | Simplified clipboard functionality for Vim |
+| [tmux-complete.vim](https://github.com/wellle/tmux-complete.vim) | Vim plugin for insert mode completion of words in adjacent tmux panes |
+| [vim-gitgutter](https://github.com/airblade/vim-gitgutter) | A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks. |
+| [eunuch.vim](https://github.com/tpope/vim-eunuch) | eunuch.vim: Helpers for UNIX |
 
 
