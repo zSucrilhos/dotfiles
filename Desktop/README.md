@@ -43,13 +43,24 @@ Layout inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
 
 ## Screenshots:
+### Rofi:
 ![rofi](../artworks/wallpapers/Deep,-dark-blue/rofi.png)
-![cava+ncmpcpp]('/artworks/wallpapers/Deep,-dark-blue/cava+ncmpcpp.png')
-![htop]('../wallpapers/Deep,-dark-blue/htop.png')
-![gtop]('../wallpapers/Deep,-dark-blue/gtop.png')
-![nvtop]('../wallpapers/Deep,-dark-blue/nvtop.png')
-![nvim]('../wallpapers/Deep,-dark-blue/nvim.png')
-![sublime,vsc]('../wallpapers/Deep,-dark-blue/sublime+vsc.png')
-![ranger]('../wallpapers/Deep,-dark-blue/ranger.png')
-![thunar]('../wallpapers/Deep,-dark-blue/thunar.png')
+### Cava+ncmpcpp:
+![cava+ncmpcpp]('../artworks/wallpapers/Deep,-dark-blue/cava+ncmpcpp.png')
+### htop:
+![htop]('../artworks/wallpapers/Deep,-dark-blue/htop.png')
+### gtop:
+![gtop]('../artworks/wallpapers/Deep,-dark-blue/gtop.png')
+### nvtop:
+![nvtop]('../artworks/wallpapers/Deep,-dark-blue/nvtop.png')
+### Neovim:
+![nvim]('../artworks/wallpapers/Deep,-dark-blue/nvim.png')
+### SublimeText3 (left) and VSCode (right):
+![sublime,vsc]('../artworks/wallpapers/Deep,-dark-blue/sublime+vsc.png')
+### Ranger:
+![ranger]('../artworks/wallpapers/Deep,-dark-blue/ranger.png')
+### Thunar:
+![thunar]('../artworks/wallpapers/Deep,-dark-blue/thunar.png')
+
+
 
