@@ -32,6 +32,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Window Compositor | [compton-tryone-git](https://aur.archlinux.org/packages/compton-tryone-git/)
 | Bar | [polybar](https://github.com/jaagr/polybar) |
+| Colorscheme | [pywal](https://github.com/dylanaraps/pywal) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Web Broser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Video Player | [mpv](https://github.com/mpv-player/mpv) and [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
