@@ -53,7 +53,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | CLI General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme](https://github.com/zSucrilhos/dotfiles/tree/master/Desktop/extras/speedcrunch-palenight-theme) |
 | CLI Calculator App | [calc](http://www.isthe.com/chongo/tech/comp/calc/) (Binary name: qalc) |
-| Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
+| Main Code Editor | [neovim](https://neovim.io/) |
 | Other Code Editors | [VSCode](https://code.visualstudio.com/) and [SublimeText3](https://www.sublimetext.com/) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
