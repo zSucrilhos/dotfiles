@@ -34,7 +34,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Colorscheme | [pywal](https://github.com/dylanaraps/pywal) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
-| Web Broser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
+| Web Browser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Video Player | [mpv](https://github.com/mpv-player/mpv) and [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
 | Image Viewer | [sxiv](https://github.com/muennich/sxiv) and [Viewnior](https://github.com/hellosiyan/Viewnior) |
 | Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) and [Clementine](https://www.clementine-player.org/pt_BR/)|
