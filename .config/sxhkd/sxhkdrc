@@ -2,9 +2,17 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
+# Open termite
+#super + Return
+#	termite --role=tmux -e "$SHELL -ic tmux"
+
+# Open alacritty with tmux
+super + shift + Return
+	alacritty -e $SHELL -i -c tmux
+
+# Open alacritty
 super + Return
-	termite --role=tmux -e "$SHELL -ic tmux"
+    alacritty
 
 # program launcher
 super + d
@@ -26,6 +34,14 @@ super + ctrl + Up
 #   Volume down
 super + ctrl + Down
     pactl set-sink-volume 0 -5%
+
+# Open pavucontrol
+ctrl + m
+    pavucontrol
+
+# Open pulseaudio eq
+ctrl + shift + m
+    
 ##########################
 
 # General start-app bindings
@@ -47,11 +63,11 @@ super + F3
 
 # Start ranger in xst
 super + shift + F3
-    xst -e ranger
+    alacritty -e $SHELL -i -c ranger
 
 # Start ncmpcpp with xst
 super + F5
-    xst -e ncmpcpp
+    alacritty -e $SHELL -i -c ncmpcpp
 
 # Take a screenshot with i3scrot
 Print
@@ -147,6 +163,10 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# rotate all the nodes in screen
+super + r
+    bspc node @/ -R 90
 
 #
 # preselect

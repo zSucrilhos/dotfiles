@@ -18,6 +18,11 @@ Enable AUR:
     Update the mirrors:
         sudo pacman -Syy
 
+qt5ct
+qt5-styleplugins
+mimeo
+xdg-utils-mimeo
+
 Install yay:
     git clone <yay repo>
     cd yay
