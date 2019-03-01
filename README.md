@@ -32,8 +32,9 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Window Compositor | [compton-tryone-git](https://aur.archlinux.org/packages/compton-tryone-git/)
 | Bar | [polybar](https://github.com/jaagr/polybar) |
+| Colorscheme | [pywal](https://github.com/dylanaraps/pywal) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
-| Web Broser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
+| Web Browser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Video Player | [mpv](https://github.com/mpv-player/mpv) and [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
 | Image Viewer | [sxiv](https://github.com/muennich/sxiv) and [Viewnior](https://github.com/hellosiyan/Viewnior) |
 | Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) and [Clementine](https://www.clementine-player.org/pt_BR/)|
@@ -52,7 +53,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 | CLI General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme](https://github.com/zSucrilhos/dotfiles/tree/master/Desktop/extras/speedcrunch-palenight-theme) |
 | CLI Calculator App | [calc](http://www.isthe.com/chongo/tech/comp/calc/) (Binary name: qalc) |
-| Main Code Editor | [neovim](https://neovim.io/) ([init.vim](https://github.com/zSucrilhos/dotfiles/blob/master/Desktop/.config/nvim/init.vim)) |
+| Main Code Editor | [neovim](https://neovim.io/) |
 | Other Code Editors | [VSCode](https://code.visualstudio.com/) and [SublimeText3](https://www.sublimetext.com/) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
