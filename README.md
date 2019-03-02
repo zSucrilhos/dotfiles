@@ -18,8 +18,8 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![sublime,vsc](/artworks/wallpapers/Rafale/sublime_plus_code.png)
 ### Ranger:
 ![ranger](/artworks/wallpapers/Rafale/ranger.png)
-### Thunar:
-![thunar](/artworks/wallpapers/Rafale/thunar.png)
+### Caja:
+![caja](/artworks/wallpapers/Rafale/caja.png)
 
 
 ## Overall View:
