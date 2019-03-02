@@ -158,16 +158,16 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0xeaeaea'
+    background: '0x1c232e'
+    foreground: '0xd1dcdd'
 
     # Bright and dim foreground colors
     #
     # The dimmed foreground color is calculated automatically if it is not present.
     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
     # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
+    dim_foreground: '0x0b0d24'
+    bright_foreground: '0x4b6ba0'
 
   # Cursor colors
   #
@@ -175,29 +175,31 @@ colors:
   # the cursor color will be the inverse of the cell color.
   #cursor:
   #  text: '0x000000'
-  #  cursor: '0xffffff'
+  #  cursor: '0xffffff' 
 
-  # Normal colors
+ # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xd54e53'
-    green:   '0xb9ca4a'
-    yellow:  '0xe6c547'
-    blue:    '0x7aa6da'
-    magenta: '0xc397d8'
-    cyan:    '0x70c0ba'
-    white:   '0xeaeaea'
+    black:   '0x122734'
+    red:     '0xf45b69'
+    green:   '0x00b159'
+    yellow:  '0xd49c24'
+    blue:    '0x428bca'
+    magenta: '0x6c66ae'
+    cyan:    '0x18b3c4'
+    white:   '0x858585'
 
   # Bright colors
   bright:
-    black:   '0x666666'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0xe7c547'
-    blue:    '0x7aa6da'
-    magenta: '0xb77ee0'
-    cyan:    '0x54ced6'
-    white:   '0xffffff'
+    black:   '0x436baf'
+    red:     '0xf94757'
+    green:   '0x49a435'
+    yellow:  '0xfcb928'
+    blue:    '0x268be2'
+    magenta: '0x867cf0'
+    cyan:    '0x18b3c4'
+    white:   '0xc6c6c6'
+
+
 
   # Dim colors
   #
@@ -253,7 +255,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+background_opacity: 1
 
 # Mouse bindings
 #
