@@ -1,6 +1,5 @@
 ### My _i3-gaps/bspwm_ dotfiles
 This is a repository dedicated to back-up and share my dotfiles when needed.
-Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
@@ -11,7 +10,7 @@ Layout highly inspired by [SeraphyBR](https://github.com/SeraphyBR/DotFiles)
 ![cava+ncmpcpp](/artworks/wallpapers/Rafale/cava_plus_ncmpcpp.png)
 ### htop:
 ![htop](/artworks/wallpapers/Rafale/htop.png)
-### gtop:
+### gtop (up) and nvtop (down):
 ![gtop and nvtop](/artworks/wallpapers/Rafale/gtop_plus_nvtop.png)
 ### Neovim:
 ![nvim](/artworks/wallpapers/Rafale/nvim.png)
