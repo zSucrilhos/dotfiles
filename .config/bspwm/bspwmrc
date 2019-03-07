@@ -32,12 +32,13 @@ bspc rule -a qBittorrent desktop='^9' follow=on
 bspc rule -a Nemo desktop='^5' follow=on
 bspc rule -a Thunar desktop='^5' follow=on
 bspc rule -a Spacefm desktop='^5' follow=on
+bspc rule -a Caja desktop='^5' follow=on
 bspc rule -a TelegramDesktop desktop='^6' follow=on
 bspc rule -a Zathura desktop='^8' follow=on state=tiled
 bspc rule -a Steam desktop='^9' follow=on
-bspc rule -a mpv desktop=^4 follow=on state=tiled
-bspc rule -a Sxiv desktop=^4 follow=on state=tiled
-bspc rule -a Viewnior desktop=^4 follow=on state=tiled
+bspc rule -a mpv desktop='^4' follow=on state=tiled
+bspc rule -a Sxiv desktop='^4' follow=on state=tiled
+bspc rule -a Viewnior desktop='^4' follow=on state=tiled
 
 bspc rule -a Xfce4-appfinder state=floating focus=on floating=on 
 bspc rule -a alsamixer state=floating focus=on
@@ -48,9 +49,11 @@ bspc rule -a SimpleScreenRecorder state=floating focus=on
 bspc rule -a Pulseffects state=floating focus=on
 bspc rule -a Pulseaudio-equalizer-gtk state=floating focus=on
 bspc rule -a Pavucontrol state=floating focus=on center=on
+
+bspc rule -a Alacritty state=tiled focus=on
 bspc rule -a Viewnior focus=on state=tiled
 
-feh --bg-fill "/home/zsucrilhos/Desktop/jet_fighter_airplane_aircraft_military_plane_warplane_war_2048x1365.jpg"
+feh --bg-fill "/home/zsucrilhos/Desktop/new-wall-papres/luka-slapnicar-1120650-unsplash.jpg"
 
 dunst &
 compton -b --config ~/.config/compton/compton.conf &
@@ -59,10 +62,11 @@ numlockx on &
 xsetroot -cursor_name left_ptr &
 /usr/bin/mpDris2 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-xautolock -time 5 -locker 'dm-tool switch-to-greeter' &
+xautolock -time 1 -locker 'betterlockscreen -l dim' &
 
 /home/zsucrilhos/_my-scripts/polybarstart-bspwm &
 /home/zsucrilhos/_my-scripts/dpms.sh &
 /home/zsucrilhos/_my-scripts/lightsOn.sh &
+
 dunstify -a System -u critical System $'System started sucessfully.\nApp apps running and OK.'
 

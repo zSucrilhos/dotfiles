@@ -17,20 +17,16 @@
 ;=============================================================
 
 [colors]
-background = #1C232E
-background-alt = #2E394B
-foreground = #D5E0F2
+background = #0E1620
+background-alt = #242E38
+foreground = #FEFEFE
 foreground-alt = #666666
-primary = #5f7894
+primary = #FDB108
 secondary = #D6A817
-blue = #5f7894
-red = #B91928
+alert = #B91928
+dimmed-text = #464E58
 
 dim-value = 0.4
-
-
-;##############################
-
 
 [bar/top]
 monitor = DVI-D-0
@@ -45,7 +41,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 2
-;line-color = #ff0000
+line-color = #ff000000
 
 border-size = 5
 border-color = #00000000
@@ -65,11 +61,14 @@ font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
 font-6 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
 font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 font-8 = Hasklug Medium Nerd Font Complete Mono:pixelsize=9;1:antialias=true;0
-
+font-9 = Nau Sea:style=Regular:size=9;0
+font-10 = Chainsaw Geometric:style=Regular:size=10;0
 
 modules-left = bspwm
-modules-center = mpd-simple
-modules-right = wireless-network pulseaudio date powermenu
+modules-center = xwindow
+modules-right = eth filesystem temperature updates-pacman-test updates-aur-test
+
+separator = | 
 
 ;tray-position = right
 ;tray-padding = 5
@@ -90,12 +89,68 @@ enable-ipc = true
 cursor-click = pointer
 ;cursor-scroll = ns-resize
 
-[module/scratchpad]
-type = custom/script
+[bar/bottom]
+monitor = DVI-D-0
+width = 100%
+height = 25
+;offset-x = 1%
+;offset-y = 95%
+radius = 5
+fixed-center = true
+bottom = true
 
-exec = python ~/_my-scripts/i3-scratchpad-indicator.py
-tail = true
-interval = 1
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #ff000000
+
+border-size = 5
+border-color = #00000000
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = Iosevka Medium:pixelsize=9;1:antialias=true;0
+font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;0
+font-2 = Fixedsys Excelsior:style=Regular:pixelsize=10:size=8:antialias=true;1
+font-3 = Unifont:fontformat=truetype:size=8:antialias=true;0
+font-4 = Wuncon Siji:pixelsize=10;1:antialias=true;0
+font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
+font-6 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
+font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
+font-8 = Hasklug Medium Nerd Font Complete Mono:pixelsize=9;1:antialias=true;0
+font-9 = Nau Sea:style=Regular:size=9;1
+font-10 = Chainsaw Geometric:style=Regular:size=10;0
+
+modules-left = powermenu cpu memory
+modules-center = mpd
+modules-right = pulseaudio time date
+
+separator = |
+
+;tray-position = right
+;tray-padding = 5
+;tray-transparent = true
+;tray-background = #000000
+
+wm-restack = bspwm
+;wm-restack = i3
+
+override-redirect = false
+enable-ipc = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+;cursor-scroll = ns-resize
 
 [module/metar]
 type = custom/script
@@ -131,10 +186,14 @@ interval = 25
 
 mount-0 = /
 
-label-mounted =  %percentage_used%%
-;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+format-mounted-prefix = " "
+format-mounted-prefix-foreground = ${colors.primary}
+format-mounted = <label-mounted>
+label-mounted = %percentage_used%%
+
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+label-unmounted-foreground = ${colors.dimmed-text}
+
 
 [module/bspwm]
 type = internal/bspwm
@@ -150,7 +209,7 @@ label-occupied-padding = 2
 
 ;label-urgent = %index%!
 label-urgent = %name%
-label-urgent-background = ${colors.red}
+label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 ;label-empty = %index%
@@ -356,7 +415,7 @@ bar-used-empty-foreground = #444444
 
 [module/wlan]
 type = internal/network
-interface = wlp0s18f2u2
+interface = enp3s0
 interval = 3.0
 
 format-connected =   <label-connected>
@@ -380,6 +439,22 @@ click-left = $TERMINAL
 [module/updates-arch-combined]
 type = custom/script
 exec = ~/_my-scripts/updates-arch-combined.sh
+interval = 600
+
+[module/updates-pacman-test]
+type = custom/script
+exec = "pacman -Qum | wc -l"
+format-prefix = "C "
+format-prefix-foreground = ${colors.primary}
+format-prefix-font = 11
+interval = 600
+
+[module/updates-aur-test]
+type = custom/script
+exec = "yay -Qum | wc -l"
+format-prefix = "AUR    "
+format-prefix-foreground = ${colors.primary}
+format-prefix-font = 10
 interval = 600
 
 [module/wireless-network]
@@ -411,34 +486,42 @@ ramp-signal-4 = 
 
 [module/eth]
 type = internal/network
-interface = wlp0s18f2u2
+interface = enp3s0
 interval = 3.0
 
 ;format-connected-underline = #55aa55
 format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${colors.primary}
 label-connected = %local_ip%
 
-format-disconnected =
+format-disconnected = disconnected
+format-disconnected-foreground = #464E58
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/time]
+type = internal/date
+interval = 5
+
+time =⠀ %H:%M
+format-prefix = 
+format-prefix-foreground = ${colors.primary}
+;format-underline = #0a6cf5
+
+label =%time%
 
 [module/date]
 type = internal/date
 interval = 5
 
 date = " %d/%m"
-date-alt = "%Y"
-
-time =⠀ %H:%M
-time-alt = ⠀ %d/%m
-format-prefix = 
-;format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
 ;format-underline = #0a6cf5
 
-label =%time% %date%
+label =%date%
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -474,13 +557,15 @@ mapped = true
 interval = 5
 
 format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 0
 label-volume = %percentage:3%%
-label-muted =  muted
-label-muted-foreground = #66
+label-muted = muted
+label-muted-foreground = ${colors.dimmed-text}
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+ramp-volume-foreground = ${colors.primary}
 
 ramp-headphones-0 = 
 ramp-headphones-1 = 
@@ -527,7 +612,7 @@ format-discharging = <animation-discharging> <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.blue}
+format-full-prefix-foreground = ${colors.primary}
 ;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
@@ -552,22 +637,25 @@ animation-discharging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
+interval = 0.5
 thermal-zone = 0
 warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+hwmon-path = /sys/devices/platform/it87.552/hwmon/hwmon2/temp1_input
 
 label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.primary}
+
+label-warn = %temperature-c% WARN
+label-warn-foreground = ${colors.alert}
+
+
 
 [module/powermenu]
 type = custom/menu
@@ -577,41 +665,32 @@ expand-right = true
 format-spacing = 1
 label-active-font = 0
 
-
 label-open = ⏻ 
-label-open-foreground = ${colors.blue}
-label-close =  
-label-close-foreground = ${colors.blue}
+label-open-foreground = ${colors.primary}
+label-close =  
+label-close-foreground = ${colors.primary}
 label-separator = |
-label-separator-foreground = ${colors.blue}
-label = ${colors.blue}
-menu-0-0 = 
-menu-0-0-exec = shutdown -r now
+label-separator-foreground = ${colors.primary}
+label = ${colors.primary}
 
-menu-0-1 = ⏻ 
-menu-0-1-exec = shutdown -h now
+menu-0-0 = 
+menu-0-0-exec = betterlockscreen -l 
 
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
+menu-0-1 = 
+menu-0-1-exec = shutdown -r now
 
-menu-1-1 = reboot
-menu-1-1-exec = shutdown -hr now
-
-menu-2-0 = power off
-menu-2-0-exec = shutdown -h now
-
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
+menu-0-2 = ⏻ 
+menu-0-2-exec = shutdown -h now
 
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
 ;compositing-background = screen
 ;compositing-foreground = source
-;compositing-border = over
+compositing-border = over
 
 [global/wm]
-margin-top = 5
+margin-top = 0
 margin-bottom = 0
 
 ; vim:ft=dosini

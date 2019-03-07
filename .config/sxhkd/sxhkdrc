@@ -57,9 +57,9 @@ super + F2
 super + shift + F2
     qutebrowser
 
-# Start thunar
+# Start caja
 super + F3
-    thunar
+    caja
 
 # Start ranger in xst
 super + shift + F3
@@ -69,12 +69,13 @@ super + shift + F3
 super + F5
     alacritty -e $SHELL -i -c ncmpcpp
 
-# Take a screenshot with i3scrot
+# Take a screenshot with maim
 Print
-    i3-scrot 
+    maim ~/Screenshots/$(date "+%Y-%m-%d_%H-%M-%S").png && dunstify -u normal "System" "Screenshot saved!"
 
+# Take a screenshot of the selection with maim and slop
 shift + Print
-    flameshot gui
+    ~/_my-scripts/maim-selection.sh
 
 super + ctrl + x
     xkill
@@ -83,7 +84,15 @@ super + ctrl + x
 super + ctrl + shift + l
     betterlockscreen -l
 
+super + shift + b
+    bspc node @/ --balance
 
+super + shift + ctrl + b
+    bspc node @/ --equalize
+
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+  bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 #
 # bspwm hotkeys

@@ -174,12 +174,12 @@ rofi.terminal:                       xst
 ! New Rice theme
 
 !State              'bg',    'fg',    'bgalt', 'hlbg',      'hlfg'
-rofi.color-normal:  #1C232E, #bfc7d5, #1C232E, #bfc7d5, 	#1C232E
-rofi.color-urgent:  #FA4664, #1C232E, #FA4664, #e8664a, 	#bfc7d5
-rofi.color-active:  #c2e488, #1C232E, #1C232E, #fdc467, 	#1C232E
+rofi.color-normal:  #0E1620, #bfc7d5, #0E1620, #FDB108, 	#0E1620
+rofi.color-urgent:  #FA4664, #0E1620, #FA4664, #e8664a, 	#FDB108
+rofi.color-active:  #c2e488, #0E1620, #0E1620, #fdc467, 	#0E1620
 
 !                  'background', 'border', 'separator'
-rofi.color-window:  #1C232E,     #1C232E,   #bfc7d5
+rofi.color-window:  #0E1620,     #0E1620,   #FDB108
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

@@ -4,22 +4,24 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
 ## Screenshots:
+### Busy:
+![busy](/artworks/wallpapers/Turbine/busy.png)
 ### Rofi:
-![rofi](/artworks/wallpapers/Rafale/rofi.png)
+![rofi](/artworks/wallpapers/Turbine/rofi.png)
 ### Cava+ncmpcpp:
-![cava+ncmpcpp](/artworks/wallpapers/Rafale/cava_plus_ncmpcpp.png)
+![cava+ncmpcpp](/artworks/wallpapers/Turbine/cava_plus_ncmpcpp.png)
 ### htop:
-![htop](/artworks/wallpapers/Rafale/htop.png)
+![htop](/artworks/wallpapers/Turbine/htop.png)
 ### gtop (up) and nvtop (down):
-![gtop and nvtop](/artworks/wallpapers/Rafale/gtop_plus_nvtop.png)
+![gtop and nvtop](/artworks/wallpapers/Turbine/gtop_plus_nvtop.png)
 ### Neovim:
-![nvim](/artworks/wallpapers/Rafale/nvim.png)
+![nvim](/artworks/wallpapers/Turbine/nvim.png)
 ### SublimeText3 (left) and VSCode (right):
-![sublime,vsc](/artworks/wallpapers/Rafale/sublime_plus_code.png)
+![sublime,vsc](/artworks/wallpapers/Turbine/sublime_plus_code.png)
 ### Ranger:
-![ranger](/artworks/wallpapers/Rafale/ranger.png)
+![ranger](/artworks/wallpapers/Turbine/ranger.png)
 ### Caja:
-![caja](/artworks/wallpapers/Rafale/caja.png)
+![caja](/artworks/wallpapers/Turbine/caja.png)
 
 
 ## Overall View:
@@ -41,7 +43,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
 | Text Reader (RSVP) | [fltrdr](https://octobanana.com/software/fltrdr) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
-| Screen-shot Tool | [scrot](https://github.com/dreamer/scrot) and [i3scrot](https://github.com/pazuzu156/i3scrot) |
+| Screen-shot Tool | [scrot](https://github.com/dreamer/scrot)|
 | Terminal Emulator | [termite](https://github.com/thestinger/termite) and [alacritty](https://github.com/jwilm/alacritty) |
 | Other Terminal Emulators | [xst](https://github.com/gnotclub/xst) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
@@ -55,6 +57,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
+| Icon Theme | [Papirus-Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
 ### Fonts used:
 | Font Name | Usage |
