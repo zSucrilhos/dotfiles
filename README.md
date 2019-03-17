@@ -56,7 +56,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Other Code Editors | [VSCode](https://code.visualstudio.com/) and [SublimeText3](https://www.sublimetext.com/) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
-| GTK+ Theme | [My slightly modified version](https://github.com/zSucrilhos/Juno-Ocean-Sucrilhos) of [Juno](https://github.com/EliverLara/Juno)-Ocean theme by [EliverLara](https://github.com/EliverLara)|
+| GTK+ Theme | Slightly modified version of [Arc-Dark](https://github.com/horst3180/arc-theme) |
 | Icon Theme | [Papirus-Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
 ### Fonts used:
