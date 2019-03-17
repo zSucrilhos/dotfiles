@@ -5,23 +5,23 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ## Screenshots:
 ### Busy:
-![busy](/artworks/wallpapers/Turbine/busy.png)
+![busy](/artworks/wallpapers/Cold-Climate/busy.png)
 ### Rofi:
-![rofi](/artworks/wallpapers/Turbine/rofi.png)
+![rofi](/artworks/wallpapers/Cold-Climate/rofi.png)
 ### Cava+ncmpcpp:
-![cava+ncmpcpp](/artworks/wallpapers/Turbine/cava_plus_ncmpcpp.png)
+![cava+ncmpcpp](/artworks/wallpapers/Cold-Climate/cava_plus_ncmpcpp.png)
 ### htop:
-![htop](/artworks/wallpapers/Turbine/htop.png)
+![htop](/artworks/wallpapers/Cold-Climate/htop.png)
 ### gtop (up) and nvtop (down):
-![gtop and nvtop](/artworks/wallpapers/Turbine/gtop_plus_nvtop.png)
+![gtop and nvtop](/artworks/wallpapers/Cold-Climate/gtop_plus_nvtop.png)
 ### Neovim:
-![nvim](/artworks/wallpapers/Turbine/nvim.png)
+![nvim](/artworks/wallpapers/Cold-Climate/nvim.png)
 ### SublimeText3 (left) and VSCode (right):
-![sublime,vsc](/artworks/wallpapers/Turbine/sublime_plus_code.png)
+![sublime,vsc](/artworks/wallpapers/Cold-Climate/sublime_plus_code.png)
 ### Ranger:
-![ranger](/artworks/wallpapers/Turbine/ranger.png)
+![ranger](/artworks/wallpapers/Cold-Climate/ranger.png)
 ### Caja:
-![caja](/artworks/wallpapers/Turbine/caja.png)
+![caja](/artworks/wallpapers/Cold-Climate/caja.png)
 
 
 ## Overall View:
