@@ -17,13 +17,13 @@
 ;=============================================================
 
 [colors]
-background = #0E1620
-background-alt = #242E38
-foreground = #FEFEFE
+background = #cc2E3440
+background-alt = #cc242E38
+foreground = #D8DEE9
 foreground-alt = #666666
-primary = #FDB108
-secondary = #D6A817
-alert = #B91928
+primary = #88C0D0
+secondary = #17728C
+alert = ${colors.primary}
 dimmed-text = #464E58
 
 dim-value = 0.4
@@ -34,7 +34,7 @@ width = 100%
 height = 25
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 5
+radius = 0
 fixed-center = true
 
 background = ${colors.background}
@@ -43,7 +43,7 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #ff000000
 
-border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -95,7 +95,7 @@ width = 100%
 height = 25
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 5
+radius = 0
 fixed-center = true
 bottom = true
 
@@ -105,7 +105,7 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #ff000000
 
-border-size = 5
+border-size = 0
 border-color = #00000000
 
 padding-left = 2
@@ -362,8 +362,11 @@ bar-empty-foreground = #44
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format = <label> <ramp-coreload>
-label =  
+format = <label> 
+format-prefix = "CPU "
+label = %percentage:3%%
+format-prefix-foreground = ${colors.primary}
+;label =   %percentage%%
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
@@ -393,11 +396,11 @@ ramp-coreload-7-foreground = #ff5555
 [module/memory]
 type = internal/memory
 interval = 1
-format = <label> <bar-used> 
-format-prefix = 
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #4bffdc
-label = 
+format = <label>
+format-prefix = "RAM "
+format-prefix-foreground = ${colors.primary}
+label = %percentage_used:3%%
+;label = 
 
 bar-used-width = 13
 bar-used-foreground-0 = #aaff77

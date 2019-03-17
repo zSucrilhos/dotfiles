@@ -16,7 +16,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi --config ~/.config/rofi/config -show drun
+	rofi --config ~/.config/rofi/config -show drun -theme ~/.config/rofi/nord.rasi
 
 # make sxhkd reload its configuration files:
 super + shift + c

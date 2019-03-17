@@ -201,7 +201,7 @@ set laststatus=2
 "      \ }
 
 let g:lightline = {
-      \ 'colorscheme': 'palenight',
+      \ 'colorscheme': 'nord',
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
@@ -249,8 +249,7 @@ set termguicolors
 
 
 " My colorscheme
-colorscheme palenight
-"colorscheme base16-icy
+colorscheme nord
 
 filetype on
 filetype indent on
