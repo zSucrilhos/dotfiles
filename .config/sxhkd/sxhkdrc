@@ -2,17 +2,13 @@
 # wm independent hotkeys
 #
 
-# Open termite
-#super + Return
-#	termite --role=tmux -e "$SHELL -ic tmux"
-
 # Open alacritty with tmux
 super + shift + Return
-	alacritty -e $SHELL -i -c tmux
+	alacritty -e $SHELL -i -c tmux &
 
 # Open alacritty
 super + Return
-    alacritty
+    alacritty &
 
 # program launcher
 super + d
@@ -37,11 +33,11 @@ super + ctrl + Down
 
 # Open pavucontrol
 ctrl + m
-    pavucontrol
+    pavucontrol &
 
 # Open pulseaudio eq
 ctrl + shift + m
-    
+    pulseaudio-equalizer-gtk &
 ##########################
 
 # General start-app bindings
@@ -51,23 +47,30 @@ super + shift + d
 
 # Start firefox
 super + F2
-    firefox
+    firefox & dunstify -u normal "Firefox" "Starting" &
 
 # Start qutebrowser
 super + shift + F2
-    qutebrowser
+    qutebrowser & dunstify -u normal "qutebrowser" "Starting" &
 
 # Start caja
 super + F3
-    caja
+    caja &
 
 # Start ranger in xst
 super + shift + F3
-    alacritty -e $SHELL -i -c ranger
+    alacritty -e $SHELL -i -c ranger &
 
 # Start ncmpcpp with xst
 super + F5
-    alacritty -e $SHELL -i -c ncmpcpp
+    alacritty -e $SHELL -i -c ncmpcpp &
+
+super + shift + F5
+    cantata &
+
+# Start Telegram
+super + F6
+    telegram-desktop &
 
 # Take a screenshot with maim
 Print
@@ -76,6 +79,12 @@ Print
 # Take a screenshot of the selection with maim and slop
 shift + Print
     ~/_my-scripts/maim-selection.sh
+
+alt + F12
+    bash ~/_my-scripts/ffmpeg-recording.sh 
+
+alt + F11
+    killall -2 ffmpeg &> /dev/null && dunstify -u normal "ffmpeg" "Recording finished and saved"
 
 super + ctrl + x
     xkill

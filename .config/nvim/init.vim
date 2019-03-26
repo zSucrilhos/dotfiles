@@ -1,9 +1,6 @@
 " VimPlug START
 call plug#begin('~/.vim/plugged') 
 
-"Plug 'Valloric/YouCompleteMe'
-"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
-
 " Deoplete completion
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -13,12 +10,24 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+" Easy motion
+Plug 'https://github.com/easymotion/vim-easymotion'
+
+" Lightning fast left-right movement 
+Plug 'https://github.com/unblevable/quick-scope'
+
+" Show a list of buffers
+Plug 'https://github.com/bling/vim-bufferline'
+
 " Linting with ALE
 Plug 'w0rp/ale'
 
 " LSP Completion Engine for C++
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
+
+" window manager
+Plug 'paroxayte/vwm.vim'
 
 " Enable multiple selection with <C-n>
 Plug 'terryma/vim-multiple-cursors'
@@ -100,10 +109,43 @@ set clipboard=unnamedplus
 set ttyfast
 set lazyredraw
 
-set synmaxcol=128
+set synmaxcol=0
 syntax sync minlines=25
 
+set tabpagemax=9
+set showmode
+
 "#######################################################
+
+" Tabs mappings
+nnoremap <C-t><Left>  :tabp<CR>
+nnoremap <C-b>n :bnext <CR>
+nnoremap <C-t><Right> :tabn<CR>
+nnoremap <C-t>n       :tabnew<CR>
+nnoremap <C-t>w       :tabc<CR>
+inoremap <C-t><Left>  <Esc>:tabp<CR>
+inoremap <C-t><Right> <Esc>:tabn<CR>
+inoremap <C-t>n       <Esc>:tabnew<CR>
+inoremap <C-t>w       <Esc>:tabc<CR>
+
+" Buffer mappings
+nnoremap <C-b>N :enew <CR>
+nnoremap <C-b>p :bprev <CR>
+nnoremap <C-b>n :bnext <CR>
+nnoremap <C-b>w :bd <CR>
+inoremap <C-b>N <Esc>:enew <CR>
+inoremap <C-b>p <Esc>:bprev <CR>
+inoremap <C-b>n <Esc>:bnext <CR>
+inoremap <C-b>w <Esc>:bd <CR>
+
+" Window mappings
+" You can use <C-w> + hjkl to navigate between windows
+" You can use <C-w>w to alternate between windows
+nnoremap <C-h>h :split<CR>
+nnoremap <C-h>v :vsplit<CR>
+inoremap <C-h>h <Esc>:split<CR>
+inoremap <C-h>v <Esc>:vsplit<CR>
+
 
 " Enable deoplete at startup
 let g:deoplete#enable_at_startup = 1
@@ -195,39 +237,33 @@ nnoremap gm m
 " Lightline configs
 set laststatus=2
 
-"    Lightline colorscheme
-"let g:lightline = {
-"      \ 'colorscheme': 'seoul256',
-"      \ }
-
 let g:lightline = {
       \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'filename' ], [ 'bufferline' ] ],
+      \ },
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
+      \'bufferline': '%{bufferline#refresh_status()}%{g:bufferline_status_info.before . g:bufferline_status_info.current . g:bufferline_status_info.after}',
       \ },
       \ 'separator':    { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' },
-      \ }
+\ }
 
-"#######################################################
+" Set the <leader> to <SPACE>
+let mapleader = "<SPACE>"
 
-"#######################################################
 
-" Set 256 colors
-"set t_ut=
-"set t_AB=^[[48;5;%dm
-"set t_AF=^[[38;5;%dm
-
-" Enable line numbers
-set relativenumber
-
-"#######################################################
+" Using bufferline only on lightline not on command bar
+let g:bufferline_echo = 0
+"
 " Enable and toggle indent guides
 let g:indent_guides_enable_on_vim_startup = 1
 
 " Set the indent guides colors
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
+
 "#######################################################
 
 " Set shell
@@ -239,14 +275,10 @@ set fileencoding=utf-8
 
 " Syntax and colors
 syntax on
-
 set termguicolors
 
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
+" Enable line numbers
+set relativenumber
 
 " My colorscheme
 colorscheme nord
@@ -271,6 +303,9 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
+set listchars=tab:▸\ ,eol:¬
+set list
+
 " Disable backup and swap files
 set nobackup
 set nowritebackup
@@ -280,6 +315,8 @@ set noswapfile
 set textwidth=120
 set ffs=unix,dos,mac
 set backspace=indent,eol,start
+set colorcolumn=80
+set columns=80
 
 " Search
 set hlsearch
@@ -292,6 +329,4 @@ set wrapscan
 
 " Bind <F3> to clear search history "
 map <F3> *:let @/=""
-
-
 

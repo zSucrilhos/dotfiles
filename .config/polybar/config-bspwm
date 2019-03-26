@@ -34,7 +34,7 @@ width = 100%
 height = 25
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 0
+radius = 5
 fixed-center = true
 
 background = ${colors.background}
@@ -43,7 +43,7 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #ff000000
 
-border-size = 0
+border-size = 4
 border-color = #00000000
 
 padding-left = 0
@@ -52,8 +52,8 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Iosevka Medium:pixelsize=9;1:antialias=true;0
-font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;0
+font-0 = Iosevka Medium:pixelsize=9;1:antialias=true;2
+font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;2
 font-2 = Fixedsys Excelsior:style=Regular:pixelsize=10:size=8:antialias=true;1
 font-3 = Unifont:fontformat=truetype:size=8:antialias=true;0
 font-4 = Wuncon Siji:pixelsize=10;1:antialias=true;0
@@ -61,8 +61,8 @@ font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
 font-6 = Font Awesome 5 Free:pixelsize=10;1:antialias=true;0
 font-7 = MaterialIcons-Regular:pixelsize=10;1:antialias=true;0
 font-8 = Hasklug Medium Nerd Font Complete Mono:pixelsize=9;1:antialias=true;0
-font-9 = Nau Sea:style=Regular:size=9;0
-font-10 = Chainsaw Geometric:style=Regular:size=10;0
+font-9 = Nau Sea:style=Regular:size=9;1
+font-10 = Chainsaw Geometric:style=Regular:size=10;2
 
 modules-left = bspwm
 modules-center = xwindow
@@ -95,7 +95,7 @@ width = 100%
 height = 25
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 0
+radius = 5
 fixed-center = true
 bottom = true
 
@@ -105,7 +105,7 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #ff000000
 
-border-size = 0
+border-size = 4
 border-color = #00000000
 
 padding-left = 2
@@ -114,9 +114,9 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Iosevka Medium:pixelsize=9;1:antialias=true;0
-font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;0
-font-2 = Fixedsys Excelsior:style=Regular:pixelsize=10:size=8:antialias=true;1
+font-0 = Iosevka Medium:pixelsize=9;1:antialias=true;3
+font-1 = Hack Nerd Font:pixelsize=10;1:antialias=true;3
+font-2 = Fixedsys Excelsior:style=Regular:pixelsize=10;1:antialias=true;30
 font-3 = Unifont:fontformat=truetype:size=8:antialias=true;0
 font-4 = Wuncon Siji:pixelsize=10;1:antialias=true;0
 font-5 = Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0
@@ -251,7 +251,8 @@ icon-prev = 
 icon-next = 
 icon-random = 
 icon-repeat = 
-icon-single = 
+#icon-single = 
+icon-single = 
 
 label-song = %artist% - %title%
 label-song-maxlen = 60

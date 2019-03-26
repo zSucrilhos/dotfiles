@@ -41,7 +41,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - buttonless: Title bar, transparent background and title bar buttons
   #     - transparent: Title bar, transparent background, but no title bar buttons
-  decorations: none
+  decorations: full
 
   # When true, alacritty starts maximized.
   start_maximized: false
@@ -65,7 +65,7 @@ scrolling:
   faux_multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: true
+  auto_scroll: false
 
 # Spaces per Tab (changes require restart)
 #
@@ -74,47 +74,47 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 4
+tabspaces: 8
 
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
-  normal:
+  #normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: mononoki Nerd Font
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    #style: Regular
 
   # Bold font face
-  bold:
+  #bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: mononoki Nerd Font
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    #style: Bold
 
   # Italic font face
-  italic:
+  #italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: mononoki Nerd Font
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    #style: Italic
 
   # Point size
-  size: 10.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -143,7 +143,7 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: false
+  use_thin_strokes: true
 
 # Display the time it takes to redraw each frame.
 render_timer: false
@@ -158,46 +158,46 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
+    background: '0x000000'
+    foreground: '0xeaeaea'
+
     # Bright and dim foreground colors
     #
     # The dimmed foreground color is calculated automatically if it is not present.
     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
     # is `false`, the normal foreground color will be used.
-    dim_foreground: '0x0b0d24'
-    bright_foreground: '0x4b6ba0'
+    #dim_foreground: '0x9a9a9a'
+    #bright_foreground: '0xffffff'
 
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   #cursor:
-    text: '0x2E3440'
-    cursor: '0xD8DEE9'
+  #  text: '0x000000'
+  #  cursor: '0xffffff'
 
- # Normal colors
+  # Normal colors
   normal:
-    black: '0x3B4252'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x88C0D0'
-    white: '0xE5E9F0'
+    black:   '0x000000'
+    red:     '0xd54e53'
+    green:   '0xb9ca4a'
+    yellow:  '0xe6c547'
+    blue:    '0x7aa6da'
+    magenta: '0xc397d8'
+    cyan:    '0x70c0ba'
+    white:   '0xeaeaea'
 
   # Bright colors
   bright:
-    black: '0x4C566A'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x8FBCBB'
-    white: '0xECEFF4'
-
+    black:   '0x666666'
+    red:     '0xff3334'
+    green:   '0x9ec400'
+    yellow:  '0xe7c547'
+    blue:    '0x7aa6da'
+    magenta: '0xb77ee0'
+    cyan:    '0x54ced6'
+    white:   '0xffffff'
 
   # Dim colors
   #
@@ -253,7 +253,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1
+background_opacity: 1.0
 
 # Mouse bindings
 #

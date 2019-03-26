@@ -89,7 +89,7 @@ font:
     family: mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Regular
 
   # Bold font face
   bold:
@@ -114,7 +114,7 @@ font:
     style: Italic
 
   # Point size
-  size: 10.0
+  size: 9.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -158,45 +158,50 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
+    background: '0x1e2141'
+    foreground: '0xd5dff0'
+
     # Bright and dim foreground colors
     #
     # The dimmed foreground color is calculated automatically if it is not present.
     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
     # is `false`, the normal foreground color will be used.
     dim_foreground: '0x0b0d24'
-    bright_foreground: '0x4b6ba0'
+    bright_foreground: '0x30466b'
 
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   #cursor:
-    text: '0x2E3440'
-    cursor: '0xD8DEE9'
+  #  text: '0x000000'
+  #  cursor: '0xffffff'
+  
+  # Normal colors
+   # Normal colors
+  
 
- # Normal colors
+  # Normal colors
   normal:
-    black: '0x3B4252'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x88C0D0'
-    white: '0xE5E9F0'
+    black:   '0x6ec492'
+    red:     '0x4968b3'
+    green:   '0xbb9eea'
+    yellow:  '0x87c1d5'
+    blue:    '0x7fb6ff'
+    magenta: '0xd43b79'
+    cyan:    '0x6ec492'
+    white:   '0xda7473'
 
   # Bright colors
   bright:
-    black: '0x4C566A'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x8FBCBB'
-    white: '0xECEFF4'
+    black:   '0x7b7d98'
+    red:     '0x2db6d3'
+    green:   '0x9265db'
+    yellow:  '0x00b4f2'
+    blue:    '0x4198ff'
+    magenta: '0xff3184'
+    cyan:    '0x7fb6ff'
+    white:   '0xe84544'
 
 
   # Dim colors
@@ -253,7 +258,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1
+background_opacity: 0.9
 
 # Mouse bindings
 #
