@@ -4,17 +4,17 @@
 #bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 # Kill all running applications before starting
-killall -9 sxhkd compton dunst numlockx unclutter mpDris2
+killall -9 sxhkd compton dunst numlockx unclutter mpDris2 redshift
 
-bspc monitor -d 一 二 三 四 五 六 七 八 九 十 
-Ebspc monitor -d 1 2 3 4 5 6 7 8 9 10
+#bspc monitor -d 一 二 三 四 五 六 七 八 九 十 
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 sxhkd &
 
-bspc config border_width         2
-bspc config window_gap          10
+bspc config border_width          2
+bspc config window_gap            8
 bspc config split_ratio           0.52
-bspc config borderless_monocle    true
+bspc config borderless_monocle    false
 bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config normal_border_color "#767676"
@@ -45,6 +45,8 @@ bspc rule -a Zathura desktop='^8' follow=on state=tiled
 bspc rule -a Steam desktop='^9' follow=on
 bspc rule -a qBittorrent desktop='^9' follow=on
 
+bspc rule -a Yad state=floating focus=on floating=on
+bspc rule -a Nvidia-settings state=floating focus=on floating=on
 bspc rule -a Xfce4-appfinder state=floating focus=on floating=on 
 bspc rule -a alsamixer state=floating focus=on
 bspc rule -a GParted state=floating focus=on
@@ -69,8 +71,9 @@ numlockx on &
 udiskie &
 xsetroot -cursor_name left_ptr &
 /usr/bin/mpDris2 &
+redshift -c /home/zsucrilhos/.config/redshift.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-xautolock -time 1 -locker 'betterlockscreen -l dim' &
+xautolock -locker 'betterlockscreen -l dim' -time 1 -notify 25 -notifier dunstify -a System -u critical System 'Locking in 25 seconds.' -corners ---- -cornerdelay 10 -cornersize 20 &
 
 /home/zsucrilhos/_my-scripts/polybarstart-bspwm &
 /home/zsucrilhos/_my-scripts/dpms.sh &

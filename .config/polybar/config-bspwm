@@ -17,8 +17,10 @@
 ;=============================================================
 
 [colors]
-background = #cc2E3440
-background-alt = #cc242E38
+; Alha channel was 'cc'
+background = #002E3440
+;background-alt = #242E38
+background-alt = #22000000
 foreground = #D8DEE9
 foreground-alt = #666666
 primary = #88C0D0
@@ -34,16 +36,16 @@ width = 100%
 height = 25
 ;offset-x = 1%
 ;offset-y = 95%
-radius = 5
+radius = 0
 fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 3
 line-color = #ff000000
 
-border-size = 4
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -66,7 +68,7 @@ font-10 = Chainsaw Geometric:style=Regular:size=10;2
 
 modules-left = bspwm
 modules-center = xwindow
-modules-right = eth filesystem temperature updates-pacman-test updates-aur-test
+modules-right = eth filesystem temperature info-redshift-temp
 
 separator = | 
 
@@ -102,10 +104,10 @@ bottom = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 3
 line-color = #ff000000
 
-border-size = 4
+border-size = 0
 border-color = #00000000
 
 padding-left = 2
@@ -126,9 +128,9 @@ font-8 = Hasklug Medium Nerd Font Complete Mono:pixelsize=9;1:antialias=true;0
 font-9 = Nau Sea:style=Regular:size=9;1
 font-10 = Chainsaw Geometric:style=Regular:size=10;0
 
-modules-left = powermenu cpu memory
+modules-left = powermenu cpu system-nvidia-smi memory
 modules-center = mpd
-modules-right = pulseaudio time date
+modules-right = pulseaudio time popup-calendar
 
 separator = |
 
@@ -151,6 +153,11 @@ enable-ipc = true
 
 cursor-click = pointer
 ;cursor-scroll = ns-resize
+;
+[module/info-redshift-temp]
+type = custom/script
+exec = ~/_my-scripts/info-redshift-temp.sh
+interval = 1
 
 [module/metar]
 type = custom/script
@@ -242,7 +249,8 @@ label-empty-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-single> <icon-random> <bar-progress> <label-time>  <label-song>
+;format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-single> <icon-random> <bar-progress> <label-time>  <label-song>
+format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-single> <icon-random> <label-time>  <label-song>
 
 icon-play = 
 icon-pause = 
@@ -368,6 +376,7 @@ format-prefix = "CPU "
 label = %percentage:3%%
 format-prefix-foreground = ${colors.primary}
 ;label =   %percentage%%
+click-left = exec gnome-system-monitor &
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
@@ -393,6 +402,20 @@ ramp-coreload-6-foreground = #ff5555
 ramp-coreload-7 = █
 ramp-coreload-7-font = 2
 ramp-coreload-7-foreground = #ff5555
+
+[module/system-cpu-frequency]
+type = custom/script
+exec = ~/_my-scripts/system-cpu-frequency.sh
+interval = 5
+
+[module/system-nvidia-smi]
+type = custom/script
+exec = ~/_my-scripts/system-nvidia-smi.sh
+interval = 1
+format-prefix = "GPU "
+format-prefix-foreground = ${colors.primary}
+label = %output:3%%
+click-left = exec nvidia-settings
 
 [module/memory]
 type = internal/memory
@@ -526,6 +549,14 @@ format-prefix-foreground = ${colors.primary}
 ;format-underline = #0a6cf5
 
 label =%date%
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/_my-scripts/popup-calendar.sh
+interval = 5
+click-left = ~/_my-scripts/popup-calendar.sh --popup
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
 
 [module/pulseaudio]
 type = internal/pulseaudio

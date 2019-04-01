@@ -181,7 +181,7 @@ tmux_conf_theme_right_separator_sub=''  #   PowerlineSymbols.otf font
 #     - #{username_ssh}
 tmux_conf_theme_status_left=' ❐ #S | ↑#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
 
-tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized}, %R , %d %b | #{username} | #{hostname} ' 
+tmux_conf_theme_status_right='#{prefix_highlight} | #{prefix}#{pairing}#{synchronized}, %R , %d %b | #{username} | #{hostname} ' 
 
 # status left style
 tmux_conf_theme_status_left_fg='#000000,#e4e4e4,#e4e4e4'  # black, white , white
@@ -349,8 +349,9 @@ set -g mouse on
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'arcticicestudio/nord-tmux'
 
 
 # Initialize TPM (keep at bottom of the file)
-run '~/.tmux/plugins/tpm/tpm'
+run -b '~/.tmux/plugins/tpm/tpm'
 

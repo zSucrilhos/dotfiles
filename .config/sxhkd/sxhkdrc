@@ -16,7 +16,7 @@ super + d
 
 # make sxhkd reload its configuration files:
 super + shift + c
-	pkill -USR1 -x sxhkd && dunstify -u normal "sxhkd" "Configuration reloaded!"
+	pkill -USR1 -x sxhkd && dunstify -u critical "sxhkd" "Configuration reloaded!"
 
 # resource bspwmrc
 super + shift + r
@@ -74,23 +74,23 @@ super + F6
 
 # Take a screenshot with maim
 Print
-    maim ~/Screenshots/$(date "+%Y-%m-%d_%H-%M-%S").png && dunstify -u normal "System" "Screenshot saved!"
+    ~/_my-scripts/maim-screenshot.sh
 
 # Take a screenshot of the selection with maim and slop
 shift + Print
-    ~/_my-scripts/maim-selection.sh
+    ~/_my-scripts/maim-slice.sh
 
 alt + F12
     bash ~/_my-scripts/ffmpeg-recording.sh 
 
 alt + F11
-    killall -2 ffmpeg &> /dev/null && dunstify -u normal "ffmpeg" "Recording finished and saved"
+    killall -2 ffmpeg &> /dev/null && dunstify -u critical "ffmpeg" "Recording finished and saved"
 
 super + ctrl + x
     xkill
 
 # lock screen with betterlockscreen
-super + ctrl + shift + l
+alt + shift + x
     betterlockscreen -l
 
 super + shift + b

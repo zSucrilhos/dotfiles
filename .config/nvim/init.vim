@@ -40,7 +40,7 @@ Plug 'tpope/vim-surround'
 
 " Identation guides for better visualization
 Plug 'Yggdroot/indentLine'
-Plug 'nathanaelkane/vim-indent-guides'
+"Plug 'nathanaelkane/vim-indent-guides'
 
 " File manager sidebar and git integration
 Plug 'scrooloose/nerdtree'
@@ -93,6 +93,11 @@ Plug 'drewtempelmeyer/palenight.vim'
 " Wal colorscheme
 Plug 'dylanaraps/wal.vim'
 
+" Vim-misc
+Plug 'xolox/vim-misc'
+
+" Vim-notes
+Plug 'xolox/vim-notes'
 
 " VimPlug END
 call plug#end()
@@ -119,7 +124,6 @@ set showmode
 
 " Tabs mappings
 nnoremap <C-t><Left>  :tabp<CR>
-nnoremap <C-b>n :bnext <CR>
 nnoremap <C-t><Right> :tabn<CR>
 nnoremap <C-t>n       :tabnew<CR>
 nnoremap <C-t>w       :tabc<CR>

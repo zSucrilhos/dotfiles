@@ -1,4 +1,3 @@
-
 Xft.dpi:       96
 Xft.antialias: true
 Xft.hinting:   true
@@ -27,6 +26,26 @@ XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 !XTerm*background:        #222D31
 !XTerm*foreground:        #d8d8d8
 !XTerm*pointerColor:      #1ABB9B
+
+!URxvt*foreground:   #bfc7d5
+!URxvt*background:   #292d3e
+!URxvt*color0:       #171819
+!URxvt*color1:       #a0363f
+!URxvt*color2:       #b2de67
+!URxvt*color3:       #fdc467
+!URxvt*color4:       #62add5
+!URxvt*color5:       #8388ea
+!URxvt*color6:       #5e8d87
+!URxvt*color7:       #697098
+!URxvt*color8:       #5f6670
+!URxvt*color9:       #cc6666
+!URxvt*color10:      #b5bd68
+!URxvt*color11:      #e8664a
+!URxvt*color12:      #5ea7f4
+!URxvt*color13:      #b294bb
+!URxvt*color14:      #8abeb7
+!URxvt*color15:      #9ba5de
+
 
 !
 !*background:                      #222D31
@@ -75,8 +94,8 @@ XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
 
 
-URxvt*letterSpace:                 -4
-URxvt.lineSpace:                   -1
+URxvt*letterSpace:                 0
+URxvt*lineSpace:                   5
 URxvt*imLocale: en_US.UTF-8
 URxvt*buffered: false
 URxvt*intensityStyles: false
@@ -84,8 +103,6 @@ URxvt*termName: rxvt-unicode-256color
 
 ! My urxvt fonts
 URxvt.font:                     xft:Hack Regular Nerd Font Mono:pixelsize=12, \
-                                xft:PowerlineSymbols:size=9, \
-                                xft:FontAwesome:size=10
 URxvt*boldFont:                 xft:Hack Regular Nerd Font Mono:pixelsize=12, \
 URxvt.utf8: 2
 URxvt*saveLines: 2000
@@ -106,8 +123,8 @@ URxvt.depth:                      32
 !URxvt.background:                 #bababa
 URxvt*mouseWheelScrollPage:       true
 URxvt*cursorBlink:                true
-URxvt*background:                 black
-URxvt*foreground:                 #000000
+!URxvt*background:                 black
+!URxvt*foreground:                 #000000
 URxvt*reverseVideo: on
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -154,10 +171,11 @@ st.bellvolume:        0
 st.imstyle:           root
 
 ! opacity==255 means what terminal will be not transparent, 0 - fully transparent
-st.opacity:      245
+st.opacity:      225
 ! Defaults taken from base16-twilight colorscheme.
+
 st.foreground:   #bfc7d5
-st.background:   #292d3e
+st.background:   #000000
 st.color0:       #171819
 st.color1:       #a0363f
 st.color2:       #b2de67
@@ -174,23 +192,13 @@ st.color12:      #5ea7f4
 st.color13:      #b294bb
 st.color14:      #8abeb7
 st.color15:      #9ba5de
+
 !st.color16:      #cda869
 !st.color17:      #9b703f
 !st.color18:      #323537
 !st.color19:      #464b50
 !st.color20:      #838184
-!st.color21: #c3c3c3
-
-
-
-
-
-
-
-
-
-
-
+!st.color21:      #c3c3c3
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!! ROFI COLOR CONFIGURATION !!!!!!!!!!!!!!!!!!!!!!!!!
@@ -198,10 +206,10 @@ st.color15:      #9ba5de
 
 !! TEMPLATE:
 !State                 bg           fg       bgalt         fgalt        hlbg          hlfg
-rofi.color-window:  #2e3441,     #23262D, #23262A,     
-rofi.color-normal:  #242c3d,     #c4cbd4, argb:96404552, #4084d6,     #f9f9f9,     
-rofi.color-urgent:  #1d1f21,     #cc6666, argb:e54b5160, #a54242,     #f9f9f9
-rofi.color-active:  #1d1f21,     #65acff, argb:e44b5160, #4491ed,     #f9f9f9 
+!rofi.color-window:  #ffffff,     #bfc7d5, #5f6670,     
+!rofi.color-normal:  #242c3d,     #c4cbd4, argb:96404552, #4084d6,     #f9f9f9,     
+!rofi.color-urgent:  #1d1f21,     #cc6666, argb:e54b5160, #a54242,     #f9f9f9
+!rofi.color-active:  #1d1f21,     #65acff, argb:e44b5160, #4491ed,     #f9f9f9 
 
 !##########################################################################
 

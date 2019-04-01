@@ -120,36 +120,18 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias k="k -h"
-alias zsh-config="nvim ~/.zshrc"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
-alias i3-config="nvim ~/.config/i3/config"
-alias polybar-config="nvim ~/.config/polybar/config"
-alias cdmysources="cd ~/_my-sources"
-alias cdmyscripts="cd ~/_my-scripts"
-alias fbg="feh --bg-fill"
-
-alias mkdir="mkdir -v"
-alias cp="cp -v"
-
-alias tmux="tmux -2"  # for 256color
-alias termite="termite" 
-#alias tmux="TERM=sreen-256color tmux -2"
-#alias tmux='tmux -u -2'  # to get rid of unicode rendering problem
-#alias termtmux="TERM=xterm-256color tmux"
-#alias termite-tmux-term="termite -e 'zsh export TERM=xterm-256color tmux'"
-#alias termite="termite && zsh tmux"
-
-
-#
+source ~/.zsh-aliases
 
 # Export ~/_my-scripts folder to the $PATH variable
 PATH="$HOME/_my-scripts:$PATH"
 export PATH
 export LANG=en_US.UTF-8
+
 # Preferred editor 
 export EDITOR="nvim"
+
+# Export resolution
+RESOLUTION=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
 
 # Export mpsyt location to the $PATH variable
 PATH="$HOME/.local/bin/:$PATH"
@@ -208,6 +190,7 @@ set -sg escape-time 1
 
 #### END ZSH Vi-Mode configs ####
 
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 export TERM=xterm-256color
 
@@ -224,14 +207,14 @@ export TERM=xterm-256color
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 #
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
 #
-cat ~/.cache/wal/sequences
+#cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
-##source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
 
 # wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
 
@@ -250,3 +233,4 @@ autoload -U compinit && compinit
 
 
 
+source /home/zsucrilhos/Downloads/_cloned-repos/zaw/zaw.zsh
