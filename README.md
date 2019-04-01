@@ -4,6 +4,8 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
 ## Screenshots:
+### Desktop:
+![busy](/artworks/wallpapers/Nord/desktop.png)
 ### Busy:
 ![busy](/artworks/wallpapers/Nord/busy.png)
 ### Rofi:
