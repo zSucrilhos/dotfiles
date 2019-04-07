@@ -8,9 +8,9 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![busy](/artworks/wallpapers/Nord/desktop.png)
 ### Busy:
 ![busy](/artworks/wallpapers/Nord/busy.png)
-### Rofi:
+### fofi:
 ![rofi](/artworks/wallpapers/Nord/rofi.png)
-### Cava+ncmpcpp:
+### cava+ncmpcpp:
 ![cava+ncmpcpp](/artworks/wallpapers/Nord/cava_plus_ncmpcpp.png)
 ### htop:
 ![htop](/artworks/wallpapers/Nord/htop.png)
@@ -18,11 +18,11 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![gtop and nvtop](/artworks/wallpapers/Nord/gtop_plus_nvtop.png)
 ### glances:
 ![glances](/artworks/wallpapers/Nord/glances.png)
-### Neovim:
+### neovim:
 ![nvim](/artworks/wallpapers/Nord/nvim.png)
 ### SublimeText3 (left) and VSCode (right):
 ![sublime,vsc](/artworks/wallpapers/Nord/sublime_plus_code.png)
-### Ranger:
+### ranger:
 ![ranger](/artworks/wallpapers/Nord/ranger.png)
 ### Caja:
 ![caja](/artworks/wallpapers/Nord/caja.png)
