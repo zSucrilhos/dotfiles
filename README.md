@@ -33,24 +33,23 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Window Compositor | [compton-tryone-git](https://aur.archlinux.org/packages/compton-tryone-git/)
 | Bar | [polybar](https://github.com/jaagr/polybar) |
-| Colorscheme | [pywal](https://github.com/dylanaraps/pywal) |
+| Colorscheme | [Nord](https://github.com/arcticicestudio/nord) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Web Browser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Video Player | [mpv](https://github.com/mpv-player/mpv) and [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
 | Image Viewer | [sxiv](https://github.com/muennich/sxiv) and [Viewnior](https://github.com/hellosiyan/Viewnior) |
 | Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) and [Clementine](https://www.clementine-player.org/pt_BR/)|
 | Sound visualizer (spectrogram) | [Cava](https://github.com/karlstav/cava) |
-| GUI File Manager | [Thunar](https://github.com/xfce-mirror/thunar) with [tumbler](https://github.com/xfce-mirror/tumbler) and [Caja](https://github.com/mate-desktop/caja)|
+| GUI File Manager | [Caja](https://github.com/mate-desktop/caja)|
 | CLI File Manager | [ranger](https://github.com/ranger/ranger) with [devicons](https://github.com/alexanderjeurissen/ranger_devicons) and [ueberzug](https://github.com/seebye/ueberzug) |
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
 | Text Reader (RSVP) | [fltrdr](https://octobanana.com/software/fltrdr) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
-| Screen-shot Tool | [scrot](https://github.com/dreamer/scrot)|
-| Terminal Emulator | [termite](https://github.com/thestinger/termite) and [alacritty](https://github.com/jwilm/alacritty) |
-| Other Terminal Emulators | [xst](https://github.com/gnotclub/xst) |
+| Screen-shot Tool | [maim] (https://github.com/naelstrof/maim)|
+| Terminal Emulator | [alacritty](https://github.com/jwilm/alacritty) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
 | Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
-| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips), [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) and [vi-mode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode) |
+| zsh Plugins | [zsh-autocompletions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-autosuggestions](https://github.com/zsh-users/zsh-completions), [k](https://github.com/supercrabtree/k), [alias-tips](https://github.com/djui/alias-tips), [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) and [vi-mode](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode) [z](https://github.com/rupa/z) |
 | CLI General Search Tool | [fzf](https://github.com/junegunn/fzf) |
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme](https://github.com/zSucrilhos/dotfiles/tree/master/Desktop/extras/speedcrunch-palenight-theme) |
 | CLI Calculator App | [calc](http://www.isthe.com/chongo/tech/comp/calc/) (Binary name: qalc) |
@@ -59,7 +58,8 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | Slightly modified version of [Arc-Dark](https://github.com/horst3180/arc-theme) |
-| Icon Theme | [Papirus-Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+| Icon Theme | [Papirus-Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) |
+| Wallpaper | [Here](https://unsplash.com/photos/n3i9j5qPiE4)| 
 
 ### Fonts used:
 | Font Name | Usage |

@@ -30,8 +30,8 @@ shadow-opacity = 1.0;
 shadow-radius = 9;
 
 menu-opacity = 1;
-inactive-opacity = 0.8;
-active-opacity = 1;
+inactive-opacity = 0.6;
+active-opacity = 1.0;
 frame-opacity = 0.4;
 inactive-opacity-override = false;
 alpha-step = 0.06;

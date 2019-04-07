@@ -31,6 +31,22 @@ super + ctrl + Up
 super + ctrl + Down
     pactl set-sink-volume 0 -5%
 
+#   Previous  MPD track
+F5
+    mpc prev
+
+#   Pause MPD Playback
+F6
+    mpc pause
+
+#   Unpause MPD Playback
+F7
+    mpc play
+
+#   Next MPD track
+F8
+    mpc next
+
 # Open pavucontrol
 ctrl + m
     pavucontrol &
@@ -47,30 +63,30 @@ super + shift + d
 
 # Start firefox
 super + F2
-    firefox & dunstify -u normal "Firefox" "Starting" &
+    firefox & dunstify -i ~/_my-scripts/firefox-52px.png -u normal "Firefox" "Starting" &
 
 # Start qutebrowser
 super + shift + F2
-    qutebrowser & dunstify -u normal "qutebrowser" "Starting" &
+    qutebrowser & dunstify -i ~/_my-scripts/qutebrowser-52px.png -u normal "qutebrowser" "Starting" &
 
 # Start caja
-super + F3
+super + F5
     caja &
 
 # Start ranger in xst
-super + shift + F3
+super + shift + F5
     alacritty -e $SHELL -i -c ranger &
 
-# Start ncmpcpp with xst
-super + F5
+# Start ncmpcpp 
+super + F7
     alacritty -e $SHELL -i -c ncmpcpp &
 
-super + shift + F5
+super + shift + F7
     cantata &
 
 # Start Telegram
 super + F6
-    telegram-desktop &
+    telegram-desktop & dunstify -i ~/_my-scripts/telegram-52px.png -u normal "Telegram" "Starting" &
 
 # Take a screenshot with maim
 Print

@@ -23,7 +23,7 @@ background = #002E3440
 background-alt = #22000000
 foreground = #D8DEE9
 foreground-alt = #666666
-primary = #88C0D0
+primary = #7CADBC
 secondary = #17728C
 alert = ${colors.primary}
 dimmed-text = #464E58
@@ -70,7 +70,7 @@ modules-left = bspwm
 modules-center = xwindow
 modules-right = eth filesystem temperature info-redshift-temp
 
-separator = | 
+separator = 
 
 ;tray-position = right
 ;tray-padding = 5
@@ -132,7 +132,7 @@ modules-left = powermenu cpu system-nvidia-smi memory
 modules-center = mpd
 modules-right = pulseaudio time popup-calendar
 
-separator = |
+separator = 
 
 ;tray-position = right
 ;tray-padding = 5
@@ -674,7 +674,7 @@ animation-discharging-framerate = 750
 type = internal/temperature
 interval = 0.5
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 65
 hwmon-path = /sys/devices/platform/it87.552/hwmon/hwmon2/temp1_input
 
 label = %temperature-c%
@@ -689,8 +689,6 @@ ramp-foreground = ${colors.primary}
 
 label-warn = %temperature-c% WARN
 label-warn-foreground = ${colors.alert}
-
-
 
 [module/powermenu]
 type = custom/menu

@@ -10,9 +10,13 @@ alias fbg="feh --bg-fill"
 
 alias mkdir="mkdir -v"
 alias cp="cp -v"
+alias mv="mv -v"
 
 alias lsa="exa -la"
 alias cdmusicd="cd /my-disks/160g/Downloads/_MyMusic(D)/"
 alias cdmusice="cd /my-disks/681g/Downloads/_MyMusic(E)/"
 
 alias tmux="tmux -2"  # for 256color
+
+alias ix.io="curl -F 'f:1=<-' ix.io"
+

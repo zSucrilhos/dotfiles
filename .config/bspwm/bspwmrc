@@ -60,12 +60,15 @@ bspc rule -a Pavucontrol state=floating focus=on center=on
 bspc rule -a Alacritty state=tiled focus=on
 bspc rule -a Viewnior focus=on state=tiled
 
-feh --bg-fill "/home/zsucrilhos/Desktop/lava_volcano_cliff_136106_3840x2160.jpg"
+redshift -x
+xrandr --output DVI-D-0 --gamma 0.9:0.9:0.9   
+
+feh --bg-fill "/home/zsucrilhos/Desktop/lava_volcano_cliff_136106_3840x2160.jpg" &
 
 xset r rate 300 80 &
 
 dunst &
-compton -b --config ~/.config/compton/compton.conf &
+compton -b --config /home/zsucrilhos/.config/compton/compton.conf &
 unclutter &
 numlockx on &
 udiskie &
@@ -73,10 +76,11 @@ xsetroot -cursor_name left_ptr &
 /usr/bin/mpDris2 &
 redshift -c /home/zsucrilhos/.config/redshift.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-xautolock -locker 'betterlockscreen -l dim' -time 1 -notify 25 -notifier dunstify -a System -u critical System 'Locking in 25 seconds.' -corners ---- -cornerdelay 10 -cornersize 20 &
+xautolock -locker 'betterlockscreen -l dim' -time 1 -notify 25 -corners ---- -cornerdelay 10 -cornersize 20 -notifier "dunstify -a System -u critical System 'Locking in 25 seconds.'" & 
 
 /home/zsucrilhos/_my-scripts/polybarstart-bspwm &
 /home/zsucrilhos/_my-scripts/dpms.sh &
+/home/zsucrilhos/_my-scripts/lightsOn.sh &
 
 dunstify -a System -u critical System $'System started sucessfully.\nAll apps running and OK.'
 
