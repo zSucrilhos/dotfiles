@@ -14,8 +14,10 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![cava+ncmpcpp](/artworks/wallpapers/Nord/cava_plus_ncmpcpp.png)
 ### htop:
 ![htop](/artworks/wallpapers/Nord/htop.png)
-### gtop (up) and nvtop (down):
+### gtop and nvtop:
 ![gtop and nvtop](/artworks/wallpapers/Nord/gtop_plus_nvtop.png)
+### glances:
+![glances](/artworks/wallpapers/Nord/glances.png)
 ### Neovim:
 ![nvim](/artworks/wallpapers/Nord/nvim.png)
 ### SublimeText3 (left) and VSCode (right):
@@ -45,7 +47,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | PDF Viewer | [zathura](https://github.com/pwmt/zathura) |
 | Text Reader (RSVP) | [fltrdr](https://octobanana.com/software/fltrdr) |
 | Wallpaper Setter | [feh](https://github.com/derf/feh) |
-| Screen-shot Tool | [maim] (https://github.com/naelstrof/maim)|
+| Screen-shot Tool | [maim](https://github.com/naelstrof/maim)|
 | Terminal Emulator | [alacritty](https://github.com/jwilm/alacritty) |
 | Terminal Multiplexer | [tmux](https://github.com/tmux/tmux) with [oh-my-tmux](https://github.com/gpakosz/.tmux) |
 | Shell | zsh with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) ([ponctual theme](https://github.com/dannynimmo/punctual-zsh-theme)) |
