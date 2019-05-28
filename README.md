@@ -8,7 +8,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 ![busy](/artworks/wallpapers/Nord/desktop.png)
 ### Busy:
 ![busy](/artworks/wallpapers/Nord/busy.png)
-### fofi:
+### rofi:
 ![rofi](/artworks/wallpapers/Nord/rofi.png)
 ### cava+ncmpcpp:
 ![cava+ncmpcpp](/artworks/wallpapers/Nord/cava_plus_ncmpcpp.png)
