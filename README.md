@@ -42,7 +42,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | :--- | :---- |
 | [Font Awesome Icons](https://fontawesome.com/cheatsheet) | Polybar |
 | [Iosevka NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) | GUI Apps, Dunst and Polybar |
-| [Mononoki NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/mononoki) variant: Mono | Terminal, SublimeText3 and VSCode |
+| [Mononoki NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Mononoki) variant: Mono | Terminal, SublimeText3 and VSCode |
 
 ### Neovim Plugins:
 | Plugin Name | Function |
