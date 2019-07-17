@@ -14,7 +14,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Web Browser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Video Player | [mpv](https://github.com/mpv-player/mpv) and [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
-| Image Viewer | [sxiv](https://github.com/muennich/sxiv) and [Viewnior](https://github.com/hellosiyan/Viewnior) |
+| Image Viewer | [sxiv](https://github.com/muennich/sxiv) and [pqiv](https://github.com/phillipberndt/pqiv)|
 | Music Player | [ncmpcpp](https://github.com/arybczak/ncmpcpp) with [MPD](https://github.com/MusicPlayerDaemon/MPD) and [Clementine](https://www.clementine-player.org/pt_BR/)|
 | Sound visualizer (spectrogram) | [Cava](https://github.com/karlstav/cava) |
 | GUI File Manager | [Caja](https://github.com/mate-desktop/caja)|
@@ -36,14 +36,13 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | Slightly modified version of [Arc-Dark](https://github.com/horst3180/arc-theme) |
 | Icon Theme | [Papirus-Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) |
-| Wallpaper | [Here](https://unsplash.com/photos/n3i9j5qPiE4)| 
 
 ### Fonts used:
 | Font Name | Usage |
 | :--- | :---- |
 | [Font Awesome Icons](https://fontawesome.com/cheatsheet) | Polybar |
 | [Iosevka NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) | GUI Apps, Dunst and Polybar |
-| [Hack NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) variant: Mono | Terminal, SublimeText3 and VSCode |
+| [Mononoki NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) variant: Mono | Terminal, SublimeText3 and VSCode |
 
 ### Neovim Plugins:
 | Plugin Name | Function |
@@ -56,7 +55,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) | True Sublime Text style multiple selections for Vim |
 | [auto-pairs](https://github.com/jiangmiao/auto-pairs) | Vim plugin, insert or delete brackets, parens, quotes in pair |
 | [vim-surround](https://github.com/tpope/vim-surround) | surround.vim: quoting/parenthesizing made simple |
-| [indentLine](https://github.com/Yggdroot/indentLine) | A vim plugin to display the indention levels with thin vertical lines |
+| [indentLine]( https://github.com/Yggdroot/indentLine) | A vim plugin to display the indention levels with thin vertical lines |
 | [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) | A Vim plugin for visually displaying indent levels in code |
 | [nerdtree](https://github.com/scrooloose/nerdtree) | A tree explorer plugin for vim. |
 | [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) | A plugin of NERDTree showing git status |
