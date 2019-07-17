@@ -31,33 +31,52 @@ super + ctrl + Up
 super + ctrl + Down
     pactl set-sink-volume 0 -5%
 
+# playback controls
 #   Previous  MPD track
-F5
+shift + F5
     mpc prev
 
 #   Pause MPD Playback
-F6
+shift + F6
     mpc pause
 
 #   Unpause MPD Playback
-F7
+shift + F7
     mpc play
 
 #   Next MPD track
-F8
+shift + F8
     mpc next
 
+#   Additional playback controls
+#   Stop the playback
+ctrl + shift + F5
+    mpc stop
+
+#   Repeat the playlist
+ctrl + shift + F6
+    mpc repeat
+
+#   Repeat single
+ctrl + shift + F7
+    mpc single
+
+#   Random mode
+ctrl + shift + F8
+    mpc random
+
+
+# General start-app bindings
+# start xfce4-appfinder
+
 # Open pavucontrol
-ctrl + m
+ctrl + alt + m
     pavucontrol &
 
 # Open pulseaudio eq
 ctrl + shift + m
     pulseaudio-equalizer-gtk &
-##########################
 
-# General start-app bindings
-# start xfce4-appfinder
 super + shift + d
     xfce4-appfinder
 
@@ -68,6 +87,14 @@ super + F2
 # Start qutebrowser
 super + shift + F2
     qutebrowser & dunstify -i ~/_my-scripts/qutebrowser-52px.png -u normal "qutebrowser" "Starting" &
+
+# Open vscode
+super + F3
+    code & dunstify -i ~/_my-scripts/code-52px.png -u normal "VSCode" "Started" &
+
+# Open atom
+super + shift + F3
+    atom & dunstify -i ~/_my-scripts/atom-52px.png -u normal "Atom" "Started" &
 
 # Start caja
 super + F5
@@ -108,6 +135,10 @@ super + ctrl + x
 # lock screen with betterlockscreen
 alt + shift + x
     betterlockscreen -l
+
+# turn off the monitor
+alt + shift + z
+    python ~/_my-disks/dpms.py
 
 super + shift + b
     bspc node @/ --balance
@@ -166,7 +197,10 @@ super + ctrl + {m,x,y,z}
 
 #
 # focus/swap
-#
+
+## focus parent node
+super + shift + a
+	bspc node -f @parent
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}

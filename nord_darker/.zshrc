@@ -33,9 +33,8 @@ export ZSH="/home/zsucrilhos/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="kphoen"
-ZSH_THEME="punctual"
 #ZSH_THEME="refined"
-
+ZSH_THEME="spaceship"
 
 
 # Set list of themes to pick from when loading at random
@@ -92,10 +91,10 @@ export UPDATE_ZSH_DAYS=14
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
-vi-mode
 zsh-completions
 zsh-autosuggestions
 alias-tips
+vi-mode
 k
 )
 
@@ -123,10 +122,15 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-source ~/.zsh-aliases
+# Sourcing externail files:
+source ~/.zsh-aliases # For alieases
 
 # Export ~/_my-scripts folder to the $PATH variable
 PATH="$HOME/_my-scripts:$PATH"
+
+# Export rust binaries to path
+PATH="$HOME/.cargo/bin:$PATH"
+
 export PATH
 export LANG=en_US.UTF-8
 
@@ -152,13 +156,16 @@ export PATH
 KEYTIMEOUT=1
 # show vim status
 # http://zshwiki.org/home/examples/zlewidgets
-function zle-line-init zle-keymap-select {
-RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-RPS2=$RPS1
-zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
+
+# Add the --INSERT-- and --NORMAL-- indicators
+#function zle-line-init zle-keymap-select {
+#RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#RPS2=$RPS1
+#zle reset-prompt
+#}
+#zle -N zle-line-init
+#zle -N zle-keymap-select
+    
 # add missing vim hotkeys
 # http://zshwiki.org/home/zle/vi-mode
 bindkey -a u undo
@@ -193,15 +200,24 @@ set -sg escape-time 1
 
 #### END ZSH Vi-Mode configs ####
 
-export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 export TERM=xterm-256color
-
+export GOPATH=$HOME/go
+export GOBIN=/usr/bin/go
 
 [[ $TERM = "xterm" ]] && { tmux -2 && exit 0; }
 
 # FZF finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# mkdircd
+function mkcd
+{
+  command mkdir $1 && cd $1
+}
+
 
 
 # wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
@@ -234,6 +250,6 @@ autoload -U compinit && compinit
 #    exec startx
 #fi
 
-
-
 source /home/zsucrilhos/Downloads/_cloned-repos/zaw/zaw.zsh
+
+

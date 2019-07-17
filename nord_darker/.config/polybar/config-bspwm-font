@@ -18,13 +18,13 @@
 
 [colors]
 ; Alha channel was 'cc'
-background = #2E343F
+background = #212733
 background-alt = #2C323D
 foreground = #D8DEE9
 foreground-alt = #8C8C8C
-primary = #84BAC9
-secondary = #5A6E85
-alert = #FFA000
+primary = #D9AA4C
+secondary = #B1D979
+alert = ${colors.primary}
 dimmed-text = #BCC0C5
 
 dim-value = 0.4
@@ -54,10 +54,10 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = "Iosevka Medium:pixelsize=9;1:antialias=true;2"
-font-1 = "Material Icons:size=12;3"
-font-2 = "Hack Nerd Font:pixelsize=10;1:antialias=true;2"
-font-3 = "Material Design Icons:size=13;2"
-font-4 = "mononoki Nerd Font:size=10;1"
+font-1 = "Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0"
+font-2 = "Font Awesome 5 Free:pixelsize=10;1:antialias=true;0"
+font-3 = "Material Icons:size=12;4:antialias=true0"
+font-4 = "Hack Nerd Font:pixelsize=10;1:antialias=true;2"
 
 modules-left = bspwm
 modules-center = xwindow
@@ -110,10 +110,10 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = "Iosevka Medium:pixelsize=9;1:antialias=true;2"
-font-1 = "Material Icons:size=12;3"
-font-2 = "Hack Nerd Font:pixelsize=10;1:antialias=true;2"
-font-3 = "Material Design Icons:size=14;2"
-font-4 = "mononoki Nerd Font:size=10;1"
+font-1 = "Font Awesome 5 Brands:pixelsize=10;1:antialias=true;0"
+font-2 = "Font Awesome 5 Free:pixelsize=10;1:antialias=true;0"
+font-3 = "Material Icons:size=12;4:antialias=true0"
+font-4 = "Hack Nerd Font:pixelsize=10;1:antialias=true;2"
 
 modules-left = powermenu cpu system-nvidia-smi memory
 modules-center = mpd
@@ -180,8 +180,7 @@ interval = 25
 
 mount-0 = /
 
-;format-mounted-prefix = " "
-format-mounted-prefix = " "
+format-mounted-prefix = " "
 format-mounted-prefix-foreground = ${colors.primary}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
@@ -246,12 +245,12 @@ icon-stop = 
 icon-prev = 
 icon-next = 
 icon-random = 
-icon-repeat = 
+icon-repeat = 
 #icon-single = 
-icon-single = 
+icon-single = 
 
 label-song = %artist% - %title%
-label-song-maxlen = 75
+label-song-maxlen = 60
 label-song-ellipsis = true
 
 label-offline =  mpd offline
@@ -360,8 +359,7 @@ bar-empty-foreground = #44
 type = internal/cpu
 interval = 0.5
 format = <label> 
-format-prefix = %{A1:gnome-system-monitor:}%{A}
-format-prefix-font = 4
+format-prefix = "CPU "
 label = %percentage:3%%
 format-prefix-foreground = ${colors.primary}
 ;label =   %percentage%%
@@ -401,9 +399,7 @@ interval = 5
 type = custom/script
 exec = ~/_my-scripts/system-nvidia-smi.sh
 interval = 1
-;format-prefix = "GPU "
-format-prefix = " "
-format-prefix-font = 4
+format-prefix = "GPU "
 format-prefix-foreground = ${colors.primary}
 label = %output:3%%
 click-left = exec nvidia-settings
@@ -412,9 +408,7 @@ click-left = exec nvidia-settings
 type = internal/memory
 interval = 1
 format = <label>
-;format-prefix = "RAM "
-format-prefix = 
-format-prefix-font = 4
+format-prefix = "RAM "
 format-prefix-foreground = ${colors.primary}
 label = %percentage_used:3%%
 ;label = 
@@ -484,39 +478,32 @@ interval = 1.0
 ping-interval = 10
 unknown-as-up = true
 
-format-connected = <ramp-signal>
-; To use when not using <ramp-signal>
-;format-connected-prefix = " "
-;format-connected-foreground = ${colors.primary}
+format-connected = <label-connected>
+format-connected-prefix = 
+format-connected-prefix-font = 3
+format-connected-foreground = ${colors.primary}
 
-label-connected = %signal:3% %ssid%
+label-connected = %signal%
 label-connected-foreground = ${colors.foreground}
 
-label-disconnected = 郎
-label-disconnected-foreground = ${colors.primary}
-label-disconnected-font = 4
+label-disconnected = " "
+label-disconnected-foreground = ${colors.dimmed-text}
 
 ;label-connected =  %essid%   %signal%    %downspeed%    %upspeed%
 ;label-connected =  %essid%   %signal%    %downspeed%
 ;label-connected =  %signal%   %downspeed%   %upspeed%
 
-ramp-signal-0 = 冷
-ramp-signal-1 = 爛
-ramp-signal-2 = 嵐
-ramp-signal-3 = 襤
-ramp-signal-4 = 蠟 
-ramp-signal-foreground = ${colors.primary}
-ramp-signal-font = 4
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
 
-
-
-animation-packetloss-0 = 
-animation-packetloss-0-foreground = ${colors.alert}
-animation-packetloss-1 = 
-animation-packetloss-1-foreground = ${colors.alert}
-
-animation-packetloss-framerate = 500
-
+;animation-packetloss-0 = 
+;animation-packetloss-0-foreground = #ffa64c
+;animation-packetloss-1 = 
+;animation-packetloss-1-foreground = ${bar/top.foreground}
+;animation-packetloss-framerate = 500
 
 [module/eth]
 type = internal/network
@@ -528,8 +515,8 @@ format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.primary}
 label-connected = %local_ip%
 
-;format-disconnected = " "
-;format-disconnected-foreground = #464E58
+format-disconnected = " "
+format-disconnected-foreground = #464E58
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -540,7 +527,7 @@ type = internal/date
 interval = 5
 
 time =⠀ %H:%M
-format-prefix =  
+format-prefix = 
 format-prefix-foreground = ${colors.primary}
 ;format-underline = #0a6cf5
 
@@ -562,7 +549,7 @@ type = custom/script
 exec = ~/_my-scripts/popup-calendar.sh
 interval = 5
 click-left = ~/_my-scripts/popup-calendar.sh --popup
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 
 [module/pulseaudio]
@@ -601,12 +588,12 @@ interval = 5
 format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 0
 label-volume = %percentage:3%%
-label-muted = " "
+label-muted = muted
 label-muted-foreground = ${colors.dimmed-text}
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 ramp-volume-foreground = ${colors.primary}
 
 ramp-headphones-0 = 
@@ -689,7 +676,9 @@ label = %temperature-c%
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 
-ramp-0 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 ramp-foreground = ${colors.primary}
 
 label-warn = %temperature-c% WARN

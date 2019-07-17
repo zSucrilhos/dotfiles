@@ -1,14 +1,8 @@
 " VimPlug START
 call plug#begin('~/.vim/plugged') 
 
-" Deoplete completion
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+"Conquer of Completion 
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Easy motion
 Plug 'https://github.com/easymotion/vim-easymotion'
@@ -29,11 +23,36 @@ Plug 'prabirshrestha/vim-lsp'
 " window manager
 Plug 'paroxayte/vwm.vim'
 
+" Emmet for vim
+Plug 'mattn/emmet-vim'
+
 " Enable multiple selection with <C-n>
 Plug 'terryma/vim-multiple-cursors'
 
 " Auto close tags and etc
 Plug 'jiangmiao/auto-pairs'
+
+" Fold code identation
+Plug 'pseewald/vim-anyfold'
+
+" prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': [
+    \ 'javascript',
+    \ 'typescript',
+    \ 'css',
+    \ 'less',
+    \ 'scss',
+    \ 'json',
+    \ 'graphql',
+    \ 'markdown',
+    \ 'vue',
+    \ 'lua',
+    \ 'php',
+    \ 'python',
+    \ 'ruby',
+    \ 'html', ] }
 
 " Tags mangement
 Plug 'tpope/vim-surround'
@@ -89,6 +108,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'yuttie/hydrangea-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'ayu-theme/ayu-vim'
+Plug 'https://github.com/tyrannicaltoucan/vim-deep-space'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+
+" Enable dark ayu theme
+"let ayucolor="mirage"   " for dark version of theme
 
 " Wal colorscheme
 Plug 'dylanaraps/wal.vim'
@@ -150,33 +176,95 @@ nnoremap <C-h>v :vsplit<CR>
 inoremap <C-h>h <Esc>:split<CR>
 inoremap <C-h>v <Esc>:vsplit<CR>
 
-
-" Enable deoplete at startup
-let g:deoplete#enable_at_startup = 1
-
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" Deoplete for C++
-" Change clang binary path
-call deoplete#custom#var('clangx', 'clang_binary', '/usr/local/bin/clang')
-
-" Change clang options
-call deoplete#custom#var('clangx', 'default_c_options', '')
-call deoplete#custom#var('clangx', 'default_cpp_options', '')
-
 "##############################
 
+"##############################
+" Conquer of Completion Settings
+
+" shortcut to open the config file with 'C'
+function! SetupCommandAbbrs(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() ==# ":" && getcmdline() ==# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use C to open coc config
+call SetupCommandAbbrs('C', 'CocConfig')
+
+" Open yank list with <space-y>
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+
+" use <tab> and <s-tab> to navigate the completion list
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" use <cr>  to confirm completion
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" make <cr> select the first item on the list and trigger completion when no item has   been selected
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
+" correct comment highlight 
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" Snippets configuration
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+
+" ##############################
+
+" ##############################
 " ALE Configs
 " Do not lint continuosly as the file is changed, only when saved
-let g:ale_lint_on_text_changed = 'never'
+"let g:ale_lint_on_text_changed = 'never'
 
 " Set the linting time in miliseconds
 let g:ale_lint_delay = 300
 
+" Enable ESLint only for JavaScript.
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+
+
+let g:ale_lint_on_save = 0
+let g:ale_lint_on_text_changed = 1
+
+" Change the format for echo messages
+let g:ale_echo_msg_error_str = 'ERROR'
+let g:ale_echo_msg_warning_str = 'WARNING'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+" Open all warning ins a window like Syntastic
+let g:ale_open_list = 1
+
+" Map the keys Ctrl+j and Ctrl+k to moving between errors 
+"nmap <silent> <C-o> <Plug>(ale_previous_wrap)
+"nmap <silent> <C-p> <Plug>(ale_next_wrap)
+
+
+
 "##############################
-"
+
 "##############################
+
 "LSP C++ server
 if executable('clangd')
     au User lsp_setup call lsp#register_server({
@@ -186,8 +274,10 @@ if executable('clangd')
         \ })
 endif
 
+" ##############################
 
-" NERDTree
+" ##############################
+" NERDTree settings
 "    Autostart NERDTree
 autocmd vimenter * NERDTree
 
@@ -197,10 +287,15 @@ autocmd VimEnter * wincmd p
 
 " Determines what char to use as identation guide
 let g:indentLine_char = '|'
+"##############################
+"Use ';' to open fzf file 'browser'
+map ; :Files<CR>
+
 
 "#######################################################
 "    Open NERDTree binding
 map <C-k> :NERDTreeToggle<CR>
+
 "    Open _my-sources folder
 map <F10> :NERDTree /home/zsucrilhos/_my-sources/
 
@@ -254,11 +349,10 @@ let g:lightline = {
       \ 'subseparator': { 'left': '', 'right': '' },
 \ }
 
-" Set the <leader> to <SPACE>
-let mapleader = "<SPACE>"
+" Set the <leader> to <Space>
+let mapleader = ","
 
-
-" Using bufferline only on lightline not on command bar
+"Using bufferline only on lightline not on command bar
 let g:bufferline_echo = 0
 "
 " Enable and toggle indent guides
@@ -334,3 +428,13 @@ set wrapscan
 " Bind <F3> to clear search history "
 map <F3> *:let @/=""
 
+
+
+" Put these lines at the very end of your vimrc file.
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
