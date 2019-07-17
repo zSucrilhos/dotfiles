@@ -1,0 +1,1 @@
+/home/zsucrilhos/Downloads/_cloned-repos/gofetch/GoFetch.py
