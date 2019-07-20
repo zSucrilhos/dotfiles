@@ -3,6 +3,12 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ![dotfiles-logo](/artworks/dotfile-logo.png)
 
+### Nord Dark
+![nord-dark](/artworks/wallpapers/Nord/busy.png)
+
+### Nord Darker
+![nord-darker](/artworks/wallpapers/Nord_Darker/busy.png)
+
 ## Overall View:
 | Program | Name |
 | :--- | :--- |
