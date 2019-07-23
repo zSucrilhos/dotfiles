@@ -1,7 +1,7 @@
 ### My _i3-gaps/bspwm_ dotfiles
 This is a repository dedicated to back-up and share my dotfiles when needed.
 
-![dotfiles-logo](/artworks/dotfile-logo.png)
+![dotfiles-logo](/artworks/dotfile-logo2.png)
 
 ### Nord Dark
 ![nord-dark](/artworks/wallpapers/Nord/busy.png)
