@@ -3,10 +3,10 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ![dotfiles-logo](/artworks/dotfile-logo2.png)
 
-### Nord Dark
+### Nord Dark (\~05/2019)
 ![nord-dark](/artworks/wallpapers/Nord/busy.png)
 
-### Nord Darker
+### Nord Darker (07/2019)
 ![nord-darker](/artworks/wallpapers/Nord_Darker/busy.png)
 
 ## Overall View:
