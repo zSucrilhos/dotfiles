@@ -16,7 +16,6 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | Window Manager | [bspwm](https://github.com/baskerville/bspwm)/[i3-gaps](https://github.com/Airblader/i3) |
 | Window Compositor | [compton-tryone-git](https://aur.archlinux.org/packages/compton-tryone-git/)
 | Bar | [polybar](https://github.com/jaagr/polybar) |
-| Colorscheme | [Nord](https://github.com/arcticicestudio/nord) |
 | Program Launcher | [rofi](https://github.com/DaveDavenport/rofi) |
 | Web Browser | [firefox](https://www.mozilla.org/en-CA/firefox/new/) and [qutebrowser](https://github.com/qutebrowser/qutebrowser) |
 | Video Player | [mpv](https://github.com/mpv-player/mpv) and [VLC](https://www.videolan.org/vlc/index.pt-BR.html) |
@@ -37,28 +36,25 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | GUI Calculator App | [speedcruch](https://speedcrunch.org/) with [my palenight-inspired theme](https://github.com/zSucrilhos/dotfiles/tree/master/Desktop/extras/speedcrunch-palenight-theme) |
 | CLI Calculator App | [calc](http://www.isthe.com/chongo/tech/comp/calc/) (Binary name: qalc) |
 | Main Code Editor | [neovim](https://neovim.io/) |
-| Other Code Editors | [VSCode](https://code.visualstudio.com/) and [SublimeText3](https://www.sublimetext.com/) |
+| Other Code Editors | [VSCode](https://code.visualstudio.com/) |
 | Lockscreen | [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) |
 | Notification daemon | [Dunst](https://github.com/dunst-project/dunst) (dunstify, libnotify) |
 | GTK+ Theme | Slightly modified version of [Arc-Dark](https://github.com/horst3180/arc-theme) |
 | Icon Theme | [Papirus-Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) |
 
-### Fonts used:
-| Font Name | Usage |
-| :--- | :---- |
-| [Font Awesome Icons](https://fontawesome.com/cheatsheet) | Polybar |
-| [Iosevka NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) | GUI Apps, Dunst and Polybar |
-| [Mononoki NerdFont](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Mononoki) variant: Mono | Terminal, SublimeText3 and VSCode |
-
 ### Neovim Plugins:
 | Plugin Name | Function |
 | :--- | :--- |
-| [palenight.vim](https://github.com/drewtempelmeyer/palenight.vim) | Soothing color scheme for your favorite [best] text editor |
 | [VimPlug](https://github.com/junegunn/vim-plug) | A minimalist Vim plugin manager. |
 | [Deoplete](https://github.com/Shougo/deoplete.nvim) | Dark powered asynchronous completion framework for neovim/Vim8 |
 | [A.L.E](https://github.com/w0rp/ale) | Asynchronous Lint Engine |
+| [async.vim](https://github.com/prabirshrestha/async.vim) | LSP Completion Engine for C++ |
 | [vim-lsp](https://github.com/prabirshrestha/vim-lsp) | Async Language Server Protocol plugin for vim8 and neovim. |
 | [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) | True Sublime Text style multiple selections for Vim |
+| [emmet](https://github.com/mattn/emmet-vim) | Emmet for vim |
+| [prettier](prettier/vim-prettier) | Prettier for vim |
+| [vim-misc](https://xolox/vim-misc) | Vim misc |
+| [vim-notes](https://xolox/vim-notes)| Vim notes |
 | [auto-pairs](https://github.com/jiangmiao/auto-pairs) | Vim plugin, insert or delete brackets, parens, quotes in pair |
 | [vim-surround](https://github.com/tpope/vim-surround) | surround.vim: quoting/parenthesizing made simple |
 | [indentLine]( https://github.com/Yggdroot/indentLine) | A vim plugin to display the indention levels with thin vertical lines |
@@ -75,6 +71,10 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 | [nerdcommenter](https://github.com/scrooloose/nerdcommenter) | Vim plugin for intensely orgasmic commenting |
 | [vim-repeat](https://github.com/tpope/vim-repeat) | repeat.vim: enable repeating supported plugin maps with "." |
 | [vim-easyclip](https://github.com/svermeulen/vim-easyclip) | Simplified clipboard functionality for Vim |
+| [vim-easymotion](https://github.com/easymotion/vim-easymotion) |
+| [quick-scope](https://github.com/unblevable/quick-scope) | Lightning fast left-right movement  |
+| [vim-bufferline](https://github.com/bling/vim-bufferline) | Show a list of buffers |
+| [vwm.vim](https://github.com/paroxayte/vwm.vim) | Vim window manager |
 | [tmux-complete.vim](https://github.com/wellle/tmux-complete.vim) | Vim plugin for insert mode completion of words in adjacent tmux panes |
 | [vim-gitgutter](https://github.com/airblade/vim-gitgutter) | A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks. |
 | [eunuch.vim](https://github.com/tpope/vim-eunuch) | eunuch.vim: Helpers for UNIX |

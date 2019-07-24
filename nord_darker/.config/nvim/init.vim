@@ -5,13 +5,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " Easy motion
-Plug 'https://github.com/easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 
 " Lightning fast left-right movement 
-Plug 'https://github.com/unblevable/quick-scope'
+Plug 'unblevable/quick-scope'
 
 " Show a list of buffers
-Plug 'https://github.com/bling/vim-bufferline'
+Plug 'bling/vim-bufferline'
 
 " Linting with ALE
 Plug 'w0rp/ale'
@@ -54,7 +54,7 @@ Plug 'prettier/vim-prettier', {
     \ 'ruby',
     \ 'html', ] }
 
-" Tags mangement
+" Tags management
 Plug 'tpope/vim-surround'
 
 " Identation guides for better visualization
