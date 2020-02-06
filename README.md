@@ -3,11 +3,14 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ![dotfiles-logo](/artworks/dotfile-logo2.png)
 
-### Nord Dark (\~05/2019)
-![nord-dark](/artworks/wallpapers/Nord/busy.png)
+### Nord Darkest (02/2020)
+![nord-darker](/artworks/wallpapers/Nord_Darkest/busy.png)
 
 ### Nord Darker (07/2019)
 ![nord-darker](/artworks/wallpapers/Nord_Darker/busy.png)
+
+### Nord Dark (\~05/2019)
+![nord-dark](/artworks/wallpapers/Nord/busy.png)
 
 ## Overall View:
 | Program | Name |
