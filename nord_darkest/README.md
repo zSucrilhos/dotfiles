@@ -10,7 +10,7 @@
 ### htop:
 ![htop](/artworks/wallpapers/Nord_Darkest/htop.png)
 ### gtop and nvtop:
-![gtop and nvtop](/artworks/wallpapers/Nord_Darkest/gtop_plus_nvtop.png)
+![gtop and nvtop](/artworks/wallpapers/Nord_Darkest/nvtop_plus_gtop.png)
 ### glances:
 ![glances](/artworks/wallpapers/Nord_Darkest/glances.png)
 ### neovim:
