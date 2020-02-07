@@ -85,4 +85,7 @@ This is a repository dedicated to back-up and share my dotfiles when needed.
 
 ##############################################################################################
 
+## To do:
+Move .mpd and .ncmpcpp to .config folder
+
 
