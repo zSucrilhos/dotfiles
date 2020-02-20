@@ -113,12 +113,26 @@ super + shift + F5
 super + F7
     alacritty -e $SHELL -i -c ncmpcpp &
 
+<<<<<<< HEAD
 super + shift + F7
     cantata &
 
 # Start Telegram
 super + F6
     telegram-desktop & dunstify -i ~/_my-scripts/_icons/telegram-52px.png -u normal "Telegram" "Starting"
+=======
+# Start cantata
+super + shift + F7
+    cantata &
+
+# Start gnome-system-monitor
+ctrl + shift + Escape
+    gnome-system-monitor
+
+# Start Telegram
+super + F6
+    kotatogram-desktop & dunstify -i ~/_my-scripts/_icons/kotatogram-52px.png -u normal "Telegram" "Starting"
+>>>>>>> Modified something
 
 # Take a screenshot with maim
 Print
@@ -149,7 +163,11 @@ alt + shift + x
 
 # turn off the monitor
 alt + shift + z
+<<<<<<< HEAD
     python ~/_my-disks/dpms.py
+=======
+    python ~/_my-scripts/dpms.py
+>>>>>>> Modified something
 
 
 # balance the windows

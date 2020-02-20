@@ -10,7 +10,11 @@
 ### htop:
 ![htop](/artworks/wallpapers/Nord_Darkest/htop.png)
 ### gtop and nvtop:
+<<<<<<< HEAD
 ![gtop and nvtop](/artworks/wallpapers/Nord_Darkest/nvtop_plus_gtop.png)
+=======
+![gtop and nvtop](/artworks/wallpapers/Nord_Darkest/gtop_plus_nvtop.png)
+>>>>>>> Modified something
 ### glances:
 ![glances](/artworks/wallpapers/Nord_Darkest/glances.png)
 ### neovim:

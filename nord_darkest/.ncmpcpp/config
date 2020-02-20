@@ -50,7 +50,11 @@ visualizer_look = "+|"
 
 
 ## Navigation ##
+<<<<<<< HEAD
 cyclic_scrolling = "yes"
+=======
+cyclic_scrolling = "no"
+>>>>>>> Modified something
 header_text_scrolling = "yes"
 jump_to_now_playing_song_at_start = "yes"
 lines_scrolled = "2"
@@ -92,4 +96,11 @@ ignore_leading_the = "yes"
 empty_tag_marker = ""
 
 
+<<<<<<< HEAD
+=======
+####### SHOW ALBUM ARTS #######
+#execute_on_song_change = "~/.ncmpcpp/albumart-2.sh"
+
+
+>>>>>>> Modified something
 
