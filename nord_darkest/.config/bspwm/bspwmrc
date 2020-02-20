@@ -84,7 +84,7 @@ bspc rule -a Pulseffects state=floating focus=on
 bspc rule -a Pulseaudio-equalizer-gtk state=floating focus=on
 bspc rule -a Pavucontrol state=floating focus=on center=on
 bspc rule -a __main__.py state=floating focus=on center=on
-bspc rule -a Gnome-system-monitor state=floating focus=on center=on
+bspc rule -a Gnome-system-monitor state=tiled focus=on center=on
 
 bspc rule -a Alacritty state=tiled focus=on
 bspc rule -a Viewnior focus=on state=tiled

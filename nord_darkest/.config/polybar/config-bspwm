@@ -74,7 +74,7 @@ font-4 = "mononoki Nerd Font:size=10;1"
 
 modules-left = bspwm
 modules-center = 
-modules-right = mpd info-redshift-temp filesystem pulseaudio time popup-calendar powermenu 
+modules-right = mpd info-redshift-temp my-crypto filesystem pulseaudio time popup-calendar powermenu 
 
 separator = 
 
@@ -162,6 +162,24 @@ cursor-click = pointer
 type = custom/script
 interval = 300
 exec = ~/_my-scripts/polybar-crypto/crypto.py
+
+[module/my-crypto]
+type = custom/script
+exec = ~/_my-scripts/my-crypto.sh
+interval = 800
+
+;label = "U$D "
+
+prefix-foreground = ${colors.foreground}
+
+format-prefix = " "
+format-prefix-font = 4
+format-prefix-foreground = ${colors.primary}
+
+[module/ticker-crypto]
+type = custom/script
+exec = ~/_my-scripts/ticker-crypto.sh
+interval = 600
 
 [module/info-redshift-temp]
 type = custom/script

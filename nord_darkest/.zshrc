@@ -34,7 +34,10 @@ export ZSH="/home/zsucrilhos/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="kphoen"
 #ZSH_THEME="refined"
-ZSH_THEME="spaceship"
+
+#ZSH_THEME="spaceship"
+
+# Using starship prompt! (at the end of the file)
 
 
 # Set list of themes to pick from when loading at random
@@ -252,4 +255,8 @@ autoload -U compinit && compinit
 
 source /home/zsucrilhos/Downloads/_cloned-repos/zaw/zaw.zsh
 
+# Set the location for the config file of starship prompt
+#export STARSHIP_CONFIG="/home/zsucrilhos/.config/starship.toml"
 
+# Using starship prompt!
+eval "$(starship init zsh)"

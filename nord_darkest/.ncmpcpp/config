@@ -50,7 +50,7 @@ visualizer_look = "+|"
 
 
 ## Navigation ##
-cyclic_scrolling = "yes"
+cyclic_scrolling = "no"
 header_text_scrolling = "yes"
 jump_to_now_playing_song_at_start = "yes"
 lines_scrolled = "2"
@@ -90,6 +90,10 @@ display_bitrate = "yes"
 follow_now_playing_lyrics = "yes"
 ignore_leading_the = "yes"
 empty_tag_marker = ""
+
+
+####### SHOW ALBUM ARTS #######
+#execute_on_song_change = "~/.ncmpcpp/albumart-2.sh"
 
 
 

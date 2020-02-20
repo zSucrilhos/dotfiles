@@ -161,10 +161,10 @@ set nrformats=bin
 
 " Set Python2 path for neovim
 let g:python_host_prog = "/usr/bin/python2"
+let g:python3_host_prog = "/usr/bin/python3"
 
 
-
-"#################### Remaping some keys
+"##### Remaping some keys #####
 "
 " Tabs mappings
 nnoremap <C-t><Left>  :tabp<CR>
@@ -197,12 +197,9 @@ inoremap <C-h>h <Esc>:spli<CR>
 inoremap <C-h>v <Esc>:vsplit<CR>
 
 "
-"
-"
 "#######################################################
 " COC - Conquer of Completion configuration
 "#######################################################
-
 
 " shortcut to open the config file with 'C'
 function! SetupCommandAbbrs(from, to)
@@ -251,13 +248,18 @@ imap <C-l> <Plug>(coc-snippets-expand)
 " Use <C-j> for select text for visual placeholder of snippet.
 vmap <C-j> <Plug>(coc-snippets-select)
 
+
+"#######################################################
+" Vim-Notes configurations
 "#######################################################
 
+:let g:notes_directories = ['~/Documents/Notes']
 
 
 "#######################################################
 " Polyglot vim configuration
 "#######################################################
+
 let g:polyglot_disabled=['markdown']
 
 
