@@ -20,6 +20,7 @@ alias cdmusice="cd /my-disks/681g/Downloads/_MyMusic(E)/"
 alias tmux="tmux -2"  # for 256color
 
 alias ix.io="curl -F 'f:1=<-' ix.io"
+alias cwd="echo ${PWD##*/}"
 
 alias please="sudo"
 
