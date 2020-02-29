@@ -138,7 +138,7 @@
 	
 18 - Download and install grub:
 
-	# pacman -S grub
+	# pacman -S grub os-prober efibootmgr ntfs-3g
 	# grub-install /dev/sda
 	
 	
