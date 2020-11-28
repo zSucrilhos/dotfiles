@@ -96,6 +96,7 @@ plugins=(
 git
 zsh-completions
 zsh-autosuggestions
+zsh-syntax-highlighting
 alias-tips
 vi-mode
 k
@@ -132,9 +133,11 @@ source ~/.zsh-aliases # For alieases
 PATH="$HOME/_my-scripts:$PATH"
 
 # Export rust binaries to path
-PATH="$HOME/.cargo/bin:$PATH"
+PATH="$HOME/.cargo/bin/:$PATH"
 
-export PATH
+# Expoft gem binaries to path
+PATH="$HOME/.gem/ruby/2.7.0/bin/:$PATH"
+
 export LANG=en_US.UTF-8
 
 # Preferred editor 
@@ -222,6 +225,12 @@ function mkcd
 }
 
 
+# Use vim to open man pages
+export MANPAGER="vim -M +MANPAGER -"
+
+# Use nvim to open man pages
+#export MANPAGER="nvim -c 'set ft=man' -"
+
 
 # wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
 
@@ -260,3 +269,4 @@ source /home/zsucrilhos/Downloads/_cloned-repos/zaw/zaw.zsh
 
 # Using starship prompt!
 eval "$(starship init zsh)"
+

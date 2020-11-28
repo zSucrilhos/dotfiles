@@ -5,7 +5,6 @@ apache
 arandr
 arc-gtk-theme
 arc-icon-theme
-aria2
 autoconf
 automake
 bash
@@ -199,7 +198,6 @@ python-pip
 python-pywal
 python2-pip
 qbittorrent
-qt5-styleplugins
 qt5ct
 qutebrowser
 redshift
@@ -211,7 +209,6 @@ s-nail
 s-tui
 samba
 scrot
-seahorse
 sed
 sl
 solaar

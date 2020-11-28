@@ -1,135 +1,163 @@
 " VimPlug START
 call plug#begin('~/.vim/plugged') 
 
-"Conquer of Completion 
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+" Only apply this if on vscode
+if exists('g:vscode')
 
-" Easy motion
-Plug 'https://github.com/easymotion/vim-easymotion'
+    " Vim easy motion fork for vscode
+    "Plug 'asvetliakov/vim-easymotion'
 
-" Lightning fast left-right movement 
-Plug 'https://github.com/unblevable/quick-scope'
+    " Nice clipboard
+    Plug 'svermeulen/vim-easyclip'
 
-" Show a list of buffers
-Plug 'https://github.com/bling/vim-bufferline'
+else
+    Plug 'dstein64/vim-startuptime'
+    
+    "Conquer of Completion 
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Linting with ALE
-Plug 'w0rp/ale'
+    " Easy motion
+    "Plug 'https://github.com/easymotion/vim-easymotion'
 
-" LSP Completion Engine for C++
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+    " Lightning fast left-right movement 
+    Plug 'https://github.com/unblevable/quick-scope'
 
-" Window manager
-Plug 'paroxayte/vwm.vim'
+    " Show a list of buffers
+    Plug 'https://github.com/bling/vim-bufferline'
 
-" Emmet for vim
-Plug 'mattn/emmet-vim'
+    " Linting with ALE
+    Plug 'w0rp/ale'
 
-" Enable multiple selection with <C-n>
-Plug 'terryma/vim-multiple-cursors'
+    " LSP Completion Engine for C++
+    Plug 'prabirshrestha/async.vim'
+    Plug 'prabirshrestha/vim-lsp'
 
-" Auto close tags and etc
-Plug 'jiangmiao/auto-pairs'
+    " Window manager
+    Plug 'paroxayte/vwm.vim'
 
-" Fold code identation
-Plug 'pseewald/vim-anyfold'
+    " Emmet for vim
+    Plug 'mattn/emmet-vim'
 
-" Fast folding
-Plug 'https://github.com/Konfekt/FastFold'
+    " Enable multiple selection with <C-n>
+    Plug 'terryma/vim-multiple-cursors'
 
-" Pretty start screen
-Plug 'https://github.com/mhinz/vim-startify'
+    " Auto close tags and etc
+    Plug 'jiangmiao/auto-pairs'
 
-" Prettier
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': [
-    \ 'javascript',
-    \ 'typescript',
-    \ 'css',
-    \ 'less',
-    \ 'scss',
-    \ 'json',
-    \ 'graphql',
-    \ 'markdown',
-    \ 'vue',
-    \ 'lua',
-    \ 'php',
-    \ 'python',
-    \ 'ruby',
-    \ 'html', ] }
+    " Match tags
+    Plug 'gregsexton/MatchTag'
 
-" Tags mangement
-Plug 'tpope/vim-surround'
+    " Auto close (x)HTML tags
+    Plug 'alvan/vim-closetag'
 
-" Identation guides for better visualization
-Plug 'Yggdroot/indentLine'
-"Plug 'nathanaelkane/vim-indent-guides'
+    " Fold code identation
+    Plug 'pseewald/vim-anyfold'
 
-" File manager sidebar and git integration
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+    " Fast folding
+    Plug 'https://github.com/Konfekt/FastFold'
 
-" NERDTree syntax highlighting
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    " Pretty start screen
+    Plug 'https://github.com/mhinz/vim-startify'
 
-" Undo history
-Plug 'mbbill/undotree'
+    " Prettier
+    Plug 'prettier/vim-prettier', {
+    \ 'do': 'yarn install',
+    \ 'for': [
+        \ 'javascript',
+        \ 'typescript',
+        \ 'css',
+        \ 'less',
+        \ 'scss',
+        \ 'json',
+        \ 'graphql',
+        \ 'markdown',
+        \ 'vue',
+        \ 'lua',
+        \ 'php',
+        \ 'python',
+        \ 'ruby',
+        \ 'html', ] }
 
-" Nice icons
-Plug 'ryanoasis/vim-devicons'
+    " Tags mangement
+    Plug 'tpope/vim-surround'
 
-" Syntax highlighting
-Plug 'vim-syntastic/syntastic'
-Plug 'sheerun/vim-polyglot'
-Plug 'ap/vim-css-color'
+    " Identation guides for better visualization
+    Plug 'Yggdroot/indentLine'
+    "Plug 'nathanaelkane/vim-indent-guides'
 
-" Status bar
-Plug 'itchyny/lightline.vim'
+    " File manager sidebar and git integration
+    Plug 'scrooloose/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Easier comments
-Plug 'scrooloose/nerdcommenter'
+    " NERDTree syntax highlighting
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-" Don't repeat yourself!
-Plug 'tpope/vim-repeat'
+    " Undo history
+    Plug 'mbbill/undotree'
 
-" Nice clipboard
-Plug 'svermeulen/vim-easyclip'
-
-" Completions from other terminals inside tmux
-Plug 'wellle/tmux-complete.vim'
-
-" Git wrapper
-Plug 'airblade/vim-gitgutter'
-
-" Unix FS operations inside vim!
-Plug 'tpope/vim-eunuch'
-
-" fzf search
-Plug 'junegunn/fzf.vim'
+    " Nice icons
+    Plug 'ryanoasis/vim-devicons'
 
 
-" My themes
-Plug 'yuttie/hydrangea-vim'
-Plug 'arcticicestudio/nord-vim'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'ayu-theme/ayu-vim'
-Plug 'https://github.com/tyrannicaltoucan/vim-deep-space'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+    "#######################################################
+    " Polyglot vim configuration
+    "#######################################################
 
-" Enable dark ayu theme
-"let ayucolor="mirage"   " for dark version of theme
+        let g:polyglot_disabled=['markdown']
 
-" Wal colorscheme
-Plug 'dylanaraps/wal.vim'
+    "#######################################################
+    " Apparently this needs to come before the plugin itself
+    "#######################################################
+"
+    " Syntax highlighting
+    Plug 'vim-syntastic/syntastic'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'ap/vim-css-color'
 
-" Vim-misc
-Plug 'xolox/vim-misc'
+    " Status bar
+    Plug 'itchyny/lightline.vim'
 
-" Vim-notes
-Plug 'xolox/vim-notes'
+    " Easier comments
+    Plug 'scrooloose/nerdcommenter'
+
+    " Don't repeat yourself!
+    Plug 'tpope/vim-repeat'
+
+    " Nice clipboard
+    Plug 'svermeulen/vim-easyclip'
+
+    " Completions from other terminals inside tmux
+    Plug 'wellle/tmux-complete.vim'
+
+    " Git wrapper
+    Plug 'airblade/vim-gitgutter'
+
+    " Unix FS operations inside vim!
+    Plug 'tpope/vim-eunuch'
+
+    " fzf search
+    Plug 'junegunn/fzf.vim'
+
+    " My themes
+    Plug 'yuttie/hydrangea-vim'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'drewtempelmeyer/palenight.vim'
+    Plug 'phanviet/vim-monokai-pro'
+    Plug 'ayu-theme/ayu-vim'
+    Plug 'https://github.com/tyrannicaltoucan/vim-deep-space'
+    Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+
+    " Wal colorscheme
+    Plug 'dylanaraps/wal.vim'
+
+    " Vim-misc
+    Plug 'xolox/vim-misc'
+
+    " Vim-notes
+    Plug 'xolox/vim-notes'
+
+endif  " End if exists('g:vscode')
+
 
 " VimPlug END
 call plug#end()
@@ -196,12 +224,20 @@ nnoremap <C-h>v :vsplit<CR> " Split vertically
 inoremap <C-h>h <Esc>:spli<CR>
 inoremap <C-h>v <Esc>:vsplit<CR>
 
-"
+
+
+" Enable dark ayu theme
+"let ayucolor="light"  " for light version of theme
+"let ayucolor="mirage" " for mirage version of theme
+"let ayucolor="dark"   " for dark version of theme
 "#######################################################
 " COC - Conquer of Completion configuration
 "#######################################################
 
-" shortcut to open the config file with 'C'
+" set coc.nvim path
+set runtimepath^=/home/zsucrilhos/.vim/plugged/coc.nvim
+
+" Shortcut to open the config file with 'C'
 function! SetupCommandAbbrs(from, to)
   exec 'cnoreabbrev <expr> '.a:from
         \ .' ((getcmdtype() ==# ":" && getcmdline() ==# "'.a:from.'")'
@@ -217,7 +253,7 @@ call SetupCommandAbbrs('C', 'CocConfig')
 " Open yank list with <space-y>
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
-" use <tab> for trigger completion and navigate to the next complete item
+" Use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -228,17 +264,17 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-" use <tab> and <s-tab> to navigate the completion list
+" Use <tab> and <s-tab> to navigate the completion list
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" use <cr>  to confirm completion
+" Use <cr>  to confirm completion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" make <cr> select the first item on the list and trigger completion when no item has   been selected
+" Make <cr> select the first item on the list and trigger completion when no item has   been selected
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
-" correct comment highlight 
+" Correct comment highlight 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " Snippets configuration
@@ -249,18 +285,27 @@ imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-j> <Plug>(coc-snippets-select)
 
 
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+"
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+
+
 "#######################################################
 " Vim-Notes configurations
 "#######################################################
 
-:let g:notes_directories = ['~/Documents/Notes']
-
-
-"#######################################################
-" Polyglot vim configuration
-"#######################################################
-
-let g:polyglot_disabled=['markdown']
+let g:notes_directories = ['~/Documents/Notes']
 
 
 
@@ -268,19 +313,21 @@ let g:polyglot_disabled=['markdown']
 " ALE Configuration (linter)
 "#######################################################
 "
-" Do not lint continuosly as the file is changed, only when saved
-"let g:ale_lint_on_text_changed = 'never'
-
 " Set the linting time in miliseconds
 let g:ale_lint_delay = 300
 
-" Enable ESLint only for JavaScript.
+" Enable ESLint only for JavaScript and pylint for Python.
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'python': ['pylint'],
 \}
 
+" Wether to lint on save or when text is changed
 let g:ale_lint_on_save = 0
 let g:ale_lint_on_text_changed = 1
+
+" Keep the gutter open at all times
+let g:ale_sign_column_always = 1
 
 " Change the format for echo messages
 let g:ale_echo_msg_error_str = 'ERROR'
@@ -294,6 +341,13 @@ let g:ale_open_list = 1
 nmap <silent> <C-o> <Plug>(ale_previous_wrap)
 nmap <silent> <C-p> <Plug>(ale_next_wrap)
 
+" Change the icons for warnings and errors
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+
+" Change the colours of the icons
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
 
 
@@ -309,29 +363,33 @@ if executable('clangd')
         \ })
 endif
 
+"#######################################################
 
 
+" Only apply this if on vscode
+if exists('g:vscode')
+
+else
 "#######################################################
 " NERDTree settings
 "#######################################################
 
-"    Autostart NERDTree
-autocmd vimenter * NERDTree
+    "    Autostart NERDTree
+    autocmd vimenter * NERDTree
 
-"    Autostart in edit area
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+    "    Autostart in edit area
+    autocmd VimEnter * NERDTree
+    autocmd VimEnter * wincmd p
 
-" Determines what char to use as identation guide
-let g:indentLine_char = '|'
+    " Determines what char to use as identation guide
+    let g:indentLine_char = '|'
 
-"    Open NERDTree binding
-map <C-k> :NERDTreeToggle<CR>
+    "    Open NERDTree binding
+    map <C-k> :NERDTreeToggle<CR>
 
-"    Open _my-sources folder
-map <F10> :NERDTree /home/zsucrilhos/_my-sources/
-
-
+    "    Open _my-sources folder
+    map <F10> :NERDTree /home/zsucrilhos/_my-sources/
+endif
 
 
 "#######################################################
@@ -340,6 +398,7 @@ map <F10> :NERDTree /home/zsucrilhos/_my-sources/
 "
 "Use 'F9' to open fzf file 'browser'
 map <F9> :Files<CR>
+
 
 
 "#######################################################
@@ -401,7 +460,8 @@ let g:lightline = {
 "#######################################################
 
 " Set the <leader> to <Space>
-let mapleader = "<Space>"
+"let mapleader = "<Space>"
+let mapleader = ","
 
 "Using bufferline only on lightline not on command bar
 let g:bufferline_echo = 0
@@ -425,7 +485,6 @@ let g:webdevicons_enable_nerdtree = 1
 
 " Whether or not to show the nerdtree brackets around flags
 let g:webdevicons_conceal_nerdtree_brackets = 1
-
 
 
 "#######################################################
@@ -505,6 +564,7 @@ map <F3> *:let @/=""
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
 packloadall
+
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL

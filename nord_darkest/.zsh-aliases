@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 alias sxiv="sxiv -asf"
 alias k="k -h"
 alias zsh-config="nvim ~/.zshrc"
@@ -22,12 +21,14 @@ alias tmux="tmux -2"  # for 256color
 
 alias ix.io="curl -F 'f:1=<-' ix.io"
 
-alias please="sudo"
+alias xclip="xclip -i -selection clipboard"
+
+alias ys="yarn start"
 
 # Faster java compile/run
 alias jc="javac"
 alias j="java"
-=======
+
 alias sxiv="sxiv -asf"
 alias k="k -h"
 alias zsh-config="nvim ~/.zshrc"
@@ -53,8 +54,8 @@ alias ix.io="curl -F 'f:1=<-' ix.io"
 alias cwd="echo ${PWD##*/}"
 
 alias please="sudo"
+alias pewpew="sudo"
 
 # Faster java compile/run
 alias jc="javac"
 alias j="java"
->>>>>>> a9d587b5695d36e91ba8b09c59176df45747c4c5

@@ -55,8 +55,9 @@ scrolling:
   # scrollback is enabled (history > 0).
   multiplier: 3
 
+  #DEPRECATED
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: true
+  #auto_scroll: true
 
 # Spaces per Tab (changes require restart)
 #
@@ -65,7 +66,7 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 4
+#tabspaces: 4   DEPRECATED
 
 # Font configuration (changes require restart)
 font:
@@ -145,6 +146,7 @@ debug.persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+
 # Colors (nord)
 colors:
   primary:
@@ -184,6 +186,7 @@ colors:
     magenta: '0xB48EAD'
     cyan: '0x8FBCBB'
     white: '0xECEFF4'
+
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
@@ -208,7 +211,7 @@ colors:
   #
   indexed_colors: []
 
-# Visual Bell
+# Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
 # rung, the terminal background will be set to white and transition back to the
@@ -229,7 +232,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
@@ -238,7 +241,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.75
+background_opacity: 0.90
 
 # Mouse bindings
 #
@@ -295,7 +298,7 @@ selection:
   save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
+window.dynamic_title: true
 
 cursor:
   # Cursor style

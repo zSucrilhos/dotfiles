@@ -1,8 +1,11 @@
 xrdb -merge ~/.Xresources
-xset dpms 330 360 360
+#xset dpms 330 360 360
 
-#exec bspwm
-#exec startkde
+# Set the keyboard layout
+setxkbmap -layout br -variant abnt2
+
+exec bspwm
+#exec startdde
 
 # startx bspwm|startx i3
 #case $2 in

@@ -1,6 +1,5 @@
 arno-iptables-firewall
 betterlockscreen-git
-blender-2.8-bin
 breeze-obsidian-cursor-theme
 catsay
 cava
@@ -45,10 +44,8 @@ spacefm
 starship-bin
 sublime-text-dev
 toilet
-tomboy
 ttf-fixedsys-excelsior-linux
 ttf-iosevka
-ttf-material-icons
 ttf-unifont
 ufetch-git
 update-grub

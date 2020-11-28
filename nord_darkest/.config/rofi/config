@@ -2,7 +2,7 @@
 rofi.modi:                           run,drun,window
 
 ! "Window width" Set from: Default
-rofi.width:                          1368
+rofi.width:                          1024
 
 ! "Number of lines" Set from: Default
 rofi.lines:                          8
@@ -11,7 +11,7 @@ rofi.lines:                          8
 rofi.columns:                        2
 
 ! "Font to use" Set from: Default
-rofi.font:                           Iosevka 12
+rofi.font:                           Iosevka Bold 12
 
 ! "Border width" Set from: Default
 rofi.bw:                             8
@@ -23,7 +23,7 @@ rofi.location:                       2
 rofi.padding:                        5
 
 ! "Y-offset relative to location" Set from: Default
-rofi.yoffset:                       -2
+rofi.yoffset:                       180
 
 ! "X-offset relative to location" Set from: Default
 rofi.xoffset:                        0

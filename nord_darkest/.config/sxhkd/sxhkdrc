@@ -34,7 +34,8 @@ super + ctrl + Down
 # Redshift
 # Toggle redshift script
 super + alt + F5
-    ~/_my-scripts/redshift-toggle.sh 
+    ~/_my-scripts/redshift-toggle.sh && dunstify -i ~/_my-scripts/_icons/redshift-512.png -u critical "Redshift" "On/Off"
+
 
 # Playback controls
 #   Previous  MPD track
@@ -78,24 +79,20 @@ ctrl + shift + F8
 ctrl + alt + m
     pavucontrol &
 
-# Open pulseaudio eq
-ctrl + shift + m
-    pulseaudio-equalizer-gtk &
-
 super + shift + d
     xfce4-appfinder
 
 # Start firefox
 super + F2
-    firefox & dunstify -i ~/_my-scripts/_icons/firefox-52px.png -u normal "Firefox" "Starting"
+    firefox-developer-edition & dunstify -i ~/_my-scripts/_icons/firefox-dev-ed-52px.png -u normal "Firefox Developer Ed." "Starting"
 
 # Start qutebrowser
 super + shift + F2
     qutebrowser & dunstify -i ~/_my-scripts/_icons/qutebrowser-52px.png -u normal "qutebrowser" "Starting"
 
-# Open vscode
+# Open vscodium
 super + F3
-    code & dunstify -i ~/_my-scripts/_icons/code-52px.png -u normal "Visual Studio Code" "Started"
+    code & dunstify -i ~/_my-scripts/_icons/vscodium.png -u normal "VSCodium" "Started"
 
 # Open atom
 super + shift + F3
@@ -105,7 +102,7 @@ super + shift + F3
 super + F5
     caja &
 
-# Start ranger in xst
+# Start ranger in alacritty
 super + shift + F5
     alacritty -e $SHELL -i -c ranger &
 
@@ -123,7 +120,7 @@ ctrl + shift + Escape
 
 # Start Telegram
 super + F6
-    kotatogram-desktop & dunstify -i ~/_my-scripts/_icons/kotatogram-52px.png -u normal "Telegram" "Starting"
+    kotatogram-desktop & dunstify -i ~/_my-scripts/_icons/kotatogram-52px.png -u normal "Kotatogram" "Starting"
 
 # Take a screenshot with maim
 Print
@@ -143,7 +140,7 @@ alt + F12
 
 # Finish and save the ffmpeg recording
 alt + F11
-    killall -2 ffmpeg &> /dev/null && dunstify -u critical "ffmpeg" "Recording finished and saved"
+    killall -2 ffmpeg &> /dev/null && dunstify -i "~/_my-scripts/_icons/save-camera.png" -u critical "ffmpeg" "Recording finished and saved"
 
 super + ctrl + x
     xkill
@@ -160,7 +157,8 @@ alt + shift + z
 # balance the windows
 super + shift + b
     bspc node @/ --balance
-##
+
+# equalize the windows
 super + shift + ctrl + b
     bspc node @/ --equalize
 

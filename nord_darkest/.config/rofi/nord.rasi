@@ -154,6 +154,11 @@
     text-color: @normal-foreground;
 }
 
+element-icon {
+    size: 30px;
+}
+
+
 /* vim:ft=css
 */
 
