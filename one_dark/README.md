@@ -1,26 +1,26 @@
 ## Screenshots:
 ### Desktop:
-![busy](/artworks/wallpapers/Nord_Darkest/desktop.png)
+![busy](/artworks/wallpapers/One_Dark/desktop.png)
 ### Busy:
-![busy](/artworks/wallpapers/Nord_Darkest/busy.png)
+![busy](/artworks/wallpapers/One_Dark/busy.png)
 ### rofi:
-![rofi](/artworks/wallpapers/Nord_Darkest/rofi.png)
+![rofi](/artworks/wallpapers/One_Dark/rofi.png)
 ### cava+ncmpcpp:
-![cava+ncmpcpp](/artworks/wallpapers/Nord_Darkest/cava_plus_ncmpcpp.png)
+![cava+ncmpcpp](/artworks/wallpapers/One_Dark/cava_plus_ncmpcpp.png)
 ### htop:
-![htop](/artworks/wallpapers/Nord_Darkest/htop.png)
+![htop](/artworks/wallpapers/One_Dark/htop.png)
 ### gtop and nvtop:
-![gtop and nvtop](/artworks/wallpapers/Nord_Darkest/nvtop_plus_gtop.png)
+![gtop and nvtop](/artworks/wallpapers/One_Dark/nvtop_plus_gtop.png)
 ### glances:
-![glances](/artworks/wallpapers/Nord_Darkest/glances.png)
+![glances](/artworks/wallpapers/One_Dark/glances.png)
 ### neovim:
-![nvim](/artworks/wallpapers/Nord_Darkest/nvim.png)
-### SublimeText3 (left) and VSCode (right):
-![sublime,vsc](/artworks/wallpapers/Nord_Darkest/sublime_plus_code.png)
+![nvim](/artworks/wallpapers/One_Dark/nvim.png)
+### VSCode:
+![vsc](/artworks/wallpapers/One_Dark/vscodium.png)
 ### ranger:
-![ranger](/artworks/wallpapers/Nord_Darkest/ranger.png)
+![ranger](/artworks/wallpapers/One_Dark/ranger.png)
 ### Caja:
-![caja](/artworks/wallpapers/Nord_Darkest/caja.png)
+![caja](/artworks/wallpapers/One_Dark/caja.png)
 
 
 ##############################################################################################

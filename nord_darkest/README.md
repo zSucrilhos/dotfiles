@@ -15,8 +15,8 @@
 ![glances](/artworks/wallpapers/Nord_Darkest/glances.png)
 ### neovim:
 ![nvim](/artworks/wallpapers/Nord_Darkest/nvim.png)
-### SublimeText3 (left) and VSCode (right):
-![sublime,vsc](/artworks/wallpapers/Nord_Darkest/sublime_plus_code.png)
+### VSCode:
+![vsc](/artworks/wallpapers/Nord_Darkest/vscode.png)
 ### ranger:
 ![ranger](/artworks/wallpapers/Nord_Darkest/ranger.png)
 ### Caja:
