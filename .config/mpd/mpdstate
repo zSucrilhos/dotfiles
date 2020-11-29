@@ -1,0 +1,230 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: play
+current: 164
+time: 125.018000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:_MyMusic(D)/Inception (Recording Sessions)/Disc 1/11. Mombassa Chase.mp3
+1:_MyMusic(D)/Inception (Recording Sessions)/Disc 2/14. Mombassa Suite.mp3
+2:_MyMusic(D)/Inception (Music from the Motion Picture)/Inception (Music from the Motion Picture)/07. Mombassa.mp3
+3:_MyMusic(E)/Hans Zimmer - Inception (2010) [FLAC] {24bit 96kHz virgin vinyl rip}/A7 - Mombasa.flac
+4:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/01. Title.mp3
+5:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/02. Briefing 1.mp3
+6:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/03. Hangar 1.mp3
+7:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/04. Shorebirds.mp3
+8:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/05. Open War 'Theme of Open The War'.mp3
+9:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/06. Wardog.mp3
+10:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/07. Naval Blockade.mp3
+11:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/08. First Flight (Arranged Ace Combat 04 'Blockade').mp3
+12:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/09. Rendezvous.mp3
+13:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/10. Ballistic Missile.mp3
+14:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/11. White Bird (Part I).mp3
+15:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/12. Front Line.mp3
+16:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/13. Scinfaxi.mp3
+17:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/14. Mother Goose 1.mp3
+18:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/15. Lit Fuse.mp3
+19:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/16. Blind Spot.mp3
+20:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/17. 8492.mp3
+21:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/18. Chain Reaction.mp3
+22:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/19. Reprisal.mp3
+23:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/20. Powder Keg.mp3
+24:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/21. Game Over.mp3
+25:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD1/22. Shop.mp3
+26:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/01. Menu.mp3
+27:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/02. Four Horsemen.mp3
+28:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/03. Demons of Razgriz.mp3
+29:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/04. Hrimfaxi.mp3
+30:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/05. Ice Cage.mp3
+31:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/06. White Noise.mp3
+32:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/07. Desert Arrow.mp3
+33:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/08. Desert Lightning.mp3
+34:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/09. Free Flight.mp3
+35:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/10. Supercircus.mp3
+36:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/11. Into The Dusk.mp3
+37:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/12. Fortress.mp3
+38:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/13. Mask.mp3
+39:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/14. Final Option.mp3
+40:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/15. Ancient Walls.mp3
+41:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/16. Failed Game Over.mp3
+42:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/17. Result.mp3
+43:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/18. Tutorial Main.mp3
+44:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/19. Tutorial Menu.mp3
+45:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD2/20. Tutorial Result.mp3
+46:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/01. Briefing 2.mp3
+47:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/02. Hangar 2.mp3
+48:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/03. Solitaire.mp3
+49:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/04. Closure.mp3
+50:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/05. Ghosts of Razgriz.mp3
+51:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/06. White Bird (Part II).mp3
+52:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/07. Heartbreak One.mp3
+53:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/08. Grabacr.mp3
+54:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/09. The Journey Home (On Radio).mp3
+55:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/10. Wings of Unity.mp3
+56:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/11. Dead Ahead.mp3
+57:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/12. Winter Storm.mp3
+58:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/13. The Unsung War.mp3
+59:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/14. The Journey Home.mp3
+60:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD3/15. Razgriz.mp3
+61:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/01. Arcade Title.mp3
+62:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/02. Arcade Menu.mp3
+63:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/03. Arcade Stage Select.mp3
+64:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/04. Arcade Briefing.mp3
+65:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/05. Arcade Ripping Air.mp3
+66:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/06. Arcade Knock You Down.mp3
+67:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/07. Arcade Elemental Particle 2.mp3
+68:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/08. Arcade Broken Skies.mp3
+69:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/09. Arcade Catch The Lightning.mp3
+70:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/10. Arcade Riding High.mp3
+71:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/11. Arcade Do or Die.mp3
+72:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/12. Arcade Consequence.mp3
+73:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/13. Arcade Game Over.mp3
+74:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/14. Arcade Clear.mp3
+75:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/15. Arcade Victory Road.mp3
+76:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/16. Blue Skies (Remix).mp3
+77:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/17. Razgriz 'Ace Combat 5 Main Theme'.mp3
+78:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/18. Open The War.mp3
+79:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/20. The Following Morning.mp3
+80:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/21. 15 Years Ago.mp3
+81:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/22. A Blue Dove for The Princess 'Nagase's Theme'.mp3
+82:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/23. OSEA.mp3
+83:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/24. Blind Corridor.mp3
+84:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/25. Fugitive Hope.mp3
+85:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/26. New Emblem.mp3
+86:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/27. President Harling.mp3
+87:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/28. SOLG.mp3
+88:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/29. Battleships Uprising.mp3
+89:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/30. Final Launch.mp3
+90:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/31. Hope for Freedom.mp3
+91:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/32. Unsung Heroes.mp3
+92:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/33. Peace (Epilogue).mp3
+93:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/34. The Journey Home 'Ace Combat 5 Ending Theme'.mp3
+94:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2004 - Ace Combat 5 The Unsung War Original Soundtrack/CD4/35. Puddle of Mudd - Blurry.mp3
+95:_MyMusic(D)/Audiomachine/Audiomachine Library (mp3)/AM - Audiomachine's Main Library/AM028 - Decimus/34. Ashes of Time.mp3
+96:_MyMusic(D)/Audiomachine/Audiomachine Library (mp3)/Public Albums/(2012) - Chronicles/13. Sands of Time.mp3
+97:_MyMusic(D)/Uncharted 4 OST/UC4 OST/01. A Thief's End.mp3
+98:_MyMusic(D)/Uncharted 4 OST/UC4 OST/02. A Normal Life.mp3
+99:_MyMusic(D)/Uncharted 4 OST/UC4 OST/03. Lure of Adventure.mp3
+100:_MyMusic(D)/Uncharted 4 OST/UC4 OST/04. Cut to the Chase.mp3
+101:_MyMusic(D)/Uncharted 4 OST/UC4 OST/05. Reunited.mp3
+102:_MyMusic(D)/Uncharted 4 OST/UC4 OST/06. Once a Thief....mp3
+103:_MyMusic(D)/Uncharted 4 OST/UC4 OST/07. The Grave of Henry Avery.mp3
+104:_MyMusic(D)/Uncharted 4 OST/UC4 OST/08. Those Who Prove Worthy.mp3
+105:_MyMusic(D)/Uncharted 4 OST/UC4 OST/09. The Twelve Towers.mp3
+106:_MyMusic(D)/Uncharted 4 OST/UC4 OST/10. Hidden in Plain Sight.mp3
+107:_MyMusic(D)/Uncharted 4 OST/UC4 OST/11. At Sea.mp3
+108:_MyMusic(D)/Uncharted 4 OST/UC4 OST/12. Marooned.mp3
+109:_MyMusic(D)/Uncharted 4 OST/UC4 OST/13. Meet Me in Paradise.mp3
+110:_MyMusic(D)/Uncharted 4 OST/UC4 OST/14. The Thieves of Libertalia.mp3
+111:_MyMusic(D)/Uncharted 4 OST/UC4 OST/15. Sic Parvis Magna.mp3
+112:_MyMusic(D)/Uncharted 4 OST/UC4 OST/16. The Brothers Drake.mp3
+113:_MyMusic(D)/Uncharted 4 OST/UC4 OST/17. Race to Libertalia.mp3
+114:_MyMusic(D)/Uncharted 4 OST/UC4 OST/18. For Better or Worse.mp3
+115:_MyMusic(D)/Uncharted 4 OST/UC4 OST/19. New Devon.mp3
+116:_MyMusic(D)/Uncharted 4 OST/UC4 OST/20. Avery's Descent.mp3
+117:_MyMusic(D)/Uncharted 4 OST/UC4 OST/21. No Escape.mp3
+118:_MyMusic(D)/Uncharted 4 OST/UC4 OST/22. Brother's Keeper.mp3
+119:_MyMusic(D)/Uncharted 4 OST/UC4 OST/23. One Last Time.mp3
+120:_MyMusic(D)/Uncharted 4 OST/UC4 OST/24. Epilogue.mp3
+121:_MyMusic(D)/Inception (Music from the Motion Picture)/Inception (Music from the Motion Picture)/12. Time.mp3
+122:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-10-20) Andreas Waldetoft - Stellaris Leviathans/04 - The Titan.flac
+123:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/01 - Stellaris Suite - Creation & Beyond.flac
+124:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/02 - Faster Than Light.flac
+125:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/03 - Deep Space Travels.flac
+126:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/04 - To the Ends of the Galaxy.flac
+127:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/05 - In Search of Life.flac
+128:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/06 - Spatial Lullaby.flac
+129:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/07 - Gravitational Constant.flac
+130:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/08 - Alpha Centauri.flac
+131:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/09 - Genesis.flac
+132:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/10 - The Celestial City.flac
+133:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/11 - Infinite Being.flac
+134:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/12 - Pillars of Creation.flac
+135:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/13 - Distant Nebula (instrumental).flac
+136:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/14 - Sigma Tauri.flac
+137:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/15 - Journey Through the Galaxy.flac
+138:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/16 - Riding the Solar Wind.flac
+139:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/17 - The Birth of a Star.flac
+140:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/18 - Luminescence.flac
+141:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/19 - Distant Nebula.flac
+142:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/20 - Faster Than Light (instrumental).flac
+143:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/21 - Battle For Supremacy (bonus track).flac
+144:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/22 - Infinite Being (alternative version).flac
+145:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-05-09) Andreas Waldetoft - Stellaris Digital Soundtrack/23 - To the Ends of the Galaxy (alternative version).flac
+146:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/01. The Edge of Consciousness.flac
+147:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/02. Vis Motrix.flac
+148:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/03. Khae Momme.flac
+149:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/04. Facing Fears.flac
+150:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/05. Passage to Eden.flac
+151:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/06. Immortalys.flac
+152:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/07. Afterlife.flac
+153:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/08. Iron Angels.flac
+154:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/09. The Valley of Stars.flac
+155:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/10. Masters of Time.flac
+156:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/11. Neon Paradise.flac
+157:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/12. Moonriser.flac
+158:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/13. Inner Sanctum.flac
+159:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/14. Legends Never Die.flac
+160:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/15. Skyborn.flac
+161:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/16. Lux Imperia.flac
+162:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/17. Beyond Love.flac
+163:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/01 Human Legacy.flac
+164:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/02. Icarus (feat. Julie Elven).flac
+165:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/03. Remember Me (feat. Roger Berruezo).flac
+166:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/04. The Awakening.flac
+167:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/05. Crystalline (feat. Celica Soldream).flac
+168:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/06. Before I Leave This World.flac
+169:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/07. One of Us (feat. Julie Elven).flac
+170:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/08. Dandelion (Tribute to a Legend).flac
+171:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/09. The Axis of Love.flac
+172:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/10. Supernova.flac
+173:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/11. Architects of Life (feat. Celica Soldream).flac
+174:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/12. Underskin.flac
+175:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/13. Blessing the Rain.flac
+176:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/14. In Aeternum.flac
+177:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/15. Glimmer of Hope (feat. Aeralie Brighton).flac
+178:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/16. La Danse de la Lune.flac
+179:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/17. The Bounds of the Universe.flac
+180:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/18. Forbidden Love.flac
+181:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/19. The Light Crusaders.flac
+182:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/20. Luminous Days.flac
+183:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/21. Starchild.flac
+184:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/22. Impossible (feat. Rangel Da Silva).flac
+185:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/23. Galactic Invasion.flac
+186:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/24. The Dark One.flac
+187:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/25. Release my Heart.flac
+188:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Reverie [FLAC 24bit]/26. The Power of Will (feat. Gaby Koss).flac
+189:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-10-20) Andreas Waldetoft - Stellaris Leviathans/01 - Dragon Breath.flac
+190:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-10-20) Andreas Waldetoft - Stellaris Leviathans/02 - Assembling the Fleet.flac
+191:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-10-20) Andreas Waldetoft - Stellaris Leviathans/03 - The Awakened.flac
+192:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-10-20) Andreas Waldetoft - Stellaris Leviathans/04 - The Titan.flac
+193:_MyMusic(E)/Stellaris Complete Soundtrack/(2016-10-20) Andreas Waldetoft - Stellaris Leviathans/05 - The Last Stand.flac
+194:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-04-06) Andreas Waldetoft - Stellaris Utopia/01 - Utopia Main Title.flac
+195:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-04-06) Andreas Waldetoft - Stellaris Utopia/02 - A New Dawn.flac
+196:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-04-06) Andreas Waldetoft - Stellaris Utopia/03 - Towards Utopia.flac
+197:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-04-06) Andreas Waldetoft - Stellaris Utopia/04 - The Imperial Fleet.flac
+198:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-04-06) Andreas Waldetoft - Stellaris Utopia/05 - Cradle of the Galaxy.flac
+199:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-04-06) Andreas Waldetoft - Stellaris Utopia/06 - In Memory of Mercedes Romero.flac
+200:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-09-21) Andreas Waldetoft - Stellaris Synthetic Dawn/01 - Synthetic Dawn Main Theme.flac
+201:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-09-21) Andreas Waldetoft - Stellaris Synthetic Dawn/02 - Robo Sapiens.flac
+202:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-09-21) Andreas Waldetoft - Stellaris Synthetic Dawn/03 - Synthetic God.flac
+203:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-12-07) Meyer - Stellaris Humanoids Species Pack/01 - The Imperial Fleet Second Coming.flac
+204:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-12-07) Meyer - Stellaris Humanoids Species Pack/02 - In Memory of MR Luminous Flux.flac
+205:_MyMusic(E)/Stellaris Complete Soundtrack/(2017-12-07) Meyer - Stellaris Humanoids Species Pack/03 - Towards Utopia Nova Flare.flac
+206:_MyMusic(E)/Stellaris Complete Soundtrack/(2018-02-22) Andreas Waldetoft - Stellaris Apocalypse/01 - Then Comes Light.flac
+207:_MyMusic(E)/Stellaris Complete Soundtrack/(2018-02-22) Andreas Waldetoft - Stellaris Apocalypse/02 - Doomsday.flac
+208:_MyMusic(E)/Stellaris Complete Soundtrack/(2018-02-22) Andreas Waldetoft - Stellaris Apocalypse/03 - Hostile Fleet Detected.flac
+209:_MyMusic(E)/Stellaris Complete Soundtrack/(2018-05-22) Meyer - Stellaris Distant Stars/01 - One Galaxy.flac
+210:_MyMusic(E)/Stellaris Complete Soundtrack/(2018-05-22) Meyer - Stellaris Distant Stars/02 - Adagio Stellar.flac
+211:_MyMusic(E)/Stellaris Complete Soundtrack/(2018-05-22) Meyer - Stellaris Distant Stars/03 - Into the Dark.flac
+212:_MyMusic(E)/RSM/Really Slow Motion (mp3)/RESL027 - Grandiose/12. Grandiose.mp3
+213:_MyMusic(D)/The Hunger Games OST/All/The Hunger Games - iTunes Collection/Albums/2013 - The Hunger Games Catching Fire (Original Motion Picture Soundtrack) [Deluxe Edition] - VA/05 We Remain.m4a
+214:_MyMusic(E)/Ivan Torrent/Ivan Torrent - Immortalys [FLAC 24bit]/18. Infinium.flac
+playlist_end

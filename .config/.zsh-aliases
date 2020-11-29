@@ -1,0 +1,61 @@
+alias sxiv="sxiv -asf"
+alias k="k -h"
+alias zsh-config="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias i3-config="nvim ~/.config/i3/config"
+alias polybar-config="nvim ~/.config/polybar/config"
+alias cdmysources="cd ~/_my-sources"
+alias cdmyscripts="cd ~/_my-scripts"
+alias fbg="feh --bg-fill"
+
+# Verbose is good
+alias mkdir="mkdir -v"
+alias cp="cp -v"
+alias mv="mv -v"
+
+alias lsa="exa -laF"
+alias cdmusicd="cd /my-disks/160g/Downloads/_MyMusic(D)/"
+alias cdmusice="cd /my-disks/681g/Downloads/_MyMusic(E)/"
+
+alias tmux="tmux -2"  # for 256color
+
+alias ix.io="curl -F 'f:1=<-' ix.io"
+
+alias xclip="xclip -i -selection clipboard"
+
+alias ys="yarn start"
+
+# Faster java compile/run
+alias jc="javac"
+alias j="java"
+
+alias sxiv="sxiv -asf"
+alias k="k -h"
+alias zsh-config="nvim ~/.zshrc"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias i3-config="nvim ~/.config/i3/config"
+alias polybar-config="nvim ~/.config/polybar/config"
+alias cdmysources="cd ~/_my-sources"
+alias cdmyscripts="cd ~/_my-scripts"
+alias fbg="feh --bg-fill"
+
+# Verbose is good
+alias mkdir="mkdir -v"
+alias cp="cp -v"
+alias mv="mv -v"
+
+alias lsa="exa -laF"
+alias cdmusicd="cd /my-disks/160g/Downloads/_MyMusic(D)/"
+alias cdmusice="cd /my-disks/681g/Downloads/_MyMusic(E)/"
+
+alias tmux="tmux -2"  # for 256color
+
+alias ix.io="curl -F 'f:1=<-' ix.io"
+alias cwd="echo ${PWD##*/}"
+
+alias please="sudo"
+alias pewpew="sudo"
+
+# Faster java compile/run
+alias jc="javac"
+alias j="java"
