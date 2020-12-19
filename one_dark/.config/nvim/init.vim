@@ -11,13 +11,41 @@ if exists('g:vscode')
     Plug 'svermeulen/vim-easyclip'
 
 else
+    " Benchmark startuptime
     Plug 'dstein64/vim-startuptime'
 
     "Conquer of Completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " Easy motion
-    "Plug 'https://github.com/easymotion/vim-easymotion'
+    Plug 'https://github.com/easymotion/vim-easymotion'
+
+    " Bookmarks per line
+    Plug 'MattesGroeger/vim-bookmarks'
+
+    " Typescript tooling for Neovim
+    Plug 'mhartington/nvim-typescript', {'for': ['typescript', 'tsx'], 'do': './install.sh'}
+
+    " Syntax highlighting for JavaScript
+    Plug 'pangloss/vim-javascript'
+
+    " Syntax highlighting for TypScript
+    Plug 'leafgarland/typescript-vim'
+
+    " JSX syntax highlighting
+    Plug 'MaxMEllon/vim-jsx-pretty'
+
+    " TSX syntax highlighting
+    Plug 'peitalin/vim-jsx-typescript'
+
+    " Styled components syntax highlighting
+    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
+    " Yet Another TypeScript Syntax =  The most advanced TypeScript Syntax Highlighting in Vim 
+    Plug 'HerringtonDarkholme/yats.vim'
+
+    " Much simpler Rainbow Parentheses
+    Plug 'junegunn/rainbow_parentheses.vim'
 
     " Lightning fast left-right movement
     Plug 'https://github.com/unblevable/quick-scope'
@@ -139,13 +167,12 @@ else
     Plug 'junegunn/fzf.vim'
 
     " My themes
-    Plug 'yuttie/hydrangea-vim'
     Plug 'arcticicestudio/nord-vim'
     Plug 'joshdick/onedark.vim'
     Plug 'drewtempelmeyer/palenight.vim'
     Plug 'phanviet/vim-monokai-pro'
     Plug 'ayu-theme/ayu-vim'
-    Plug 'https://github.com/tyrannicaltoucan/vim-deep-space'
+    Plug 'tyrannicaltoucan/vim-deep-space'
     Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
     " Wal colorscheme
@@ -194,7 +221,10 @@ let g:python3_host_prog = "/usr/bin/python3"
 
 
 "##### Remaping some keys #####
-"
+
+" Fzf command-pallete mapping
+nnoremap <F12> :Commands<CR>
+
 " Tabs mappings
 nnoremap <C-t><Left>  :tabp<CR>
 nnoremap <C-t><Right> :tabn<CR>
@@ -225,12 +255,11 @@ nnoremap <C-h>v :vsplit<CR> " Split vertically
 inoremap <C-h>h <Esc>:spli<CR>
 inoremap <C-h>v <Esc>:vsplit<CR>
 
-
-
 " Enable dark ayu theme
 "let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
 "let ayucolor="dark"   " for dark version of theme
+
 "#######################################################
 " COC - Conquer of Completion configuration
 "#######################################################
@@ -300,6 +329,53 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+" Open coc-explorer
+nmap <space>e :CocCommand explorer<CR>
+
+" When cursoring over a word, show either the diagnostic if it exists, otherwise the documentation
+function! ShowDocIfNoDiagnostic(timer_id)
+  if (coc#float#has_float() == 0)
+    silent call CocActionAsync('doHover')
+  endif
+endfunction
+
+function! s:show_hover_doc()
+  call timer_start(500, 'ShowDocIfNoDiagnostic')
+endfunction
+
+autocmd CursorHoldI * :call <SID>show_hover_doc()
+autocmd CursorHold * :call <SID>show_hover_doc()
+
+" Remap goto-definition, goto-type-definition, goto-references
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gr <Plug>(coc-references)
+
+" Jump to the next and previous error
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" Remap open a list with all errors and warnings
+nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
+
+" Remap symbols list
+nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
+
+" Remap perform code actions
+nmap <leader>do <Plug>(coc-codeaction)
+
+" Remap rename symbol
+nmap <leader>rn <Plug>(coc-rename)
+
+" Refer to: https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
+
+
+"#######################################################
+" Vim-Bookmarks configurations
+"#######################################################
+
+let g:bookmark_sign = ''
+let g:bookmark_highlight_lines = 1
 
 
 "#######################################################
@@ -307,7 +383,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 "#######################################################
 
 let g:notes_directories = ['~/Documents/Notes']
-
 
 
 "#######################################################
@@ -422,7 +497,7 @@ let g:syntastic_python_checkers = ['pylint']
 
 
 "#######################################################
-" Easyclip configs 
+" Easyclip configs
 "#######################################################
 
 "    Use gm for 'add mark' instead of m, include the following in your .vimrc
@@ -502,6 +577,10 @@ set fileencoding=utf-8
 " Syntax and colors
 syntax on
 set termguicolors
+
+" Highlight from start of file for TS and JS buffers
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " Enable line numbers
 set relativenumber
