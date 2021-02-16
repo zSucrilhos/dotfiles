@@ -1,3 +1,4 @@
+export DESKTOP_SESSION=bspwm
 xrdb -merge ~/.Xresources
 #xset dpms 330 360 360
 

@@ -11,7 +11,7 @@ bspc monitor -d 0 1 2 3 4 5 6 7 8 9
 
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
 
-bspc config click_to_focus true
+#bspc config click_to_focus        true
 bspc config border_width          0
 bspc config window_gap            5
 bspc config split_ratio           0.52
@@ -19,7 +19,7 @@ bspc config borderless_monocle    false
 bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 
-bspc config border_radius 6
+#bspc config border_radius         6
 bspc config normal_border_color "#282c34"
 bspc config focused_border_color "#5c6370"
 bspc config presel_feedback_color "#98c379"
@@ -39,12 +39,13 @@ bspc config pointer_action2 resize_corner
 bspc rule -a Termite desktop='^1' follow=on
 bspc rule -a qutebrowser desktop='^2' follow=on
 bspc rule -a Chromium desktop='^2' follow=on
-bspc rule -a firefox desktop='^2' follow=on
-bspc rule -a firefoxdeveloperedition desktop='^2' follow=on
+bspc rule -a firefox desktop='^2' follow=off
+bspc rule -a firefoxdeveloperedition desktop='^2' follow=off
 bspc rule -a Mousepad desktop='^3' follow=on
 bspc rule -a Subl3 desktop='^3' follow=on
 bspc rule -a Code desktop='^3' follow=on
-bspc rule -a Notepadqq desktop='^3' follow=on
+bspc rule -a Emacs desktop='^3' follow=off
+bspc rule -a VSCodium desktop='^3' follow=off
 bspc rule -a Deluge desktop='^4' follow=on
 bspc rule -a mpv desktop='^4' follow=on state=tiled
 bspc rule -a Sxiv desktop='^4' follow=on state=tiled
@@ -71,8 +72,8 @@ bspc rule -a GParted state=floating focus=on
 bspc rule -a Lxappearance state=floating focus=on
 bspc rule -a nitrogen state=floating focus=on
 bspc rule -a SimpleScreenRecorder state=floating focus=on
-bspc rule -a Pulseffects state=floating focus=on
-bspc rule -a Pulseaudio-equalizer-gtk state=floating focus=on
+bspc rule -a Pulseffects state=floating focus=off
+bspc rule -a Pulseaudio-equalizer-gtk state=floating focus=off
 bspc rule -a Pavucontrol state=floating focus=on center=on
 bspc rule -a __main__.py state=floating focus=on center=on
 bspc rule -a Gnome-system-monitor state=tiled focus=on center=on
@@ -80,6 +81,8 @@ bspc rule -a Gnome-system-monitor state=tiled focus=on center=on
 bspc rule -a Alacritty state=tiled focus=on
 bspc rule -a speedcrunch state=floating focus=on
 bspc rule -a Viewnior focus=on state=tiled
+bspc rule -a Emacs state=tiled focus=on
+
 
 # Old
 #xset dpms 330 360 360 &
@@ -99,7 +102,11 @@ xrandr --output DVI-D-0 --gamma 1.0:1.0:1.0 &
 #feh --bg-fill "/home/zsucrilhos/Desktop/Desktop/nordic-SBKjnxm.jpg" &
 #feh --bg-fill "/home/zsucrilhos/Downloads/1050933.jpg"
 #hsetroot -solid '#1F2430'
-feh --bg-fill "/home/zsucrilhos/Downloads/ujOHTu4.png"
+#feh --bg-fill "/home/zsucrilhos/Downloads/ujOHTu4.png"
+#feh --bg-fill "/home/zsucrilhos/Downloads/mark-basarab-zVzFFCZJTJk-unsplash.jpg"
+#feh --bg-fill "/home/zsucrilhos/Downloads/barna-bartis-r4BQTSnQ4aE-unsplash.jpg"
+#feh --bg-fill "/home/zsucrilhos/Desktop/Desktop/nordic-SBKjnxm.jpg"
+feh --bg-fill "/home/zsucrilhos/_my-disks/SEAGATE-1Tb-pt1/_Files/Desktop/av2]/4481543.jpg"
 
 dunst &
 picom -b --config /home/zsucrilhos/.config/picom/picom.conf &
@@ -111,9 +118,9 @@ setxkbmap -layout br -variant abnt2 &
 
 #/home/zsucrilhos/_my-scripts/blurme & not using this for now
 
-/usr/bin/mpDris2 &
-redshift -c /home/zsucrilhos/.config/redshift.conf &
+redshift -c /home/zsucrilhos/.config/redshift/redshift.conf &
 flashfocus &
+/usr/bin/mpDris2 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 xautolock -locker "betterlockscreen -l" -time 5 -notify 25 -corners ---- -cornerdelay 10 -cornersize 20 -notifier "dunstify -i ~/_my-scripts/_icons/locking.png -a System -u critical System 'Locking in 25 seconds.'"  &

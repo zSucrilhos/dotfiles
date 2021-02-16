@@ -1,26 +1,19 @@
-#source ~/antigen.zsh
-#
-#
-# Load the oh-my-zsh's library.
-#antigen use oh-my-zsh
+# The following lines were added by compinstall
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**' 'l:|=* r:|=*'
+zstyle :compinstall filename '/home/zsucrilhos/.zshrc'
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
-#antigen bundle git
-#antigen bundle heroku
-#antigen bundle pip
-#antigen bundle lein
-#antigen bundle command-not-found
-
-# Syntax highlighting bundle.
-#antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Load the theme.
-#antigen theme eendroroy/alien-minimal alien-minimal
-#antigen theme kphoen
-
-# Tell Antigen that you're done.
-#antigen apply
-
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=10000
+setopt autocd extendedglob
+unsetopt nomatch
+#bindkey -v
+# End of lines configured by zsh-newuser-install
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -36,7 +29,6 @@ export ZSH="/home/zsucrilhos/.oh-my-zsh"
 #ZSH_THEME="refined"
 
 #ZSH_THEME="spaceship"
-
 # Using starship prompt! (at the end of the file)
 
 
@@ -47,11 +39,11 @@ export ZSH="/home/zsucrilhos/.oh-my-zsh"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="false"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -66,10 +58,10 @@ export UPDATE_ZSH_DAYS=14
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -84,6 +76,45 @@ export UPDATE_ZSH_DAYS=14
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+################################################################################
+################################### zPlug ######################################
+################################################################################
+
+source ~/.zplug/init.zsh
+
+# ZSH Alias-tips
+zplug "djui/alias-tips", from:github, defer:3
+
+# ZSH Completions
+zplug "zsh-users/zsh-completions"
+
+# ZSH Autosuggestions
+zplug "zsh-users/zsh-autosuggestions"
+
+# ZSH Syntax Highlighting
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+
+# Make sure to use double quotes
+zplug "zsh-users/zsh-history-substring-search"
+
+# Supports oh-my-zsh plugins and the like
+zplug "plugins/git", from:oh-my-zsh
+
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load
+
+################################################################################
+################################################################################
+#
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -92,32 +123,33 @@ export UPDATE_ZSH_DAYS=14
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(
-git
-zsh-completions
-zsh-autosuggestions
-zsh-syntax-highlighting
-alias-tips
-vi-mode
-k
+    #git
+    #alias-tips
+    #zsh-autosuggestions
+    #zsh-completions
+    #zsh-syntax-highlighting
+    vi-mode
 )
+
+source $ZSH/oh-my-zsh.sh
 
 # z - jump around
 . ~/_my-scripts/z.sh
 
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
+################################################################################
+############################ User configuration ################################
+################################################################################
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -127,7 +159,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Sourcing externail files:
+# Sourcing external files:
 source ~/.zsh-aliases # For alieases
 
 # Export ~/_my-scripts folder to the $PATH variable
@@ -139,8 +171,6 @@ PATH="$HOME/.cargo/bin/:$PATH"
 # Expoft gem binaries to path
 PATH="$HOME/.gem/ruby/2.7.0/bin/:$PATH"
 
-export LANG=en_US.UTF-8
-
 # Preferred editor 
 export EDITOR="nvim"
 
@@ -148,10 +178,52 @@ export EDITOR="nvim"
 RESOLUTION=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
 
 # Export mpsyt location to the $PATH variable
-PATH="$HOME/.local/bin/:$PATH"
-export PATH
 
-##### ZSH Vi-Mode configs #####
+export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export TERM="xterm-256color"
+
+export GOPATH=$HOME/go
+export GOBIN=/usr/bin/go
+
+
+# Set the location for the config file of starship prompt
+#export STARSHIP_CONFIG="/home/zsucrilhos/.config/starship.toml"
+
+##############################################
+
+# Set $TERM for tmux
+[[ $TERM = "xterm" ]] && { tmux -2 && exit 0; }
+
+# FZF finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# mkdircd
+function mkcd {
+  command mkdir $1 && cd $1
+}
+
+# 0x0.st
+0x0() {
+    for i in "@$"; do
+        curl -F file=@$i http://0x0.st
+    done
+}
+
+
+########################################
+######## Node Version Manager ##########
+########################################
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+
+########################################
+########## ZSH Vi-Mode configs #########
+########################################
 
 ##### for ~/.zshrc
 # enable vim mode on commmand line
@@ -178,25 +250,13 @@ KEYTIMEOUT=1
 bindkey -a u undo
 bindkey -a '^T' redo
 bindkey '^?' backward-delete-char #backspace
-# history search in vim mode
-# http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
-# ctrl+r to search history
-bindkey -M viins '^r' history-incremental-search-backward
-bindkey -M vicmd '^r' history-incremental-search-backward
-# }}}export KEYTIMEOUT=1
-
-# add missing vim hotkeys
-# http://zshwiki.org/home/zle/vi-mode
-# bindkey -a u undo
-# bindkey -a '^T' redo
-# bindkey '^?' backward-delete-char  #backspace
 
 # history search in vim mode
 # http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
 # ctrl+r to search history
 bindkey -M viins '^r' history-incremental-search-backward
 bindkey -M vicmd '^r' history-incremental-search-backward
-
+# export KEYTIMEOUT=1
 
 ##### for ~/tmux.conf
 # Lowers the delay time between the prefix key and other keys - fixes pausing in vim
@@ -205,36 +265,14 @@ set -sg escape-time 1
 # reload .tmux.conf 
 # bind-key r source-file ~/.tmux.conf \; display-message "Configuration reloaded"
 
-#### END ZSH Vi-Mode configs ####
+########################################
+####### END ZSH Vi-Mode configs ########
+########################################
 
-export QT_QPA_PLATFORMTHEME="qt5ct"
-
-export TERM="xterm-256color"
-export GOPATH=$HOME/go
-export GOBIN=/usr/bin/go
-
-[[ $TERM = "xterm" ]] && { tmux -2 && exit 0; }
-
-# FZF finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-# mkdircd
-function mkcd
-{
-  command mkdir $1 && cd $1
-}
-
-
-# Use vim to open man pages
-export MANPAGER="vim -M +MANPAGER -"
-
-# Use nvim to open man pages
-#export MANPAGER="nvim -c 'set ft=man' -"
-
-
-# wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
-
+########################################
+############ Pywal Configs #############
+########################################
+#
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
@@ -248,26 +286,26 @@ export MANPAGER="vim -M +MANPAGER -"
 # To add support for TTYs this line can be optionally added.
 #source ~/.cache/wal/colors-tty.sh
 
-# wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal wal 
-
-
-# zsh-competions # zsh-competions # zsh-competions # zsh-competions # zsh-competions # zsh-competions # zsh-competions
-autoload -U compinit && compinit
-
-
-
+########################################
+########## END Pywal Configs ###########
+########################################
 
 # Autologin with getty
 # /etc/systemd/system/getty@tty1.service.d/override.conf
 #if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
 #    exec startx
-#fi
 
-source /home/zsucrilhos/Downloads/_cloned-repos/zaw/zaw.zsh
+autoload -U compinit && compinit
 
-# Set the location for the config file of starship prompt
-#export STARSHIP_CONFIG="/home/zsucrilhos/.config/starship.toml"
+# cd to home
+#cd ~
 
-# Using starship prompt!
+# Starship prompt - this needs to be the last line of the file
 eval "$(starship init zsh)"
 
+
+PATH="/home/zsucrilhos/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/zsucrilhos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/zsucrilhos/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/zsucrilhos/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/zsucrilhos/perl5"; export PERL_MM_OPT;

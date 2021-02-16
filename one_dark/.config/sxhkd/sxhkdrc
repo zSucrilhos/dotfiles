@@ -38,6 +38,12 @@ super + ctrl + m
     pactl set-sink-volume 0 -5%
     #~/_my-scripts/1jgl.sh toggle
 
+
+# Power/Energy
+alt + F4
+    ~/.config/rofi/applets/powermenu.sh
+
+
 # Redshift
 # Toggle redshift script
 super + alt + F5
@@ -89,21 +95,21 @@ ctrl + alt + m
 super + shift + d
     xfce4-appfinder
 
-# Start firefox
+# Start librewolf
 super + F2
-    firefox-developer-edition & dunstify -i ~/_my-scripts/_icons/firefox-dev-ed-52px.png -u normal "Firefox Developer Ed." "Starting"
+    librewolf & dunstify -i ~/_my-scripts/_icons/librewolf.png -u normal "Librewolf" "Starting"
 
 # Start qutebrowser
 super + shift + F2
     qutebrowser & dunstify -i ~/_my-scripts/_icons/qutebrowser-52px.png -u normal "qutebrowser" "Starting"
 
-# Open vscodium
+# Open emacs
 super + F3
-    code & dunstify -i ~/_my-scripts/_icons/vscodium.png -u normal "VSCodium" "Started"
+    emacs & dunstify -i ~/_my-scripts/_icons/emacs-768.png -u normal "Emacs" "Started"
 
-# Open atom
+# Open vscodium
 super + shift + F3
-    atom & dunstify -i ~/_my-scripts/_icons/atom-52px.png -u normal "Atom" "Started"
+    vscodium & dunstify -i ~/_my-scripts/_icons/vscodium.png -u normal "VSCodium" "Started"
 
 # Start caja
 super + F5

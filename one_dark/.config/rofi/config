@@ -35,7 +35,7 @@ rofi.fixed-num-lines:                false
 rofi.show-icons:                     true
 
 ! "Terminal to use" Set from: Default
-rofi.terminal:                       xst
+rofi.terminal:                       alacritty
 
 ! "Ssh client to use" Set from: Default
 ! rofi.ssh-client:                     ssh
@@ -202,13 +202,13 @@ rofi.color-window:  #0E1620,     #0E1620,   #FDB108
 ! rofi.display-windowcd:               
 
 ! "The display name of this browser" Set from: Default
-! rofi.display-run:                    
+rofi.display-run: " "
 
 ! "The display name of this browser" Set from: Default
 ! rofi.display-ssh:                    
 
 ! "The display name of this browser" Set from: Default
-! rofi.display-drun:                   
+rofi.display-drun: " "
 
 ! "The display name of this browser" Set from: Default
 ! rofi.display-combi:                  

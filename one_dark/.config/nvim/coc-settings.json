@@ -1,6 +1,20 @@
 {
+  "suggest.snippetIndicator": " ►",
 
-"suggest.snippetIndicator": " ►"
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
 
+  "prettier.disableSuccessMessage": true,
+
+  "tsserver.trace.server": "verbose",
+
+  "coc.preferences.formatOnSaveFiletypes": [],
+
+  "tsserver.formatOnType": false,
+  "coc.preferences.formatOnType": false
 }
-

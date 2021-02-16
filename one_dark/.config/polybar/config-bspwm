@@ -50,7 +50,7 @@ width = 100%
 height = 25
 ;offset-x = 1%
 ;offset-y = 0
-radius = 0
+radius = 4
 ; radius was 4 (nord darkest, try to set a shadow with the radius later)
 fixed-center = true
 
@@ -81,11 +81,11 @@ font-0 = "Iosevka Nerd Font:style=Bold:pixelsize=9:antialias=true;2"
 font-1 = "Material Icons:size=12:antialias=true;2"
 font-2 = "Hack Nerd Font:pixelsize=10:antialias=true;2"
 font-3 = "Material Icons:size=12:antialias=true;3"
-font-4 = "mononoki Nerd Font:size=10;1"
+font-4 = "mononoki Nerd Font:size=19;1"
 
 modules-left = bspwm
 modules-center = 
-modules-right = mpd info-redshift-temp filesystem pulseaudio time popup-calendar powermenu 
+modules-right = mpd info-redshift-temp filesystem pulseaudio wlan time popup-calendar powermenu2
 
 separator = 
 
@@ -238,9 +238,9 @@ interval = 25
 mount-0 = /
 
 ;format-mounted-prefix = " "
-;format-mounted-prefix = " "
+format-mounted-prefix = " "
 ;format-mounted-prefix = "宅 "
-format-mounted-prefix = " "
+;format-mounted-prefix = " "
 ;" "
 ;宅 - sdcard
 format-mounted-prefix-foreground = ${colors.primary}
@@ -438,7 +438,7 @@ bar-empty-foreground = #44
 type = internal/cpu
 interval = 0.5
 format = <label> 
-format-prefix = %{A1:gnome-system-monitor:}%{A} 
+format-prefix = %{A1:gnome-system-monitor:}%{A} 
 ;format-prefix = %{A1:gnome-system-monitor:}CPU%{A}
 format-prefix-font = 4
 label = %percentage:3%%
@@ -492,7 +492,8 @@ type = internal/memory
 interval = 1
 format = <label>
 ;format-prefix = 
-format-prefix = %{A1:gnome-system-monitor:}%{A}
+;format-prefix = %{A1:gnome-system-monitor:}%{A}
+format-prefix = %{A1:gnome-system-monitor:}%{A}
 ;format-prefix = %{A1:gnome-system-monitor:}RAM%{A}
 format-prefix-font = 4
 format-prefix-foreground = ${colors.primary}
@@ -517,26 +518,30 @@ bar-used-empty-foreground = #444444
 
 [module/wlan]
 type = internal/network
-interface = enp3s0
+interface = wlp2s0u1u2
+;interface = enp3s0
 interval = 3.0
 
-format-connected =   <label-connected>
+format-connected = <ramp-signal>
+;format-connected =   <label-connected>
 ;format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected =
+format-disconnected = 
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
-click-left = $TERMINAL
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.primary}
+click-left = 
+; icon battery charging
+;
 
 [module/updates-arch-combined]
 type = custom/script
@@ -627,11 +632,11 @@ interval = 3.0
 format-connected = <label-connected>
 format-connected-foreground = ${colors.primary}
 
-format-connected-prefix = " "
+format-connected-prefix = "  "
 format-connected-prefix-foreground = ${colors.primary}
-format-connected-prefix-font = 4
+format-connected-prefix-font = 1
 
-label-connected = WAN
+label-connected = On
 label-connected-font = 1
 label-connected-foreground = ${colors.foreground}
 ;label-connected = %local_ip%
@@ -639,11 +644,11 @@ label-connected-foreground = ${colors.foreground}
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = ${colors.primary}
 
-format-disconnected-prefix = " "
-format-disconnected-prefix-foreground = ${colors.primary}
+format-disconnected-prefix = " "
+format-disconnected-prefix-foreground = ${colors.foreground-alt}
 format-disconnected-prefix-font = 4
 
-label-disconnected = WAN
+label-disconnected = Off
 label-disconnected-font = 1
 label-disconnected-foreground = ${colors.foreground}
 
@@ -829,6 +834,7 @@ ramp-foreground = ${colors.primary}
 label-warn = %temperature-c% WARN
 label-warn-foreground = ${colors.alert}
 
+
 [module/powermenu]
 type = custom/menu
 
@@ -855,6 +861,29 @@ menu-0-0 = "⏻ "
 menu-0-0-exec = shutdown -h now
 
 
+[module/powermenu2]
+type = custom/menu
+
+expand-right = false
+
+format-spacing = 1
+label-active-font = 0
+
+label-open = ⏻ 
+label-open-foreground = ${colors.primary}
+
+label-close =  
+label-close-foreground = ${colors.primary}
+
+label-separator = |
+label-separator-foreground = ${colors.primary}
+
+label = ${colors.primary}
+
+menu-0-0 = "⏻ "
+menu-0-0-exec = ~/.config/rofi/applets/powermenu.sh
+
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -867,3 +896,4 @@ margin-top = 0
 margin-bottom = 0
 
 ; vim:ft=dosini
+; -*- mode: ini;-*-
