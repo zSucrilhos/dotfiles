@@ -1,0 +1,38 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+
+# /dev/sdc2 - ROOT Partition
+UUID=4da3a91e-f78b-4821-81f2-8fc591ea54f6	/         	ext4      	rw,relatime	0 1
+
+# /dev/sdc1 - BOOT Partition
+UUID=02e5abff-3328-427c-adb2-a0bced657ca2	/boot     	ext4      	rw,relatime	0 2
+
+# /dev/sdc3 - HOME Partition
+UUID=f6217605-dd0e-4dc3-8b09-ec1b1d680373	/home     	ext4      	rw,relatime	0 2
+
+# /dev/sdc4 - SWAP Partition
+UUID=94429971-629a-4a76-b3f1-8cb3f9230ff6	none      	swap      	defaults  	0 0
+
+# /dev/sda2 - Windows Desktop Partition
+UUID=602C2FC02C2F9058				/mnt/120gb	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
+# /dev/sdb1 - 1-4Tb HDD
+UUID=0AC316860AC31686				/mnt/1-4tb	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
+# /dev/sde1 - 250Gb 1Tb HDD
+UUID=64A0A251A0A2298E				/mnt/250gb	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
+# /dev/sde5 - 680Gb 1Tb HDD
+UUID=46DED08CDED07621				/mnt/680gb	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
+# /dev/sdd1 - 230Gb HDD HDD
+#UUID=08D904D908D904D9				/mnt/230gb	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
+# /dev/sdb1 - WD BLUE 1TB - P1
+UUID=1083169010831690				/mnt/465gb1	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
+# /dev/sdb2 - WD BLUE 1TB - P2
+UUID=1083164610831646				/mnt/465gb2	ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=1000,gid=1000,windows_names 0 0 
+
