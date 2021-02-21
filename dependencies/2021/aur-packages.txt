@@ -6,6 +6,7 @@ flameshot-git
 flashfocus-git
 fltrdr
 fonts-meta-extended-lt
+freezer-appimage
 fsearch-git
 fselect
 gbacklight

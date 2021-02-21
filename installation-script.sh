@@ -19,17 +19,19 @@ cp .tmux/.tmux.conf.local .
 
 # Copying files from dotfiles
 echo "### Cloning dotfiles"
-cd $HOME/Desktop
+cd $HOME/Downloads/_cloned-repos
 git clone github.com/zsucrilhos/dotfiles && cd dotfiles
 
 echo "### Copying files..."
 cd extras && cp -rv ./_my-scripts ./icons ./themes .config $HOME && cd ..
 cd one_dark && cp -rv .config .tmux .Xresources .tmux.conf .tmux.conf.local .xinitrc $HOME && cd ..
 
-echo "### Installing yay" # maybe install paru later?
-git clone git clone https://aur.archlinux.org/yay.git 
-cd yay
+echo "### Installing paru"
+cd $HOME/Downloads/_cloned-repos
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
+cd ..
 
 echo "### Installing packages..."
 cd ./dependencies/2021/

@@ -14,11 +14,6 @@ binutils
 bison
 bleachbit
 bspwm
-caja
-caja-extensions-common
-caja-image-converter
-caja-open-terminal
-caja-sendto
 calibre
 cantata
 catimg
@@ -53,8 +48,6 @@ figlet
 file
 file-roller
 findutils
-firefox-developer-edition
-firefox-tridactyl
 flex
 fortune-mod
 frei0r-plugins
@@ -151,6 +144,7 @@ papirus-icon-theme
 paprefs
 patch
 pavucontrol
+pcmanfm
 piper
 pkgconf
 playerctl
