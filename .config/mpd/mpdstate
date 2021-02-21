@@ -1,9 +1,9 @@
-sw_volume: 80
+sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: play
-current: 73
-time: 23.016000
+state: pause
+current: 6
+time: 0.762000
 random: 0
 repeat: 1
 single: 0
@@ -12,114 +12,87 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Guild Wars 2 Heart of Thorns/01 Heart of Thorns Theme.m4a
-1:Guild Wars 2 Heart of Thorns/02 Maguuma Overture.m4a
-2:Guild Wars 2 Heart of Thorns/03 The Pact Laid Waste.m4a
-3:Guild Wars 2 Heart of Thorns/04 The Jungle Provides.m4a
-4:Guild Wars 2 Heart of Thorns/05 Dangerous Beauty.m4a
-5:Guild Wars 2 Heart of Thorns/06 Jaka Itzel.m4a
-6:Guild Wars 2 Heart of Thorns/07 View from the Canopy.m4a
-7:Guild Wars 2 Heart of Thorns/08 Faren's Flier.m4a
-8:Guild Wars 2 Heart of Thorns/09 Quaggan Command.m4a
-9:Guild Wars 2 Heart of Thorns/10 Far from Home.m4a
-10:Guild Wars 2 Heart of Thorns/11 Auric Wilds.m4a
-11:Guild Wars 2 Heart of Thorns/12 Golden Heights.m4a
-12:Guild Wars 2 Heart of Thorns/13 An Exalted Lullaby.m4a
-13:Guild Wars 2 Heart of Thorns/14 Glint's Legacy.m4a
-14:Guild Wars 2 Heart of Thorns/15 Tarir, the Forgotten City.m4a
-15:Guild Wars 2 Heart of Thorns/16 Attack on Tarir.m4a
-16:Guild Wars 2 Heart of Thorns/17 Leaving Tarir.m4a
-17:Guild Wars 2 Heart of Thorns/18 Tangled Depths.m4a
-18:Guild Wars 2 Heart of Thorns/19 Rata Novus.m4a
-19:Guild Wars 2 Heart of Thorns/20 Taming the Jungle.m4a
-20:Guild Wars 2 Heart of Thorns/21 Scar.m4a
-21:Guild Wars 2 Heart of Thorns/22 Chak Tunnels.m4a
-22:Guild Wars 2 Heart of Thorns/23 Teku Nuhoch.m4a
-23:Guild Wars 2 Heart of Thorns/24 Dragon's Stand.m4a
-24:Guild Wars 2 Heart of Thorns/25 Mouth of Mordremoth.m4a
-25:Guild Wars 2 Heart of Thorns/26 Hearts and Minds.m4a
-26:Guild Wars 2 Heart of Thorns/27 Mordremoth.m4a
-27:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Maker of Worlds.flac
-28:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Heartland's Sigh.flac
-29:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Fated Lands.flac
-30:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Bloodlines.flac
-31:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Kynareth's Wish.flac
-32:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Lost Glory.flac
-33:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Ode to a Dynasty.flac
-34:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Of Storms and Half-light.flac
-35:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - These Verdant Fields.flac
-36:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Lorkhan's Footsteps.flac
-37:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Moon and Scars.flac
-38:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Shapeless.flac
-39:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Wilder Hearts.flac
-40:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - So Blind and in Terror.flac
-41:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Sleeping Sky.flac
-42:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Nox Atra.flac
-43:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/01. No Place On Earth.mp3
-44:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/02. Face Of The Father.mp3
-45:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/03. Shalom.mp3
-46:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/04. Allure.mp3
-47:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/05. We Are One.mp3
-48:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/06. Darkest Night.mp3
-49:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/07. Low Tide.mp3
-50:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/08. Thin Place.mp3
-51:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/09. Delusion.mp3
-52:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/10. Incision.mp3
-53:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/11. In The Distance.mp3
-54:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/12. Something Can Grow.mp3
-55:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/13. Wir Sind Gleich.mp3
-56:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/14. High Tide.mp3
-57:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/15. Like A Child (Cinematic Mix).mp3
-58:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/16. Farthest Seas.mp3
-59:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/17. Eyes Wide Open (Cinematic Mix).mp3
-60:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/18. The King.mp3
-61:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/19. The Way Home.mp3
-62:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/20. Morning's Wings.mp3
-63:Tony Anderson - The Heart Of Man - 2017 (320 kbps)/21. Thin Place (Abbreviated).mp3
-64:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Reverence.flac
-65:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Dignity.flac
-66:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Widow's Lament.flac
-67:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Concordat Effect.flac
-68:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - One More Day.flac
-69:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Watchman's Legacy.flac
-70:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Apparitions.flac
-71:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - All That Remains.flac
-72:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Home.flac
-73:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Familiar Faces.flac
-74:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Last of the Guard.flac
-75:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Arcana Magicae.flac
-76:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Foreign Foe.flac
-77:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Northern Cry.flac
-78:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Brigands of Blackwood.flac
-79:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Mortal Wound.flac
-80:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Blood Frenzy.flac
-81:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Hold Fast (Be Brave, Don't Die).flac
-82:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - To Fell an Ogre.flac
-83:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Arch Henchman.flac
-84:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Master of Fate.flac
-85:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - By Death or Dream.flac
-86:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Stories from the Hearth.flac
-87:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Empty Chair.flac
-88:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Honour Amongst Patrons.flac
-89:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Drinks for Dogs.flac
-90:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Storm Will Carry Us Home (Bard Song).flac
-91:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Fades Away (Bard Song).flac
-92:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Bless Me, Oh Fallen One (Bard Song).flac
-93:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Melvin of Skingrad (Bard Song).flac
-94:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Hero of a Song (Bard Song).flac
-95:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Everyone's Throne (Bard Song).flac
-96:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - A Wet Grave.flac
-97:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Moving Earth.flac
-98:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Signs of Life.flac
-99:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Vile and the Infamous.flac
-100:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - War Machine.flac
-101:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Barrels, Blood and Bone.flac
-102:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - The Toll of Fate.flac
-103:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Diaspora Nenalata.flac
-104:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - They Left Me in Here.flac
-105:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Dark Places.flac
-106:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Unwelcome Guest.flac
-107:Beyond Skyrim - Bruma OST/Beyond Skyrim Bruma - Creeps and Critters.flac
-108:Thomas Bergersen - 2020 - Humanity. Chapter I/08. Thomas Bergersen, Audrey Callahan - Humanity.flac
-109:Thomas Bergersen - 2020 - Humanity. Chapter I/07. Thomas Bergersen - Mountain Call.flac
+0:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/01. Skies Unknown.mp3
+1:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/02. Main Menu Mix.mp3
+2:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/03. IUN Briefing.mp3
+3:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/04. Fort Grays Air Base Hangar.mp3
+4:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/05. Charge Assault.mp3
+5:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/06. Eastern Wind.mp3
+6:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/07. Unmanned Craft.mp3
+7:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/08. Dual Wielder.mp3
+8:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/09. Two-Pronged Strategy.mp3
+9:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/10. Brownie's Last Dogfight.mp3
+10:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/11. Tail Man.mp3
+11:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/12. Gunther Peninsula.mp3
+12:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/13. Rescue.mp3
+13:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/14. Mother Goose One.mp3
+14:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/15. Tears of Razgriz.mp3
+15:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/16. IUN Debriefing.mp3
+16:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/17. 444 Briefing.mp3
+17:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/18. 444th Air Base Hangar.mp3
+18:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/19. 444.mp3
+19:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/20. Long Day.mp3
+20:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/21. Yinshi Valley.mp3
+21:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/22. First Contact.mp3
+22:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/23. Two Pairs.mp3
+23:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/24. Musings of the Scrap Queen.mp3
+24:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/25. Pipeline Destruction.mp3
+25:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/26. Three of a Kind.mp3
+26:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/27. Waiapolo Mountains.mp3
+27:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/28. Identification.mp3
+28:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/29. Faceless Soldier.mp3
+29:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/30. Transfer Orders.mp3
+30:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/31. ADFX-10.mp3
+31:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/32. SOLITARY Debriefing.mp3
+32:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/33. Mission Failed.mp3
+33:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/34. LRSSG Briefing.mp3
+34:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/35. New Arrows Air Base Hangar.mp3
+35:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/36. Siren's Song.mp3
+36:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/37. Stonehenge Defensive.mp3
+37:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/38. Dragon Breath.mp3
+38:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/39. Magic Spear I.mp3
+39:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/40. Magic Spear II.mp3
+40:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/41. Werewolf.mp3
+41:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/42. LRSSG Debriefing I.mp3
+42:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/43. Battle for Farbanti.mp3
+43:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/44. SOL Squadron.mp3
+44:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/45. Last Hope I.mp3
+45:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/46. Last Hope II.mp3
+46:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/47. Drones Gone Rogue.mp3
+47:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/48. LRSSG Briefing II.mp3
+48:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/49. Homeward.mp3
+49:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/50. Supply Ship.mp3
+50:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/51. Lost Kingdom.mp3
+51:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/52. Archange.mp3
+52:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/53. The King Who Lost Two Crowns.mp3
+53:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/54. LRSSG Briefing III.mp3
+54:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/55. Lighthouse.mp3
+55:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/56. Daredevil.mp3
+56:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/57. Belkan Sorcery.mp3
+57:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/58. LRSSG Debriefing II.mp3
+58:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/59. LRSSG Briefing IV.mp3
+59:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/60. Soldier without Borders.mp3
+60:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/61. Hush.mp3
+61:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/62. Space Elevator.mp3
+62:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/63. Dark Blue.mp3
+63:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/64. Pensées (End Titles).mp3
+64:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/65. Multiplayer Lobby 1.mp3
+65:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/66. Multiplayer Lobby 2.mp3
+66:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/67. Multiplayer Lobby 3.mp3
+67:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/68. Multiplayer Final Checks.mp3
+68:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/69. Roca Roja.mp3
+69:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/70. Multiplayer - Victory.mp3
+70:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/71. Multiplayer - Defeat.mp3
+71:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/72. Multiplayer - MVP.mp3
+72:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/73. Mobius 1 Returns.mp3
+73:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/74. Back In The Pilot's Seat.mp3
+74:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/75. VR Mission Failed.mp3
+75:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/76. Tango Line.mp3
+76:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/77. Blockade (Mobius 1 Returns Remix).mp3
+77:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/78. Legends Never Die.mp3
+78:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/79. Mobius 1 Forever (VR Debriefing).mp3
+79:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/80. Unused Track 1.mp3
+80:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/81. Unused Track 2.mp3
+81:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/82. LRSSG Briefing IV (Alternate Edit).mp3
+82:_MyMusic(E)/Ace Combat Collection OST/Ace Combat Soundtrack Collection [MP3]/2019 - Ace Combat 7 Skies Unknown Soundtrack/83. Pensées-Faceless Soldier End Credits.mp3
 playlist_end
