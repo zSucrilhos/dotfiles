@@ -50,7 +50,7 @@ let g:coc_global_extensions = [
     \ 'coc-markdownlint',
     \ 'coc-lists',
     \ 'coc-git',
-    \ 'coc-highlight'
+    \ 'coc-highlight',
     \ ]
 
 " Bad response?
@@ -116,14 +116,19 @@ Plug 'tpope/vim-fugitive'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " A file explorer tree for neovim written in lua
-"Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Adds file type icons to Vim plugins such as: NERDTree, vim-airline,
 " CtrlP, unite, Denite, lightline, vim-startify and many more
 Plug 'ryanoasis/vim-devicons'
 
+"nvim Telescope - Find, Filter, Preview, Pick. All lua, all the time. 
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " File manager for Neovim. Better than NERDTree
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+"Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 
 " A tree explorer plugin for vim.
 "Plug 'preservim/nerdtree' |
@@ -239,9 +244,29 @@ Plug 'ctrlpvim/ctrlp.vim' " ADD CONFIGS
 " Check this
 "Plug 'christoomey/vim-tmux-navigator'
 
-
 " Initialize plugin system
 call plug#end()
+
+
+"#######################################################
+" nvim-treesitter configs
+"#######################################################
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  indent = { enable = true },
+  ensure_installed = "maintained",
+  highlight = {
+      enable = true,
+      use_languagetree = false,
+  },
+  incremental_selection = { enable = true },
+  textobjects = { enable = true }}
+EOF
+
+" Treesitter-based folding
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 
 
 "#######################################################
@@ -332,11 +357,78 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-" Remap open a list with all errors and warnings
-nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
-" Remap symbols list
-nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Map function and class text objects
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+endif
+
+" Use CTRL-S for selections ranges.
+" Requires 'textDocument/selectionRange' support of language server.
+nmap <silent> <C-s> <Plug>(coc-range-select)
+xmap <silent> <C-s> <Plug>(coc-range-select)
+
+" Mappings for CoCList
+" Show all diagnostics.
+nnoremap <silent><nowait> <space>d  :<C-u>CocList diagnostics<cr>
+
+" Manage extensions.
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+
+" Show commands.
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+
+" Find symbol of current document.
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+
+" Do default action for next item.
+nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+
+" Do default action for previous item.
+nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+
+" Resume latest coc list.
+nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Remap perform code actions
 nmap <leader>do <Plug>(coc-codeaction)
@@ -547,23 +639,34 @@ endtry
 
 
 "#######################################################
+" Telescope configuration
+"#######################################################
+"
+" Find files using Telescope command-line sugar.
+nnoremap '<C-p>'      <cmd>Telescope find_files<cr>
+nnoremap <leader>Fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>Fb <cmd>Telescope buffers<cr>
+nnoremap <leader>Fh <cmd>Telescope help_tags<cr>
+
+
+"#######################################################
 " CtrlP configuration
 "#######################################################
 "
 " Change the default mapping and the default command to invoke CtrlP
-let g:ctrlp_map = '<C-p>'
-let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_map = '<C-p>'
+"let g:ctrlp_cmd = 'CtrlP'
 
 " Ignore files in .gitignore
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " When invoked without an explicit starting directory, CtrlP will set its local
 " working directory according to this variable
-let g:ctrlp_working_path_mode = 'ra'
+"let g:ctrlp_working_path_mode = 'ra'
 
 " If none of the default markers (.git .hg .svn .bzr _darcs) are present in a project,
 " you can define additional ones with g:ctrlp_root_markers:
-let g:ctrlp_root_markers = ['package.json', 'yarn.lock', 'tsconfig.json', '.gitignore', 'node_modules']
+"let g:ctrlp_root_markers = ['package.json', 'yarn.lock', 'tsconfig.json', '.gitignore', 'node_modules']
 
 
 "#######################################################
@@ -595,18 +698,25 @@ map <F9> :Files<CR>
 " Barbar.nvim configuration
 "#######################################################
 
-" NOTE This variable doesn't exist before barbar runs. Create it before
-"       setting any option.
-let bufferline = {}
+" NOTE: If barbar's option dict isn't created yet, create it
+let bufferline = get(g:, 'bufferline', {})
 
 " Enable/disable animations
 let bufferline.animation = v:true
 
+" Enable/disable auto-hiding the tab bar when there is a single buffer
+let bufferline.auto_hide = v:false
+
 " Enable/disable icons
 " if set to 'numbers', will show buffer index in the tabline
 " if set to 'both', will show buffer index and icons in the tabline
-"let bufferline.icons = v:true -- default
 let bufferline.icons = v:true
+
+" If set, the icon color will follow its corresponding buffer
+" highlight group. By default, the Buffer*Icon group is linked to the
+" Buffer* group (see Highlighting below). Otherwise, it will take its
+" default value as defined by devicons.
+let bufferline.icon_custom_colors = v:false
 
 " Configure icons on the bufferline.
 let bufferline.icon_separator_active = '▎'
@@ -632,11 +742,10 @@ let bufferline.semantic_letters = v:true
 " optimal for the qwerty keyboard layout but might need adjustement
 " for other layouts.
 let bufferline.letters =
-  \ 'asdfjkl;ghnmxcbziowerutyqpASDFJKLGHNMXCBZIOWERUTYQP'
+  \ 'asdfjkl;ghnmxcvbziowerutyqpASDFJKLGHNMXCVBZIOWERUTYQP'
 
 " Sets the maximum padding width with which to surround each tab
 let bufferline.maximum_padding = 4
-
 
 " " ################ REMAPS ################
 " Magic buffer-picking mode
@@ -672,7 +781,7 @@ nnoremap <silent> <C-t>q :BufferClose<CR>
 " (including closing/deleting from the list)
 
 " Wipeout buffer
-nnoremap <silent> <C-t>wp! :BufferWipeout<CR>
+nnoremap <silent> <C-t>wp :BufferWipeout<CR>
 
 " Close commands
 nnoremap <silent> <C-t>cac :BufferCloseAllButCurrent<CR>
@@ -685,6 +794,7 @@ nnoremap <silent> <C-t>cal :BufferCloseBuffersLeft<CR>
 
 " Split vertically
 nnoremap <C-t>v :vsplit<CR> 
+
 
 "#######################################################
 " coc-prettier configuration
@@ -720,10 +830,10 @@ let g:notes_directories = ['~/Documents/Notes']
 "#######################################################
 
 " Open CHADTree binding
-nnoremap <C-k> :CHADopen<CR>
+"nnoremap <C-k> :CHADopen<CR>
 
 " Add a hotkey to clear quickfix list
-nnoremap <leader>l <cmd>call setqflist([])<cr>
+"nnoremap <leader>l <cmd>call setqflist([])<cr>
 
 
 "#######################################################
@@ -777,105 +887,62 @@ nnoremap <leader>l <cmd>call setqflist([])<cr>
 "#######################################################
 " nvim-tree.lua settings
 "#######################################################
-"
-"let g:nvim_tree_side = 'left' " left by default
-"let g:nvim_tree_width = 42 " 30 by default
-"let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache' ] " empty by default
-"let g:nvim_tree_auto_open = 1 " 0  by default, opens the tree when typing `vim $DIR` or `vim`
-"let g:nvim_tree_auto_close = 1 " 0 by default, closes the tree when it's the last window
-"let g:nvim_tree_quit_on_open = 0 " 0 by default, closes the tree when you open a file
-"let g:nvim_tree_follow = 1 " 0 by default, this option allows the cursor to be updated when entering a buffer
-"let g:nvim_tree_indent_markers = 1 " 0 by default, this option shows indent markers when folders are open
-"let g:nvim_tree_hide_dotfiles = 0 " 0 by default, this option hides files and folders starting with a dot `.`
-"let g:nvim_tree_git_hl = 1 " 0 by default, will enable file highlight for git attributes (can be used without the icons).
-"let g:nvim_tree_root_folder_modifier = ':~' " This is the default. See :help filename-modifiers for more options
-"let g:nvim_tree_tab_open = 1 " 0 by default, will open the tree when entering a new tab and the tree was previously open
-"let g:nvim_tree_width_allow_resize  = 1 " 0 by default, will not resize the tree when opening a file
-"let g:nvim_tree_show_icons = {
-    "\ 'git': 1,
-    "\ 'folders': 1,
-    "\ 'files': 1,
-    "\ }
-""If 0, do not show the icons for one of 'git' 'folder' and 'files'
-""1 by default, notice that if 'files' is 1, it will only display
-""if nvim-web-devicons is installed and on your runtimepath
 
-"" You can edit keybindings be defining this variable
-"" You don't have to define all keys.
-"" NOTE: the 'edit' key will wrap/unwrap a folder and open a file
-"let g:nvim_tree_bindings = {
-    "\ 'edit':            ['<CR>', 'o'],
-    "\ 'edit_vsplit':     '<C-v>',
-    "\ 'edit_split':      '<C-x>',
-    "\ 'edit_tab':        '<C-t>',
-    "\ 'close_node':      ['<S-CR>', '<BS>'],
-    "\ 'toggle_ignored':  'I',
-    "\ 'toggle_dotfiles': 'H',
-    "\ 'refresh':         'R',
-    "\ 'preview':         '<Tab>',
-    "\ 'cd':              '<C-]>',
-    "\ 'create':          'a',
-    "\ 'remove':          'd',
-    "\ 'rename':          'r',
-    "\ 'cut':             'x',
-    "\ 'copy':            'c',
-    "\ 'paste':           'p',
-    "\ 'prev_git_item':   '[c',
-    "\ 'next_git_item':   ']c',
-    "\ }
+let g:nvim_tree_side = "left" | "right" "left by default
+let g:nvim_tree_width = 40 "30 by default
+let g:nvim_tree_ignore = [ ".git", "node_modules", ".cache" ] "empty by default
+let g:nvim_tree_auto_open = 1 "0 by default, opens the tree when typing `vim $DIR` or `vim`
+let g:nvim_tree_auto_close = 1 "0 by default, closes the tree when it"s the last window
+let g:nvim_tree_auto_ignore_ft = [ "startify", "dashboard" ] "empty by default, don't auto open tree on specific filetypes.
+let g:nvim_tree_quit_on_open = 1 "0 by default, closes the tree when you open a file
+let g:nvim_tree_follow = 1 "0 by default, this option allows the cursor to be updated when entering a buffer
+let g:nvim_tree_indent_markers = 1 "0 by default, this option shows indent markers when folders are open
+let g:nvim_tree_hide_dotfiles = 0 "0 by default, this option hides files and folders starting with a dot `.`
+let g:nvim_tree_git_hl = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
+let g:nvim_tree_root_folder_modifier = ":~" "This is the default. See :help filename-modifiers for more options
+let g:nvim_tree_tab_open = 1 "0 by default, will open the tree when entering a new tab and the tree was previously open
+let g:nvim_tree_width_allow_resize  = 1 "0 by default, will not resize the tree when opening a file
+let g:nvim_tree_disable_netrw = 0 "1 by default, disables netrw
+let g:nvim_tree_hijack_netrw = 0 "1 by default, prevents netrw from automatically opening when opening directories (but lets you keep its other utilities)
+let g:nvim_tree_add_trailing = 1 "0 by default, append a trailing slash to folder names
+let g:nvim_tree_show_icons = {
+    \ "git": 1,
+    \ "folders": 1,
+    \ "files": 1,
+    \ }
+"If 0, do not show the icons for one of "git" "folder" and "files"
+"1 by default, notice that if "files" is 1, it will only display
+"if nvim-web-devicons is installed and on your runtimepath
+" default will show icon by default if no icon is provided
+" default shows no icon by default
+let g:nvim_tree_icons = {
+    \ "default": "",
+    \ "symlink": "",
+    \ "git": {
+    \   "unstaged": "",
+    \   "staged": "",
+    \   "unmerged": "",
+    \   "renamed": "➜",
+    \   "untracked": ""
+    \   },
+    \ "folder": {
+    \   "default": "",
+    \   "open": "",
+    \   "empty": "",
+    \   "empty_open": "",
+    \   "symlink": "",
+    \   }
+    \ }
 
-"" Disable default mappings by plugin
-"" Bindings are enabled by default, disabled on any non-zero value
-"let nvim_tree_disable_keybindings=0
+nnoremap <C-k> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+" NvimTreeOpen and NvimTreeClose are also available if you need them
 
-"" default will show icon by default if no icon is provided
-"" default shows no icon by default
-"let g:nvim_tree_icons = {
-    "\ 'default': " ",
-    "\ 'symlink': " ",
-    "\ 'git': {
-    "\   'unstaged': "✗ ",
-    "\   'staged': "✓ ",
-    "\   'unmerged': " ",
-    "\   'renamed': "➜ ",
-    "\   'untracked': "*"
-    "\   },
-    "\ 'folder': {
-    "\   'default': " ",
-    "\   'open': " ",
-    "\   'symlink': " ",
-    "\   }
-    "\ }
+set termguicolors " this variable must be enabled for colors to be applied properly
 
-
-    ""\   'unstaged': "✗ ",
-    ""\   'staged': "✓ ",
-    ""\   'unmerged': " ",
-    ""\   'renamed': "➜ ",
-    ""\   'untracked': "*"
-
-
-"nnoremap <C-k>     :NvimTreeToggle<CR>
-"nnoremap <leader>r :NvimTreeRefresh<CR>
-"nnoremap <leader>n :NvimTreeFindFile<CR>
-"" NvimTreeOpen and NvimTreeClose are also available if you need them
-
-"" A list of groups can be found at `:help nvim_tree_highlight`
-"highlight NvimTreeFolderIcon guibg=blue
-
-"highlight NvimTreeGitNew guibg=blue
-"highlight NvimTreeGitStaged guibg=SeaGreen1
-"highlight NvimTreeGitRenamed guibg=SeaGreen1
-"highlight NvimTreeGitDirty guibg=SeaGreen1
-
-
-"#######################################################
-" Easymotion configs
-"#######################################################
-
-" Disable coc when easymotion is running
-autocmd User EasyMotionPromptBegin silent! CocDisable
-autocmd User EasyMotionPromptEnd silent! CocEnable
+" a list of groups can be found at `:help nvim_tree_highlight`
+highlight NvimTreeFolderIcon guibg=blue
 
 
 "#######################################################
@@ -1057,16 +1124,16 @@ nnoremap <C-b>w :bd<CR>
 " You can use <C-w>w to alternate between windows
 
 " Split horizontally (same file)
-nnoremap <C-w>h :split<CR> 
+nnoremap <C-w>H :split<CR> 
 
 " Split vertically (same file)
-nnoremap <C-w>v :vsplit<CR> 
+nnoremap <C-w>V :vsplit<CR> 
 
 " Split horizontally (new empty buffer)
-nnoremap <C-w>hn :new<CR> 
+nnoremap <C-w>Vn :new<CR> 
 
 " Split vertically (new empty buffer)
-nnoremap <C-w>vn :vnew<CR> 
+nnoremap <C-w>Hn :vnew<CR> 
 
 "###################################### Remapings END
 
@@ -1162,13 +1229,11 @@ set nobackup " Disable backups
 set nowritebackup " Not to write backups
 set noswapfile " Disable swapfile
 
-" Miscellaneous
-set textwidth=120 " Maximum text width, long lines will be \n'ed after whitespace
-set ffs=unix,dos,mac " Detect file's EOL
-set backspace=indent,eol,start " idk
-set colorcolumn=80 " Highlight column no N (comma separated)
-set columns=80 " Number of columns of the screen
-set showcmd " Show (partial) command in the last line of the screen
+" Indent
+set autoindent " Autoindent
+set smartindent
+set breakindent
+set copyindent
 
 " Search
 set hlsearch " Highlight all matches of preview search pattern
@@ -1179,7 +1244,21 @@ set history=500
 set undolevels=700
 set wrapscan " Searches wraps around the end of the file
 
-" Bind <leader><leader> to reload neovim configuration
+" Miscellaneous
+set autoread 
+set textwidth=120 " Maximum text width, long lines will be \n'ed after whitespace
+set ffs=unix,dos,mac " Detect file's EOL
+set backspace=indent,eol,start " idk
+set colorcolumn=80 " Highlight column no N (comma separated)
+set columns=80 " Number of columns of the screen
+set showcmd " Show (partial) command in the last line of the screen
+
+" Scrolling
+set scrolloff=4 " Start scrolling when we're 8 lines away from margins
+set sidescroll=8 " Start horizontal scroll 15 lines away from margins
+set sidescroll=1 " Only used when the 'wrap' option is off
+
+"Bind <leader><leader> to reload neovim configuration
 "nnoremap <silent> <leader><leader> :source $MYVIMRC<CR>
 
 " THESE MUST BE AT THE VERY END OF THE FILE

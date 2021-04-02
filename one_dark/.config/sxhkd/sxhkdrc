@@ -109,14 +109,14 @@ super + F3
 
 # Open vscodium
 super + shift + F3
-    vscodium & dunstify -i ~/_my-scripts/_icons/vscodium.png -u normal "VSCodium" "Started"
+    code & dunstify -i ~/_my-scripts/_icons/code-52px.png -u normal "VSCode" "Started"
 
-# Start caja
-super + F5
-    caja &
+# Start pcmanfm
+super + shift + F5
+    pcmanfm &
 
 # Start ranger in alacritty
-super + shift + F5
+super + F5
     alacritty -e $SHELL -i -c ranger &
 
 # Start ncmpcpp 

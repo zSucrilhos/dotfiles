@@ -3,7 +3,7 @@
 #bspc monitor -d I II III IV V VI VII VIII IX X
 
 # Kill all running applications before starting
-killall -9 sxhkd picom dunst numlockx unclutter mpDris2 redshift flashfocus udiskie lightsOn.sh blurme polybar
+killall -9 sxhkd picom dunst numlockx unclutter mpDris2 redshift flashfocus udiskie lightsOn.sh blurme polybar flameshot
 
 #bspc monitor -d 一 二 三 四 五 六 七 八 九 十 
 #bspc monitor -d 1 2 3 4 5 6 7 8 9 10
@@ -106,7 +106,8 @@ xrandr --output DVI-D-0 --gamma 1.0:1.0:1.0 &
 #feh --bg-fill "/home/zsucrilhos/Downloads/mark-basarab-zVzFFCZJTJk-unsplash.jpg"
 #feh --bg-fill "/home/zsucrilhos/Downloads/barna-bartis-r4BQTSnQ4aE-unsplash.jpg"
 #feh --bg-fill "/home/zsucrilhos/Desktop/Desktop/nordic-SBKjnxm.jpg"
-feh --bg-fill "/home/zsucrilhos/_my-disks/SEAGATE-1Tb-pt1/_Files/Desktop/av2]/4481543.jpg"
+#feh --bg-fill "/home/zsucrilhos/_my-disks/SEAGATE-1Tb-pt1/_Files/Desktop/av2]/4481543.jpg"
+feh --bg-fill "/home/zsucrilhos/_my-disks/SEAGATE-1Tb-pt2/Arquivos/Erick/Erick/Kuldar Leement/the_machinery_of_death_by_kuldarleement-d63kkgt.jpg"
 
 dunst &
 picom -b --config /home/zsucrilhos/.config/picom/picom.conf &
@@ -115,6 +116,7 @@ numlockx on &
 udiskie -a &
 xsetroot -cursor_name left_ptr &
 setxkbmap -layout br -variant abnt2 &
+flameshot &
 
 #/home/zsucrilhos/_my-scripts/blurme & not using this for now
 
